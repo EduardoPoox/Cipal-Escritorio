@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0DCDD395-7F01-486D-9F17-6B5AE5F8AC2D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cipal.egresos</RootNamespace>
+    <AssemblyName>cipal.egresos</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\componentes\CrystalReports\CrystalDecisions.CrystalReports.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\componentes\CrystalReports\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\componentes\CrystalReports\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\componentes\CrystalReports\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\componentes\CrystalReports\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Excel.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Shared.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.Misc.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.ExcelExport.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinSchedule.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <HintPath>..\packages\Office.Interop.Excel.12.0.0\lib\net40\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Office, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <HintPath>..\packages\Office.12.0.0\lib\net40\Office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="datasets\dsegresosmantenimiento.Designer.cs">
+      <DependentUpon>dsegresosmantenimiento.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="datasets\dsegresosgasolinas.Designer.cs">
+      <DependentUpon>dsegresosgasolinas.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="datasets\dsegresos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsegresos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmbuscardocumentodigital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbuscardocumentodigital.Designer.cs">
+      <DependentUpon>frmbuscardocumentodigital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmgasolina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgasolina.Designer.cs">
+      <DependentUpon>frmgasolina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmgasolinadetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgasolinadetalle.Designer.cs">
+      <DependentUpon>frmgasolinadetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmgasolinaconsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgasolinaconsulta.Designer.cs">
+      <DependentUpon>frmgasolinaconsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmantenimiento.Designer.cs">
+      <DependentUpon>frmmantenimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmantenimientodetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmantenimientodetalle.Designer.cs">
+      <DependentUpon>frmmantenimientodetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmantenimientoconsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmantenimientoconsulta.Designer.cs">
+      <DependentUpon>frmmantenimientoconsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmnomina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmnomina.Designer.cs">
+      <DependentUpon>frmnomina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmorigenesydestinos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmorigenesydestinos.Designer.cs">
+      <DependentUpon>frmorigenesydestinos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpedido.Designer.cs">
+      <DependentUpon>frmpedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpedidoconsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpedidoconsulta.Designer.cs">
+      <DependentUpon>frmpedidoconsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpedidodetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpedidodetalle.Designer.cs">
+      <DependentUpon>frmpedidodetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmorden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmorden.Designer.cs">
+      <DependentUpon>frmorden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmconstancia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconstancia.Designer.cs">
+      <DependentUpon>frmconstancia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frminforme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frminforme.Designer.cs">
+      <DependentUpon>frminforme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpedidodetalleimpuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpedidodetalleimpuesto.Designer.cs">
+      <DependentUpon>frmpedidodetalleimpuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsolicitud.Designer.cs">
+      <DependentUpon>frmsolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmordenconsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmordenconsulta.Designer.cs">
+      <DependentUpon>frmordenconsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmconstanciaconsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconstanciaconsulta.Designer.cs">
+      <DependentUpon>frmconstanciaconsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frminformeconsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frminformeconsulta.Designer.cs">
+      <DependentUpon>frminformeconsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsolicitudconsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsolicitudconsulta.Designer.cs">
+      <DependentUpon>frmsolicitudconsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmordendetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmordendetalle.Designer.cs">
+      <DependentUpon>frmordendetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmconstanciadetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconstanciadetalle.Designer.cs">
+      <DependentUpon>frmconstanciadetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frminformedetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frminformedetalle.Designer.cs">
+      <DependentUpon>frminformedetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsolicituddetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsolicituddetalle.Designer.cs">
+      <DependentUpon>frmsolicituddetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmvisualizadoregresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmvisualizadoregresos.Designer.cs">
+      <DependentUpon>frmvisualizadoregresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="datasets\dsegresosmantenimiento.xsc">
+      <DependentUpon>dsegresosmantenimiento.xsd</DependentUpon>
+    </None>
+    <None Include="datasets\dsegresosmantenimiento.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsegresosmantenimiento.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="datasets\dsegresosmantenimiento.xss">
+      <DependentUpon>dsegresosmantenimiento.xsd</DependentUpon>
+    </None>
+    <None Include="datasets\dsegresosgasolinas.xsc">
+      <DependentUpon>dsegresosgasolinas.xsd</DependentUpon>
+    </None>
+    <None Include="datasets\dsegresosgasolinas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsegresosgasolinas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="datasets\dsegresosgasolinas.xss">
+      <DependentUpon>dsegresosgasolinas.xsd</DependentUpon>
+    </None>
+    <None Include="datasets\dsegresos.xsc">
+      <DependentUpon>dsegresos.xsd</DependentUpon>
+    </None>
+    <None Include="datasets\dsegresos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsegresos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="datasets\dsegresos.xss">
+      <DependentUpon>dsegresos.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmbuscardocumentodigital.resx">
+      <DependentUpon>frmbuscardocumentodigital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgasolina.resx">
+      <DependentUpon>frmgasolina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgasolinadetalle.resx">
+      <DependentUpon>frmgasolinadetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgasolinaconsulta.resx">
+      <DependentUpon>frmgasolinaconsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmantenimiento.resx">
+      <DependentUpon>frmmantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmantenimientodetalle.resx">
+      <DependentUpon>frmmantenimientodetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmantenimientoconsulta.resx">
+      <DependentUpon>frmmantenimientoconsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmnomina.resx">
+      <DependentUpon>frmnomina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmorigenesydestinos.resx">
+      <DependentUpon>frmorigenesydestinos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpedido.resx">
+      <DependentUpon>frmpedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpedidoconsulta.resx">
+      <DependentUpon>frmpedidoconsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpedidodetalle.resx">
+      <DependentUpon>frmpedidodetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmorden.resx">
+      <DependentUpon>frmorden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconstancia.resx">
+      <DependentUpon>frmconstancia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frminforme.resx">
+      <DependentUpon>frminforme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpedidodetalleimpuesto.resx">
+      <DependentUpon>frmpedidodetalleimpuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsolicitud.resx">
+      <DependentUpon>frmsolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmordenconsulta.resx">
+      <DependentUpon>frmordenconsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconstanciaconsulta.resx">
+      <DependentUpon>frmconstanciaconsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frminformeconsulta.resx">
+      <DependentUpon>frminformeconsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsolicitudconsulta.resx">
+      <DependentUpon>frmsolicitudconsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmordendetalle.resx">
+      <DependentUpon>frmordendetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconstanciadetalle.resx">
+      <DependentUpon>frmconstanciadetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frminformedetalle.resx">
+      <DependentUpon>frminformedetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsolicituddetalle.resx">
+      <DependentUpon>frmsolicituddetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmvisualizadoregresos.resx">
+      <DependentUpon>frmvisualizadoregresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cipal.catalogos\cipal.catalogos.csproj">
+      <Project>{24AC37E4-D98F-4543-819F-EC731557B1F8}</Project>
+      <Name>cipal.catalogos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cipal.entidades\cipal.entidades.csproj">
+      <Project>{67b9c38e-bf2b-4e18-b83e-b057dcf2a0fb}</Project>
+      <Name>cipal.entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cipal.genericas\cipal.genericas.csproj">
+      <Project>{4dfbf486-a9e2-4a1e-93f0-590b0b20ec20}</Project>
+      <Name>cipal.genericas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cipal.negocios\cipal.negocios.csproj">
+      <Project>{ab1f3b7c-a49e-48a6-8a3a-b3112337bf66}</Project>
+      <Name>cipal.negocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,1920 @@
+﻿namespace cipal
+{
+    partial class frmCIPAL
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCIPAL));
+            Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance7 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance8 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance9 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance10 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinScrollBar.ScrollBarLook scrollBarLook1 = new Infragistics.Win.UltraWinScrollBar.ScrollBarLook();
+            Infragistics.Win.Appearance appearance11 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance12 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance13 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance14 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance15 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance16 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance17 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance18 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinScrollBar.ScrollBarLook scrollBarLook2 = new Infragistics.Win.UltraWinScrollBar.ScrollBarLook();
+            Infragistics.Win.Appearance appearance19 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance20 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance21 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance22 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance23 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance24 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance25 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance26 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance27 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab11 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance28 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance29 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab12 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance30 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance31 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab13 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance32 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance33 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab10 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance34 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance35 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab7 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance36 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance37 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab20 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance38 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance39 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab21 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance40 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance41 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab22 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance42 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance43 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab23 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance44 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance45 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab24 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance46 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance47 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab25 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance48 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance49 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab26 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance50 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance51 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance52 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance53 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab6 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance54 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance55 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance56 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance57 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab29 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance58 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance59 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab30 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance60 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance61 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab38 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance62 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance63 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab39 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance64 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance65 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab40 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance66 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance67 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab41 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance68 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance69 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab42 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance70 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance71 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance72 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance73 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab44 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance74 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance75 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab46 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance76 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance77 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab47 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance78 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance79 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab50 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance80 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance81 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab51 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance82 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance83 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab52 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance84 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance85 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance86 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance87 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance88 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance89 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance90 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance91 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance92 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance93 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinScrollBar.ScrollBarLook scrollBarLook3 = new Infragistics.Win.UltraWinScrollBar.ScrollBarLook();
+            Infragistics.Win.Appearance appearance94 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance95 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance96 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance97 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab14 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance98 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance99 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab16 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance100 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance101 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance102 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance103 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance104 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance105 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinScrollBar.ScrollBarLook scrollBarLook4 = new Infragistics.Win.UltraWinScrollBar.ScrollBarLook();
+            Infragistics.Win.Appearance appearance106 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance107 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance108 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance109 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance135 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance136 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance137 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance138 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance110 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance111 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance112 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance113 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab1 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance114 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance115 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance116 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance117 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab2 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance118 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance119 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance120 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab3 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance121 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance122 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance123 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab4 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance124 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance125 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance126 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab5 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance127 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance128 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance129 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance130 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab19 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance131 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance132 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance133 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance134 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance139 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance140 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance141 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance142 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance143 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance144 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance145 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance146 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance147 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinScrollBar.ScrollBarLook scrollBarLook5 = new Infragistics.Win.UltraWinScrollBar.ScrollBarLook();
+            Infragistics.Win.Appearance appearance148 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance149 = new Infragistics.Win.Appearance();
+            this.ultraTabPageControl7 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.lblProductInventory = new Infragistics.Win.Misc.UltraLabel();
+            this.lblStoreName_Inventory = new Infragistics.Win.Misc.UltraLabel();
+            this.ultraTabPageControl8 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl9 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl6 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.gridInventory = new Infragistics.Win.UltraWinGrid.UltraGrid();
+            this.ultraTabPageControl17 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl22 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl23 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl24 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl25 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl26 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl27 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl28 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl34 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl36 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl37 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl38 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl52 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl56 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl44 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraGrid2 = new Infragistics.Win.UltraWinGrid.UltraGrid();
+            this.ultraLabel1 = new Infragistics.Win.Misc.UltraLabel();
+            this.ultraLabel2 = new Infragistics.Win.Misc.UltraLabel();
+            this.ultraTabPageControl45 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl1 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.scHome1 = new System.Windows.Forms.SplitContainer();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnOrders = new Infragistics.Win.Misc.UltraButton();
+            this.btnContacts = new Infragistics.Win.Misc.UltraButton();
+            this.btnReports = new Infragistics.Win.Misc.UltraButton();
+            this.btnInventory = new Infragistics.Win.Misc.UltraButton();
+            this.lblCategories = new Infragistics.Win.Misc.UltraLabel();
+            this.scHome2 = new System.Windows.Forms.SplitContainer();
+            this.ultraTabPageControl2 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.tccatalogos = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
+            this.ultraTabSharedControlsPage2 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
+            this.ultraTabPageControl3 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabControl5 = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
+            this.ultraTabSharedControlsPage4 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
+            this.ultraTabPageControl49 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl4 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabControl6 = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
+            this.ultraTabSharedControlsPage5 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
+            this.ultraTabPageControl19 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl20 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl21 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl29 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl30 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl31 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl32 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl5 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.tcGestion = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
+            this.ultraTabSharedControlsPage6 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
+            this.gridReports = new Infragistics.Win.UltraWinGrid.UltraGrid();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.scReports = new System.Windows.Forms.SplitContainer();
+            this.lblStockReports = new Infragistics.Win.Misc.UltraLabel();
+            this.lblSalesReports = new Infragistics.Win.Misc.UltraLabel();
+            this.ultraTabPageControl18 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabControl3 = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
+            this.ultraTabSharedControlsPage7 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
+            this.ultraCalendarLook1 = new Infragistics.Win.UltraWinSchedule.UltraCalendarLook(this.components);
+            this.ultraFormManager1 = new Infragistics.Win.UltraWinForm.UltraFormManager(this.components);
+            this._Form1_UltraFormManager_Dock_Area_Left = new Infragistics.Win.UltraWinForm.UltraFormDockArea();
+            this._Form1_UltraFormManager_Dock_Area_Right = new Infragistics.Win.UltraWinForm.UltraFormDockArea();
+            this._Form1_UltraFormManager_Dock_Area_Top = new Infragistics.Win.UltraWinForm.UltraFormDockArea();
+            this._Form1_UltraFormManager_Dock_Area_Bottom = new Infragistics.Win.UltraWinForm.UltraFormDockArea();
+            this.tcMain = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
+            this.ultraTabSharedControlsPage1 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
+            this.ultraTabSharedControlsPage3 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
+            this.ultraTabPageControl10 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl11 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl12 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabControl1 = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
+            this.ultraCalendarInfo1 = new Infragistics.Win.UltraWinSchedule.UltraCalendarInfo(this.components);
+            this.ultraTabPageControl40 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl41 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraGrid1 = new Infragistics.Win.UltraWinGrid.UltraGrid();
+            this.ultraTabPageControl42 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabControl2 = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
+            this.ultraTabPageControl13 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl14 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl15 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl16 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl47 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl48 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabControl4 = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
+            this.ultraTabSharedControlsPage8 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
+            this.ultraTabPageControl50 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl51 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabSharedControlsPage9 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
+            this.ultraTabPageControl39 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl53 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl54 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl55 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl7.SuspendLayout();
+            this.ultraTabPageControl6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridInventory)).BeginInit();
+            this.ultraTabPageControl44.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraGrid2)).BeginInit();
+            this.ultraTabPageControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.scHome1)).BeginInit();
+            this.scHome1.Panel1.SuspendLayout();
+            this.scHome1.Panel2.SuspendLayout();
+            this.scHome1.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.scHome2)).BeginInit();
+            this.scHome2.SuspendLayout();
+            this.ultraTabPageControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tccatalogos)).BeginInit();
+            this.tccatalogos.SuspendLayout();
+            this.ultraTabPageControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl5)).BeginInit();
+            this.ultraTabControl5.SuspendLayout();
+            this.ultraTabPageControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl6)).BeginInit();
+            this.ultraTabControl6.SuspendLayout();
+            this.ultraTabPageControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tcGestion)).BeginInit();
+            this.tcGestion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridReports)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.scReports)).BeginInit();
+            this.scReports.Panel1.SuspendLayout();
+            this.scReports.Panel2.SuspendLayout();
+            this.scReports.SuspendLayout();
+            this.ultraTabPageControl18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl3)).BeginInit();
+            this.ultraTabControl3.SuspendLayout();
+            this.ultraTabSharedControlsPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraFormManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tcMain)).BeginInit();
+            this.tcMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl1)).BeginInit();
+            this.ultraTabControl1.SuspendLayout();
+            this.ultraTabPageControl41.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl4)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // ultraTabPageControl7
+            // 
+            this.ultraTabPageControl7.Controls.Add(this.lblProductInventory);
+            this.ultraTabPageControl7.Controls.Add(this.lblStoreName_Inventory);
+            resources.ApplyResources(this.ultraTabPageControl7, "ultraTabPageControl7");
+            this.ultraTabPageControl7.Name = "ultraTabPageControl7";
+            // 
+            // lblProductInventory
+            // 
+            appearance1.FontData.Name = resources.GetString("resource.Name");
+            appearance1.FontData.SizeInPoints = ((float)(resources.GetObject("resource.SizeInPoints")));
+            appearance1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.lblProductInventory.Appearance = appearance1;
+            resources.ApplyResources(this.lblProductInventory, "lblProductInventory");
+            this.lblProductInventory.Name = "lblProductInventory";
+            // 
+            // lblStoreName_Inventory
+            // 
+            appearance2.FontData.Name = resources.GetString("resource.Name1");
+            appearance2.FontData.SizeInPoints = ((float)(resources.GetObject("resource.SizeInPoints1")));
+            appearance2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.lblStoreName_Inventory.Appearance = appearance2;
+            resources.ApplyResources(this.lblStoreName_Inventory, "lblStoreName_Inventory");
+            this.lblStoreName_Inventory.Name = "lblStoreName_Inventory";
+            this.lblStoreName_Inventory.WrapText = false;
+            this.lblStoreName_Inventory.Click += new System.EventHandler(this.lblStoreName_Inventory_Click);
+            // 
+            // ultraTabPageControl8
+            // 
+            resources.ApplyResources(this.ultraTabPageControl8, "ultraTabPageControl8");
+            this.ultraTabPageControl8.Name = "ultraTabPageControl8";
+            // 
+            // ultraTabPageControl9
+            // 
+            resources.ApplyResources(this.ultraTabPageControl9, "ultraTabPageControl9");
+            this.ultraTabPageControl9.Name = "ultraTabPageControl9";
+            // 
+            // ultraTabPageControl6
+            // 
+            this.ultraTabPageControl6.Controls.Add(this.gridInventory);
+            resources.ApplyResources(this.ultraTabPageControl6, "ultraTabPageControl6");
+            this.ultraTabPageControl6.Name = "ultraTabPageControl6";
+            // 
+            // gridInventory
+            // 
+            appearance3.BackColor = System.Drawing.Color.White;
+            this.gridInventory.DisplayLayout.Appearance = appearance3;
+            this.gridInventory.DisplayLayout.AutoFitStyle = Infragistics.Win.UltraWinGrid.AutoFitStyle.ResizeAllColumns;
+            this.gridInventory.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.None;
+            appearance4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            appearance4.BorderColor = System.Drawing.Color.White;
+            this.gridInventory.DisplayLayout.GroupByBox.Appearance = appearance4;
+            this.gridInventory.DisplayLayout.GroupByBox.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
+            appearance5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            appearance5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            appearance5.ForeColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
+            this.gridInventory.DisplayLayout.GroupByBox.PromptAppearance = appearance5;
+            this.gridInventory.DisplayLayout.Override.AllowGroupBy = Infragistics.Win.DefaultableBoolean.True;
+            this.gridInventory.DisplayLayout.Override.BorderStyleCell = Infragistics.Win.UIElementBorderStyle.None;
+            this.gridInventory.DisplayLayout.Override.BorderStyleHeader = Infragistics.Win.UIElementBorderStyle.None;
+            this.gridInventory.DisplayLayout.Override.BorderStyleRow = Infragistics.Win.UIElementBorderStyle.None;
+            this.gridInventory.DisplayLayout.Override.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.RowSelect;
+            appearance6.BackColor = System.Drawing.Color.Transparent;
+            this.gridInventory.DisplayLayout.Override.GroupByRowAppearance = appearance6;
+            appearance7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            appearance7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            appearance7.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            appearance7.FontData.Name = resources.GetString("resource.Name2");
+            appearance7.FontData.SizeInPoints = ((float)(resources.GetObject("resource.SizeInPoints2")));
+            resources.ApplyResources(appearance7, "appearance7");
+            this.gridInventory.DisplayLayout.Override.HeaderAppearance = appearance7;
+            appearance8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.gridInventory.DisplayLayout.Override.HotTrackRowAppearance = appearance8;
+            this.gridInventory.DisplayLayout.Override.MaxSelectedRows = 1;
+            this.gridInventory.DisplayLayout.Override.ReserveSortIndicatorSpaceWhenAutoSizing = Infragistics.Win.UltraWinGrid.ReserveSortIndicatorSpaceWhenAutoSizing.WhenColumnIsSortable;
+            resources.ApplyResources(appearance9, "appearance9");
+            this.gridInventory.DisplayLayout.Override.RowAppearance = appearance9;
+            this.gridInventory.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
+            appearance10.BackColor = System.Drawing.Color.LightGray;
+            appearance10.ForeColor = System.Drawing.Color.Black;
+            this.gridInventory.DisplayLayout.Override.SelectedRowAppearance = appearance10;
+            scrollBarLook1.ViewStyle = Infragistics.Win.UltraWinScrollBar.ScrollBarViewStyle.Office2013;
+            this.gridInventory.DisplayLayout.ScrollBarLook = scrollBarLook1;
+            this.gridInventory.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
+            this.gridInventory.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy;
+            resources.ApplyResources(this.gridInventory, "gridInventory");
+            this.gridInventory.Name = "gridInventory";
+            this.gridInventory.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
+            this.gridInventory.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.gridInventory.InitializeLayout += new Infragistics.Win.UltraWinGrid.InitializeLayoutEventHandler(this.Grid_InitializeLayout);
+            this.gridInventory.AfterRowActivate += new System.EventHandler(this.Grid_AfterRowActivate);
+            // 
+            // ultraTabPageControl17
+            // 
+            resources.ApplyResources(this.ultraTabPageControl17, "ultraTabPageControl17");
+            this.ultraTabPageControl17.Name = "ultraTabPageControl17";
+            // 
+            // ultraTabPageControl22
+            // 
+            resources.ApplyResources(this.ultraTabPageControl22, "ultraTabPageControl22");
+            this.ultraTabPageControl22.Name = "ultraTabPageControl22";
+            // 
+            // ultraTabPageControl23
+            // 
+            resources.ApplyResources(this.ultraTabPageControl23, "ultraTabPageControl23");
+            this.ultraTabPageControl23.Name = "ultraTabPageControl23";
+            // 
+            // ultraTabPageControl24
+            // 
+            resources.ApplyResources(this.ultraTabPageControl24, "ultraTabPageControl24");
+            this.ultraTabPageControl24.Name = "ultraTabPageControl24";
+            // 
+            // ultraTabPageControl25
+            // 
+            resources.ApplyResources(this.ultraTabPageControl25, "ultraTabPageControl25");
+            this.ultraTabPageControl25.Name = "ultraTabPageControl25";
+            // 
+            // ultraTabPageControl26
+            // 
+            resources.ApplyResources(this.ultraTabPageControl26, "ultraTabPageControl26");
+            this.ultraTabPageControl26.Name = "ultraTabPageControl26";
+            // 
+            // ultraTabPageControl27
+            // 
+            resources.ApplyResources(this.ultraTabPageControl27, "ultraTabPageControl27");
+            this.ultraTabPageControl27.Name = "ultraTabPageControl27";
+            // 
+            // ultraTabPageControl28
+            // 
+            resources.ApplyResources(this.ultraTabPageControl28, "ultraTabPageControl28");
+            this.ultraTabPageControl28.Name = "ultraTabPageControl28";
+            // 
+            // ultraTabPageControl34
+            // 
+            resources.ApplyResources(this.ultraTabPageControl34, "ultraTabPageControl34");
+            this.ultraTabPageControl34.Name = "ultraTabPageControl34";
+            // 
+            // ultraTabPageControl36
+            // 
+            resources.ApplyResources(this.ultraTabPageControl36, "ultraTabPageControl36");
+            this.ultraTabPageControl36.Name = "ultraTabPageControl36";
+            // 
+            // ultraTabPageControl37
+            // 
+            resources.ApplyResources(this.ultraTabPageControl37, "ultraTabPageControl37");
+            this.ultraTabPageControl37.Name = "ultraTabPageControl37";
+            // 
+            // ultraTabPageControl38
+            // 
+            resources.ApplyResources(this.ultraTabPageControl38, "ultraTabPageControl38");
+            this.ultraTabPageControl38.Name = "ultraTabPageControl38";
+            // 
+            // ultraTabPageControl52
+            // 
+            resources.ApplyResources(this.ultraTabPageControl52, "ultraTabPageControl52");
+            this.ultraTabPageControl52.Name = "ultraTabPageControl52";
+            // 
+            // ultraTabPageControl56
+            // 
+            resources.ApplyResources(this.ultraTabPageControl56, "ultraTabPageControl56");
+            this.ultraTabPageControl56.Name = "ultraTabPageControl56";
+            // 
+            // ultraTabPageControl44
+            // 
+            this.ultraTabPageControl44.Controls.Add(this.ultraGrid2);
+            this.ultraTabPageControl44.Controls.Add(this.ultraLabel1);
+            this.ultraTabPageControl44.Controls.Add(this.ultraLabel2);
+            resources.ApplyResources(this.ultraTabPageControl44, "ultraTabPageControl44");
+            this.ultraTabPageControl44.Name = "ultraTabPageControl44";
+            // 
+            // ultraGrid2
+            // 
+            appearance11.BackColor = System.Drawing.Color.White;
+            this.ultraGrid2.DisplayLayout.Appearance = appearance11;
+            this.ultraGrid2.DisplayLayout.AutoFitStyle = Infragistics.Win.UltraWinGrid.AutoFitStyle.ResizeAllColumns;
+            this.ultraGrid2.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.None;
+            appearance12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            appearance12.BorderColor = System.Drawing.Color.White;
+            this.ultraGrid2.DisplayLayout.GroupByBox.Appearance = appearance12;
+            this.ultraGrid2.DisplayLayout.GroupByBox.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
+            appearance13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            appearance13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            appearance13.ForeColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
+            this.ultraGrid2.DisplayLayout.GroupByBox.PromptAppearance = appearance13;
+            this.ultraGrid2.DisplayLayout.Override.AllowGroupBy = Infragistics.Win.DefaultableBoolean.True;
+            this.ultraGrid2.DisplayLayout.Override.BorderStyleCell = Infragistics.Win.UIElementBorderStyle.None;
+            this.ultraGrid2.DisplayLayout.Override.BorderStyleHeader = Infragistics.Win.UIElementBorderStyle.None;
+            this.ultraGrid2.DisplayLayout.Override.BorderStyleRow = Infragistics.Win.UIElementBorderStyle.None;
+            this.ultraGrid2.DisplayLayout.Override.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.RowSelect;
+            this.ultraGrid2.DisplayLayout.Override.ColumnHeaderTextOrientation = new Infragistics.Win.TextOrientationInfo(0, Infragistics.Win.TextFlowDirection.Horizontal);
+            appearance14.BackColor = System.Drawing.Color.Transparent;
+            this.ultraGrid2.DisplayLayout.Override.GroupByRowAppearance = appearance14;
+            appearance15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            appearance15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            appearance15.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            appearance15.FontData.Name = resources.GetString("resource.Name3");
+            appearance15.FontData.SizeInPoints = ((float)(resources.GetObject("resource.SizeInPoints3")));
+            resources.ApplyResources(appearance15, "appearance15");
+            this.ultraGrid2.DisplayLayout.Override.HeaderAppearance = appearance15;
+            appearance16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.ultraGrid2.DisplayLayout.Override.HotTrackRowAppearance = appearance16;
+            this.ultraGrid2.DisplayLayout.Override.MaxSelectedRows = 1;
+            this.ultraGrid2.DisplayLayout.Override.ReserveSortIndicatorSpaceWhenAutoSizing = Infragistics.Win.UltraWinGrid.ReserveSortIndicatorSpaceWhenAutoSizing.WhenColumnIsSortable;
+            resources.ApplyResources(appearance17, "appearance17");
+            this.ultraGrid2.DisplayLayout.Override.RowAppearance = appearance17;
+            this.ultraGrid2.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
+            appearance18.BackColor = System.Drawing.Color.LightGray;
+            appearance18.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ultraGrid2.DisplayLayout.Override.SelectedRowAppearance = appearance18;
+            scrollBarLook2.ViewStyle = Infragistics.Win.UltraWinScrollBar.ScrollBarViewStyle.Office2013;
+            this.ultraGrid2.DisplayLayout.ScrollBarLook = scrollBarLook2;
+            this.ultraGrid2.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
+            this.ultraGrid2.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy;
+            resources.ApplyResources(this.ultraGrid2, "ultraGrid2");
+            this.ultraGrid2.Name = "ultraGrid2";
+            this.ultraGrid2.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
+            this.ultraGrid2.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            // 
+            // ultraLabel1
+            // 
+            appearance19.FontData.Name = resources.GetString("resource.Name4");
+            appearance19.FontData.SizeInPoints = ((float)(resources.GetObject("resource.SizeInPoints4")));
+            appearance19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.ultraLabel1.Appearance = appearance19;
+            resources.ApplyResources(this.ultraLabel1, "ultraLabel1");
+            this.ultraLabel1.Name = "ultraLabel1";
+            // 
+            // ultraLabel2
+            // 
+            appearance20.FontData.Name = resources.GetString("resource.Name5");
+            appearance20.FontData.SizeInPoints = ((float)(resources.GetObject("resource.SizeInPoints5")));
+            appearance20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.ultraLabel2.Appearance = appearance20;
+            resources.ApplyResources(this.ultraLabel2, "ultraLabel2");
+            this.ultraLabel2.Name = "ultraLabel2";
+            this.ultraLabel2.WrapText = false;
+            // 
+            // ultraTabPageControl45
+            // 
+            resources.ApplyResources(this.ultraTabPageControl45, "ultraTabPageControl45");
+            this.ultraTabPageControl45.Name = "ultraTabPageControl45";
+            // 
+            // ultraTabPageControl1
+            // 
+            this.ultraTabPageControl1.Controls.Add(this.scHome1);
+            resources.ApplyResources(this.ultraTabPageControl1, "ultraTabPageControl1");
+            this.ultraTabPageControl1.Name = "ultraTabPageControl1";
+            this.ultraTabPageControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.ultraTabPageControl1_Paint);
+            // 
+            // scHome1
+            // 
+            resources.ApplyResources(this.scHome1, "scHome1");
+            this.scHome1.Name = "scHome1";
+            // 
+            // scHome1.Panel1
+            // 
+            this.scHome1.Panel1.Controls.Add(this.tableLayoutPanel1);
+            this.scHome1.Panel1.Controls.Add(this.lblCategories);
+            this.scHome1.Panel1.SizeChanged += new System.EventHandler(this.scHome1_Panel1_SizeChanged);
+            // 
+            // scHome1.Panel2
+            // 
+            this.scHome1.Panel2.Controls.Add(this.scHome2);
+            // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.btnOrders, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnContacts, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnReports, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnInventory, 0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // btnOrders
+            // 
+            appearance21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
+            appearance21.FontData.Name = resources.GetString("resource.Name6");
+            appearance21.FontData.SizeInPoints = ((float)(resources.GetObject("resource.SizeInPoints6")));
+            appearance21.ForeColor = System.Drawing.Color.White;
+            appearance21.ImageHAlign = Infragistics.Win.HAlign.Center;
+            this.btnOrders.Appearance = appearance21;
+            this.btnOrders.ButtonStyle = Infragistics.Win.UIElementButtonStyle.FlatBorderless;
+            resources.ApplyResources(this.btnOrders, "btnOrders");
+            this.btnOrders.ImageSize = new System.Drawing.Size(116, 116);
+            this.btnOrders.Name = "btnOrders";
+            this.btnOrders.Tag = "Orders";
+            this.btnOrders.UseAppStyling = false;
+            this.btnOrders.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.btnOrders.Click += new System.EventHandler(this.CategoryButton_Click);
+            // 
+            // btnContacts
+            // 
+            appearance22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(107)))), ((int)(((byte)(193)))));
+            appearance22.FontData.Name = resources.GetString("resource.Name7");
+            appearance22.FontData.SizeInPoints = ((float)(resources.GetObject("resource.SizeInPoints7")));
+            appearance22.ForeColor = System.Drawing.Color.White;
+            appearance22.ImageHAlign = Infragistics.Win.HAlign.Center;
+            this.btnContacts.Appearance = appearance22;
+            this.btnContacts.ButtonStyle = Infragistics.Win.UIElementButtonStyle.FlatBorderless;
+            resources.ApplyResources(this.btnContacts, "btnContacts");
+            this.btnContacts.ImageSize = new System.Drawing.Size(116, 116);
+            this.btnContacts.Name = "btnContacts";
+            this.btnContacts.Tag = "Contacts";
+            this.btnContacts.UseAppStyling = false;
+            this.btnContacts.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.btnContacts.Click += new System.EventHandler(this.CategoryButton_Click);
+            // 
+            // btnReports
+            // 
+            appearance23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(24)))), ((int)(((byte)(136)))));
+            appearance23.FontData.Name = resources.GetString("resource.Name8");
+            appearance23.FontData.SizeInPoints = ((float)(resources.GetObject("resource.SizeInPoints8")));
+            appearance23.ForeColor = System.Drawing.Color.White;
+            appearance23.ImageHAlign = Infragistics.Win.HAlign.Center;
+            this.btnReports.Appearance = appearance23;
+            this.btnReports.ButtonStyle = Infragistics.Win.UIElementButtonStyle.FlatBorderless;
+            resources.ApplyResources(this.btnReports, "btnReports");
+            this.btnReports.ImageSize = new System.Drawing.Size(116, 116);
+            this.btnReports.Name = "btnReports";
+            this.btnReports.Tag = "Reports";
+            this.btnReports.UseAppStyling = false;
+            this.btnReports.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.btnReports.Click += new System.EventHandler(this.CategoryButton_Click);
+            // 
+            // btnInventory
+            // 
+            appearance24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(90)))), ((int)(((byte)(50)))));
+            appearance24.FontData.Name = resources.GetString("resource.Name9");
+            appearance24.FontData.SizeInPoints = ((float)(resources.GetObject("resource.SizeInPoints9")));
+            appearance24.ForeColor = System.Drawing.Color.White;
+            appearance24.ImageHAlign = Infragistics.Win.HAlign.Center;
+            this.btnInventory.Appearance = appearance24;
+            this.btnInventory.ButtonStyle = Infragistics.Win.UIElementButtonStyle.FlatBorderless;
+            resources.ApplyResources(this.btnInventory, "btnInventory");
+            this.btnInventory.ImageSize = new System.Drawing.Size(116, 116);
+            this.btnInventory.Name = "btnInventory";
+            this.btnInventory.Tag = "Inventory";
+            this.btnInventory.UseAppStyling = false;
+            this.btnInventory.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.btnInventory.Click += new System.EventHandler(this.CategoryButton_Click);
+            // 
+            // lblCategories
+            // 
+            appearance25.FontData.Name = resources.GetString("resource.Name10");
+            appearance25.FontData.SizeInPoints = ((float)(resources.GetObject("resource.SizeInPoints10")));
+            appearance25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.lblCategories.Appearance = appearance25;
+            resources.ApplyResources(this.lblCategories, "lblCategories");
+            this.lblCategories.Name = "lblCategories";
+            // 
+            // scHome2
+            // 
+            resources.ApplyResources(this.scHome2, "scHome2");
+            this.scHome2.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.scHome2.Name = "scHome2";
+            // 
+            // scHome2.Panel2
+            // 
+            this.scHome2.Panel2.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // ultraTabPageControl2
+            // 
+            this.ultraTabPageControl2.Controls.Add(this.tccatalogos);
+            resources.ApplyResources(this.ultraTabPageControl2, "ultraTabPageControl2");
+            this.ultraTabPageControl2.Name = "ultraTabPageControl2";
+            // 
+            // tccatalogos
+            // 
+            appearance26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(129)))));
+            appearance26.BorderColor = System.Drawing.Color.Transparent;
+            appearance26.FontData.Name = resources.GetString("resource.Name11");
+            appearance26.ForeColor = System.Drawing.Color.White;
+            appearance26.ForeColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(155)))), ((int)(((byte)(131)))));
+            this.tccatalogos.Appearance = appearance26;
+            this.tccatalogos.Controls.Add(this.ultraTabSharedControlsPage2);
+            this.tccatalogos.Controls.Add(this.ultraTabPageControl6);
+            this.tccatalogos.Controls.Add(this.ultraTabPageControl7);
+            this.tccatalogos.Controls.Add(this.ultraTabPageControl8);
+            this.tccatalogos.Controls.Add(this.ultraTabPageControl9);
+            this.tccatalogos.Controls.Add(this.ultraTabPageControl17);
+            this.tccatalogos.Controls.Add(this.ultraTabPageControl22);
+            this.tccatalogos.Controls.Add(this.ultraTabPageControl23);
+            this.tccatalogos.Controls.Add(this.ultraTabPageControl24);
+            this.tccatalogos.Controls.Add(this.ultraTabPageControl25);
+            this.tccatalogos.Controls.Add(this.ultraTabPageControl26);
+            this.tccatalogos.Controls.Add(this.ultraTabPageControl27);
+            this.tccatalogos.Controls.Add(this.ultraTabPageControl28);
+            this.tccatalogos.Cursor = System.Windows.Forms.Cursors.Default;
+            resources.ApplyResources(this.tccatalogos, "tccatalogos");
+            this.tccatalogos.ImageSize = new System.Drawing.Size(48, 16);
+            this.tccatalogos.Name = "tccatalogos";
+            appearance27.BackColor = System.Drawing.Color.White;
+            appearance27.ForeColor = System.Drawing.Color.Black;
+            this.tccatalogos.SelectedTabAppearance = appearance27;
+            this.tccatalogos.SharedControlsPage = this.ultraTabSharedControlsPage2;
+            this.tccatalogos.SpaceAfterTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.tccatalogos.SpaceBeforeTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.tccatalogos.Style = Infragistics.Win.UltraWinTabControl.UltraTabControlStyle.Flat;
+            this.tccatalogos.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.LeftTop;
+            appearance28.Image = ((object)(resources.GetObject("appearance28.Image")));
+            ultraTab11.Appearance = appearance28;
+            ultraTab11.Key = "New";
+            appearance29.Image = ((object)(resources.GetObject("appearance29.Image")));
+            ultraTab11.SelectedAppearance = appearance29;
+            ultraTab11.TabPage = this.ultraTabPageControl7;
+            resources.ApplyResources(ultraTab11, "ultraTab11");
+            ultraTab11.ForceApplyResources = "";
+            appearance30.Image = ((object)(resources.GetObject("appearance30.Image")));
+            ultraTab12.Appearance = appearance30;
+            ultraTab12.Key = "Import";
+            appearance31.Image = ((object)(resources.GetObject("appearance31.Image")));
+            ultraTab12.SelectedAppearance = appearance31;
+            ultraTab12.TabPage = this.ultraTabPageControl8;
+            resources.ApplyResources(ultraTab12, "ultraTab12");
+            ultraTab12.ForceApplyResources = "";
+            appearance32.Image = ((object)(resources.GetObject("appearance32.Image")));
+            ultraTab13.Appearance = appearance32;
+            ultraTab13.Key = "Export";
+            appearance33.Image = ((object)(resources.GetObject("appearance33.Image")));
+            ultraTab13.SelectedAppearance = appearance33;
+            ultraTab13.TabPage = this.ultraTabPageControl9;
+            resources.ApplyResources(ultraTab13, "ultraTab13");
+            ultraTab13.ForceApplyResources = "";
+            appearance34.Image = ((object)(resources.GetObject("appearance34.Image")));
+            ultraTab10.Appearance = appearance34;
+            ultraTab10.Key = "Inventory";
+            appearance35.Image = ((object)(resources.GetObject("appearance35.Image")));
+            ultraTab10.SelectedAppearance = appearance35;
+            ultraTab10.TabPage = this.ultraTabPageControl6;
+            resources.ApplyResources(ultraTab10, "ultraTab10");
+            ultraTab10.ForceApplyResources = "";
+            appearance36.Image = ((object)(resources.GetObject("appearance36.Image")));
+            ultraTab7.Appearance = appearance36;
+            appearance37.Image = ((object)(resources.GetObject("appearance37.Image")));
+            ultraTab7.SelectedAppearance = appearance37;
+            ultraTab7.TabPage = this.ultraTabPageControl17;
+            resources.ApplyResources(ultraTab7, "ultraTab7");
+            ultraTab7.ForceApplyResources = "";
+            appearance38.Image = ((object)(resources.GetObject("appearance38.Image")));
+            ultraTab20.Appearance = appearance38;
+            appearance39.Image = ((object)(resources.GetObject("appearance39.Image")));
+            ultraTab20.SelectedAppearance = appearance39;
+            ultraTab20.TabPage = this.ultraTabPageControl22;
+            resources.ApplyResources(ultraTab20, "ultraTab20");
+            ultraTab20.ForceApplyResources = "";
+            appearance40.Image = ((object)(resources.GetObject("appearance40.Image")));
+            ultraTab21.Appearance = appearance40;
+            appearance41.Image = ((object)(resources.GetObject("appearance41.Image")));
+            ultraTab21.SelectedAppearance = appearance41;
+            ultraTab21.TabPage = this.ultraTabPageControl23;
+            resources.ApplyResources(ultraTab21, "ultraTab21");
+            ultraTab21.ForceApplyResources = "";
+            appearance42.Image = ((object)(resources.GetObject("appearance42.Image")));
+            ultraTab22.Appearance = appearance42;
+            appearance43.Image = ((object)(resources.GetObject("appearance43.Image")));
+            ultraTab22.SelectedAppearance = appearance43;
+            ultraTab22.TabPage = this.ultraTabPageControl24;
+            resources.ApplyResources(ultraTab22, "ultraTab22");
+            ultraTab22.ForceApplyResources = "";
+            appearance44.Image = ((object)(resources.GetObject("appearance44.Image")));
+            ultraTab23.Appearance = appearance44;
+            appearance45.Image = ((object)(resources.GetObject("appearance45.Image")));
+            ultraTab23.SelectedAppearance = appearance45;
+            ultraTab23.TabPage = this.ultraTabPageControl25;
+            resources.ApplyResources(ultraTab23, "ultraTab23");
+            ultraTab23.ForceApplyResources = "";
+            appearance46.Image = ((object)(resources.GetObject("appearance46.Image")));
+            ultraTab24.Appearance = appearance46;
+            appearance47.Image = ((object)(resources.GetObject("appearance47.Image")));
+            ultraTab24.SelectedAppearance = appearance47;
+            ultraTab24.TabPage = this.ultraTabPageControl26;
+            resources.ApplyResources(ultraTab24, "ultraTab24");
+            ultraTab24.ForceApplyResources = "";
+            appearance48.Image = ((object)(resources.GetObject("appearance48.Image")));
+            ultraTab25.Appearance = appearance48;
+            appearance49.Image = ((object)(resources.GetObject("appearance49.Image")));
+            ultraTab25.SelectedAppearance = appearance49;
+            ultraTab25.TabPage = this.ultraTabPageControl27;
+            resources.ApplyResources(ultraTab25, "ultraTab25");
+            ultraTab25.ForceApplyResources = "";
+            appearance50.Image = ((object)(resources.GetObject("appearance50.Image")));
+            ultraTab26.Appearance = appearance50;
+            appearance51.Image = ((object)(resources.GetObject("appearance51.Image")));
+            ultraTab26.SelectedAppearance = appearance51;
+            ultraTab26.TabPage = this.ultraTabPageControl28;
+            resources.ApplyResources(ultraTab26, "ultraTab26");
+            ultraTab26.ForceApplyResources = "";
+            this.tccatalogos.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
+            ultraTab11,
+            ultraTab12,
+            ultraTab13,
+            ultraTab10,
+            ultraTab7,
+            ultraTab20,
+            ultraTab21,
+            ultraTab22,
+            ultraTab23,
+            ultraTab24,
+            ultraTab25,
+            ultraTab26});
+            this.tccatalogos.TabSize = new System.Drawing.Size(50, 150);
+            this.tccatalogos.TextOrientation = Infragistics.Win.UltraWinTabs.TextOrientation.Horizontal;
+            this.tccatalogos.UseAppStyling = false;
+            this.tccatalogos.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.tccatalogos.SelectedTabChanged += new Infragistics.Win.UltraWinTabControl.SelectedTabChangedEventHandler(this.tccatalogos_SelectedTabChanged);
+            // 
+            // ultraTabSharedControlsPage2
+            // 
+            resources.ApplyResources(this.ultraTabSharedControlsPage2, "ultraTabSharedControlsPage2");
+            this.ultraTabSharedControlsPage2.Name = "ultraTabSharedControlsPage2";
+            // 
+            // ultraTabPageControl3
+            // 
+            this.ultraTabPageControl3.Controls.Add(this.ultraTabControl5);
+            resources.ApplyResources(this.ultraTabPageControl3, "ultraTabPageControl3");
+            this.ultraTabPageControl3.Name = "ultraTabPageControl3";
+            // 
+            // ultraTabControl5
+            // 
+            resources.ApplyResources(this.ultraTabControl5, "ultraTabControl5");
+            appearance52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(129)))));
+            appearance52.BorderColor = System.Drawing.Color.Transparent;
+            appearance52.FontData.Name = resources.GetString("resource.Name12");
+            appearance52.ForeColor = System.Drawing.Color.White;
+            appearance52.ForeColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(202)))), ((int)(((byte)(108)))));
+            appearance52.Image = ((object)(resources.GetObject("appearance52.Image")));
+            appearance52.ImageBackgroundOrigin = Infragistics.Win.ImageBackgroundOrigin.Form;
+            this.ultraTabControl5.Appearance = appearance52;
+            this.ultraTabControl5.Controls.Add(this.ultraTabSharedControlsPage4);
+            this.ultraTabControl5.Controls.Add(this.ultraTabPageControl49);
+            this.ultraTabControl5.ImageSize = new System.Drawing.Size(48, 16);
+            this.ultraTabControl5.Name = "ultraTabControl5";
+            appearance53.BackColor = System.Drawing.Color.White;
+            appearance53.ForeColor = System.Drawing.Color.Black;
+            this.ultraTabControl5.SelectedTabAppearance = appearance53;
+            this.ultraTabControl5.SharedControlsPage = this.ultraTabSharedControlsPage4;
+            this.ultraTabControl5.SpaceAfterTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.ultraTabControl5.SpaceBeforeTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.ultraTabControl5.Style = Infragistics.Win.UltraWinTabControl.UltraTabControlStyle.Flat;
+            this.ultraTabControl5.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.LeftTop;
+            appearance54.Image = ((object)(resources.GetObject("appearance54.Image")));
+            ultraTab6.Appearance = appearance54;
+            ultraTab6.Key = "Daily";
+            appearance55.Image = ((object)(resources.GetObject("appearance55.Image")));
+            ultraTab6.SelectedAppearance = appearance55;
+            ultraTab6.TabPage = this.ultraTabPageControl49;
+            resources.ApplyResources(ultraTab6, "ultraTab6");
+            ultraTab6.ForceApplyResources = "";
+            this.ultraTabControl5.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
+            ultraTab6});
+            this.ultraTabControl5.TabSize = new System.Drawing.Size(50, 150);
+            this.ultraTabControl5.TextOrientation = Infragistics.Win.UltraWinTabs.TextOrientation.Horizontal;
+            this.ultraTabControl5.UseAppStyling = false;
+            this.ultraTabControl5.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            // 
+            // ultraTabSharedControlsPage4
+            // 
+            resources.ApplyResources(this.ultraTabSharedControlsPage4, "ultraTabSharedControlsPage4");
+            this.ultraTabSharedControlsPage4.Name = "ultraTabSharedControlsPage4";
+            // 
+            // ultraTabPageControl49
+            // 
+            resources.ApplyResources(this.ultraTabPageControl49, "ultraTabPageControl49");
+            this.ultraTabPageControl49.Name = "ultraTabPageControl49";
+            // 
+            // ultraTabPageControl4
+            // 
+            this.ultraTabPageControl4.Controls.Add(this.ultraTabControl6);
+            resources.ApplyResources(this.ultraTabPageControl4, "ultraTabPageControl4");
+            this.ultraTabPageControl4.Name = "ultraTabPageControl4";
+            // 
+            // ultraTabControl6
+            // 
+            resources.ApplyResources(this.ultraTabControl6, "ultraTabControl6");
+            appearance56.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(129)))));
+            appearance56.BorderColor = System.Drawing.Color.Transparent;
+            appearance56.FontData.Name = resources.GetString("resource.Name13");
+            appearance56.ForeColor = System.Drawing.Color.White;
+            appearance56.ForeColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(202)))), ((int)(((byte)(108)))));
+            appearance56.Image = ((object)(resources.GetObject("appearance56.Image")));
+            appearance56.ImageBackgroundOrigin = Infragistics.Win.ImageBackgroundOrigin.Form;
+            this.ultraTabControl6.Appearance = appearance56;
+            this.ultraTabControl6.Controls.Add(this.ultraTabSharedControlsPage5);
+            this.ultraTabControl6.Controls.Add(this.ultraTabPageControl19);
+            this.ultraTabControl6.Controls.Add(this.ultraTabPageControl20);
+            this.ultraTabControl6.Controls.Add(this.ultraTabPageControl21);
+            this.ultraTabControl6.Controls.Add(this.ultraTabPageControl29);
+            this.ultraTabControl6.Controls.Add(this.ultraTabPageControl30);
+            this.ultraTabControl6.Controls.Add(this.ultraTabPageControl31);
+            this.ultraTabControl6.Controls.Add(this.ultraTabPageControl32);
+            this.ultraTabControl6.ImageSize = new System.Drawing.Size(48, 16);
+            this.ultraTabControl6.Name = "ultraTabControl6";
+            appearance57.BackColor = System.Drawing.Color.White;
+            appearance57.ForeColor = System.Drawing.Color.Black;
+            this.ultraTabControl6.SelectedTabAppearance = appearance57;
+            this.ultraTabControl6.SharedControlsPage = this.ultraTabSharedControlsPage5;
+            this.ultraTabControl6.SpaceAfterTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.ultraTabControl6.SpaceBeforeTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.ultraTabControl6.Style = Infragistics.Win.UltraWinTabControl.UltraTabControlStyle.Flat;
+            this.ultraTabControl6.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.LeftTop;
+            appearance58.Image = ((object)(resources.GetObject("appearance58.Image")));
+            ultraTab29.Appearance = appearance58;
+            ultraTab29.Key = "Daily";
+            appearance59.Image = ((object)(resources.GetObject("appearance59.Image")));
+            ultraTab29.SelectedAppearance = appearance59;
+            ultraTab29.TabPage = this.ultraTabPageControl19;
+            resources.ApplyResources(ultraTab29, "ultraTab29");
+            ultraTab29.ForceApplyResources = "";
+            appearance60.Image = ((object)(resources.GetObject("appearance60.Image")));
+            ultraTab30.Appearance = appearance60;
+            ultraTab30.Key = "Weekly";
+            appearance61.Image = ((object)(resources.GetObject("appearance61.Image")));
+            ultraTab30.SelectedAppearance = appearance61;
+            ultraTab30.TabPage = this.ultraTabPageControl20;
+            resources.ApplyResources(ultraTab30, "ultraTab30");
+            ultraTab30.ForceApplyResources = "";
+            appearance62.Image = ((object)(resources.GetObject("appearance62.Image")));
+            ultraTab38.Appearance = appearance62;
+            ultraTab38.Key = "Monthly";
+            appearance63.Image = ((object)(resources.GetObject("appearance63.Image")));
+            ultraTab38.SelectedAppearance = appearance63;
+            ultraTab38.TabPage = this.ultraTabPageControl21;
+            resources.ApplyResources(ultraTab38, "ultraTab38");
+            ultraTab38.ForceApplyResources = "";
+            appearance64.Image = ((object)(resources.GetObject("appearance64.Image")));
+            ultraTab39.Appearance = appearance64;
+            appearance65.Image = ((object)(resources.GetObject("appearance65.Image")));
+            ultraTab39.SelectedAppearance = appearance65;
+            ultraTab39.TabPage = this.ultraTabPageControl29;
+            resources.ApplyResources(ultraTab39, "ultraTab39");
+            ultraTab39.ForceApplyResources = "";
+            appearance66.Image = ((object)(resources.GetObject("appearance66.Image")));
+            ultraTab40.Appearance = appearance66;
+            appearance67.Image = ((object)(resources.GetObject("appearance67.Image")));
+            ultraTab40.SelectedAppearance = appearance67;
+            ultraTab40.TabPage = this.ultraTabPageControl30;
+            resources.ApplyResources(ultraTab40, "ultraTab40");
+            ultraTab40.ForceApplyResources = "";
+            appearance68.Image = ((object)(resources.GetObject("appearance68.Image")));
+            ultraTab41.Appearance = appearance68;
+            appearance69.Image = ((object)(resources.GetObject("appearance69.Image")));
+            ultraTab41.SelectedAppearance = appearance69;
+            ultraTab41.TabPage = this.ultraTabPageControl31;
+            resources.ApplyResources(ultraTab41, "ultraTab41");
+            ultraTab41.ForceApplyResources = "";
+            appearance70.Image = ((object)(resources.GetObject("appearance70.Image")));
+            ultraTab42.Appearance = appearance70;
+            appearance71.Image = ((object)(resources.GetObject("appearance71.Image")));
+            ultraTab42.SelectedAppearance = appearance71;
+            ultraTab42.TabPage = this.ultraTabPageControl32;
+            resources.ApplyResources(ultraTab42, "ultraTab42");
+            ultraTab42.ForceApplyResources = "";
+            this.ultraTabControl6.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
+            ultraTab29,
+            ultraTab30,
+            ultraTab38,
+            ultraTab39,
+            ultraTab40,
+            ultraTab41,
+            ultraTab42});
+            this.ultraTabControl6.TabSize = new System.Drawing.Size(50, 150);
+            this.ultraTabControl6.TextOrientation = Infragistics.Win.UltraWinTabs.TextOrientation.Horizontal;
+            this.ultraTabControl6.UseAppStyling = false;
+            this.ultraTabControl6.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            // 
+            // ultraTabSharedControlsPage5
+            // 
+            resources.ApplyResources(this.ultraTabSharedControlsPage5, "ultraTabSharedControlsPage5");
+            this.ultraTabSharedControlsPage5.Name = "ultraTabSharedControlsPage5";
+            // 
+            // ultraTabPageControl19
+            // 
+            resources.ApplyResources(this.ultraTabPageControl19, "ultraTabPageControl19");
+            this.ultraTabPageControl19.Name = "ultraTabPageControl19";
+            // 
+            // ultraTabPageControl20
+            // 
+            resources.ApplyResources(this.ultraTabPageControl20, "ultraTabPageControl20");
+            this.ultraTabPageControl20.Name = "ultraTabPageControl20";
+            // 
+            // ultraTabPageControl21
+            // 
+            resources.ApplyResources(this.ultraTabPageControl21, "ultraTabPageControl21");
+            this.ultraTabPageControl21.Name = "ultraTabPageControl21";
+            // 
+            // ultraTabPageControl29
+            // 
+            resources.ApplyResources(this.ultraTabPageControl29, "ultraTabPageControl29");
+            this.ultraTabPageControl29.Name = "ultraTabPageControl29";
+            // 
+            // ultraTabPageControl30
+            // 
+            resources.ApplyResources(this.ultraTabPageControl30, "ultraTabPageControl30");
+            this.ultraTabPageControl30.Name = "ultraTabPageControl30";
+            // 
+            // ultraTabPageControl31
+            // 
+            resources.ApplyResources(this.ultraTabPageControl31, "ultraTabPageControl31");
+            this.ultraTabPageControl31.Name = "ultraTabPageControl31";
+            // 
+            // ultraTabPageControl32
+            // 
+            resources.ApplyResources(this.ultraTabPageControl32, "ultraTabPageControl32");
+            this.ultraTabPageControl32.Name = "ultraTabPageControl32";
+            // 
+            // ultraTabPageControl5
+            // 
+            this.ultraTabPageControl5.Controls.Add(this.tcGestion);
+            this.ultraTabPageControl5.Controls.Add(this.gridReports);
+            this.ultraTabPageControl5.Controls.Add(this.panel3);
+            resources.ApplyResources(this.ultraTabPageControl5, "ultraTabPageControl5");
+            this.ultraTabPageControl5.Name = "ultraTabPageControl5";
+            // 
+            // tcGestion
+            // 
+            resources.ApplyResources(this.tcGestion, "tcGestion");
+            appearance72.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(129)))));
+            appearance72.BorderColor = System.Drawing.Color.Transparent;
+            appearance72.FontData.Name = resources.GetString("resource.Name14");
+            appearance72.ForeColor = System.Drawing.Color.White;
+            appearance72.ForeColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(202)))), ((int)(((byte)(108)))));
+            appearance72.Image = ((object)(resources.GetObject("appearance72.Image")));
+            appearance72.ImageBackgroundOrigin = Infragistics.Win.ImageBackgroundOrigin.Form;
+            this.tcGestion.Appearance = appearance72;
+            this.tcGestion.Controls.Add(this.ultraTabSharedControlsPage6);
+            this.tcGestion.Controls.Add(this.ultraTabPageControl34);
+            this.tcGestion.Controls.Add(this.ultraTabPageControl36);
+            this.tcGestion.Controls.Add(this.ultraTabPageControl37);
+            this.tcGestion.Controls.Add(this.ultraTabPageControl38);
+            this.tcGestion.Controls.Add(this.ultraTabPageControl52);
+            this.tcGestion.Controls.Add(this.ultraTabPageControl56);
+            this.tcGestion.ImageSize = new System.Drawing.Size(48, 16);
+            this.tcGestion.Name = "tcGestion";
+            appearance73.BackColor = System.Drawing.Color.White;
+            appearance73.ForeColor = System.Drawing.Color.Black;
+            this.tcGestion.SelectedTabAppearance = appearance73;
+            this.tcGestion.SharedControlsPage = this.ultraTabSharedControlsPage6;
+            this.tcGestion.SpaceAfterTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.tcGestion.SpaceBeforeTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.tcGestion.Style = Infragistics.Win.UltraWinTabControl.UltraTabControlStyle.Flat;
+            this.tcGestion.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.LeftTop;
+            appearance74.Image = ((object)(resources.GetObject("appearance74.Image")));
+            ultraTab44.Appearance = appearance74;
+            ultraTab44.Key = "Weekly";
+            appearance75.Image = ((object)(resources.GetObject("appearance75.Image")));
+            ultraTab44.SelectedAppearance = appearance75;
+            ultraTab44.TabPage = this.ultraTabPageControl34;
+            resources.ApplyResources(ultraTab44, "ultraTab44");
+            ultraTab44.ForceApplyResources = "";
+            appearance76.Image = ((object)(resources.GetObject("appearance76.Image")));
+            ultraTab46.Appearance = appearance76;
+            appearance77.Image = ((object)(resources.GetObject("appearance77.Image")));
+            ultraTab46.SelectedAppearance = appearance77;
+            ultraTab46.TabPage = this.ultraTabPageControl36;
+            resources.ApplyResources(ultraTab46, "ultraTab46");
+            ultraTab46.ForceApplyResources = "";
+            appearance78.Image = ((object)(resources.GetObject("appearance78.Image")));
+            ultraTab47.Appearance = appearance78;
+            appearance79.Image = ((object)(resources.GetObject("appearance79.Image")));
+            ultraTab47.SelectedAppearance = appearance79;
+            ultraTab47.TabPage = this.ultraTabPageControl37;
+            resources.ApplyResources(ultraTab47, "ultraTab47");
+            ultraTab47.ForceApplyResources = "";
+            appearance80.Image = ((object)(resources.GetObject("appearance80.Image")));
+            ultraTab50.Appearance = appearance80;
+            appearance81.Image = ((object)(resources.GetObject("appearance81.Image")));
+            ultraTab50.SelectedAppearance = appearance81;
+            ultraTab50.TabPage = this.ultraTabPageControl38;
+            resources.ApplyResources(ultraTab50, "ultraTab50");
+            ultraTab50.ForceApplyResources = "";
+            appearance82.Image = ((object)(resources.GetObject("appearance82.Image")));
+            ultraTab51.Appearance = appearance82;
+            appearance83.Image = ((object)(resources.GetObject("appearance83.Image")));
+            ultraTab51.SelectedAppearance = appearance83;
+            ultraTab51.TabPage = this.ultraTabPageControl52;
+            resources.ApplyResources(ultraTab51, "ultraTab51");
+            ultraTab51.ForceApplyResources = "";
+            appearance84.Image = ((object)(resources.GetObject("appearance84.Image")));
+            ultraTab52.Appearance = appearance84;
+            appearance85.Image = ((object)(resources.GetObject("appearance85.Image")));
+            ultraTab52.SelectedAppearance = appearance85;
+            ultraTab52.TabPage = this.ultraTabPageControl56;
+            resources.ApplyResources(ultraTab52, "ultraTab52");
+            ultraTab52.ForceApplyResources = "";
+            this.tcGestion.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
+            ultraTab44,
+            ultraTab46,
+            ultraTab47,
+            ultraTab50,
+            ultraTab51,
+            ultraTab52});
+            this.tcGestion.TabSize = new System.Drawing.Size(50, 150);
+            this.tcGestion.TextOrientation = Infragistics.Win.UltraWinTabs.TextOrientation.Horizontal;
+            this.tcGestion.UseAppStyling = false;
+            this.tcGestion.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            // 
+            // ultraTabSharedControlsPage6
+            // 
+            resources.ApplyResources(this.ultraTabSharedControlsPage6, "ultraTabSharedControlsPage6");
+            this.ultraTabSharedControlsPage6.Name = "ultraTabSharedControlsPage6";
+            // 
+            // gridReports
+            // 
+            appearance86.BackColor = System.Drawing.Color.White;
+            this.gridReports.DisplayLayout.Appearance = appearance86;
+            this.gridReports.DisplayLayout.AutoFitStyle = Infragistics.Win.UltraWinGrid.AutoFitStyle.ResizeAllColumns;
+            this.gridReports.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.None;
+            appearance87.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            appearance87.BorderColor = System.Drawing.Color.White;
+            this.gridReports.DisplayLayout.GroupByBox.Appearance = appearance87;
+            this.gridReports.DisplayLayout.GroupByBox.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
+            appearance88.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            appearance88.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            appearance88.ForeColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
+            this.gridReports.DisplayLayout.GroupByBox.PromptAppearance = appearance88;
+            this.gridReports.DisplayLayout.Override.AllowDelete = Infragistics.Win.DefaultableBoolean.False;
+            this.gridReports.DisplayLayout.Override.AllowGroupBy = Infragistics.Win.DefaultableBoolean.True;
+            this.gridReports.DisplayLayout.Override.BorderStyleCell = Infragistics.Win.UIElementBorderStyle.None;
+            this.gridReports.DisplayLayout.Override.BorderStyleHeader = Infragistics.Win.UIElementBorderStyle.None;
+            this.gridReports.DisplayLayout.Override.BorderStyleRow = Infragistics.Win.UIElementBorderStyle.None;
+            this.gridReports.DisplayLayout.Override.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.RowSelect;
+            appearance89.BackColor = System.Drawing.Color.Transparent;
+            this.gridReports.DisplayLayout.Override.GroupByRowAppearance = appearance89;
+            appearance90.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            appearance90.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            appearance90.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            appearance90.FontData.Name = resources.GetString("resource.Name15");
+            appearance90.FontData.SizeInPoints = ((float)(resources.GetObject("resource.SizeInPoints11")));
+            resources.ApplyResources(appearance90, "appearance90");
+            this.gridReports.DisplayLayout.Override.HeaderAppearance = appearance90;
+            appearance91.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.gridReports.DisplayLayout.Override.HotTrackRowAppearance = appearance91;
+            this.gridReports.DisplayLayout.Override.MaxSelectedRows = 1;
+            this.gridReports.DisplayLayout.Override.ReserveSortIndicatorSpaceWhenAutoSizing = Infragistics.Win.UltraWinGrid.ReserveSortIndicatorSpaceWhenAutoSizing.WhenColumnIsSortable;
+            resources.ApplyResources(appearance92, "appearance92");
+            this.gridReports.DisplayLayout.Override.RowAppearance = appearance92;
+            this.gridReports.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
+            appearance93.BackColor = System.Drawing.Color.LightGray;
+            appearance93.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.gridReports.DisplayLayout.Override.SelectedRowAppearance = appearance93;
+            scrollBarLook3.ViewStyle = Infragistics.Win.UltraWinScrollBar.ScrollBarViewStyle.Office2013;
+            this.gridReports.DisplayLayout.ScrollBarLook = scrollBarLook3;
+            this.gridReports.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
+            this.gridReports.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy;
+            resources.ApplyResources(this.gridReports, "gridReports");
+            this.gridReports.Name = "gridReports";
+            this.gridReports.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
+            this.gridReports.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.gridReports.InitializeLayout += new Infragistics.Win.UltraWinGrid.InitializeLayoutEventHandler(this.Grid_InitializeLayout);
+            this.gridReports.AfterRowActivate += new System.EventHandler(this.Grid_AfterRowActivate);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.scReports);
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
+            // 
+            // scReports
+            // 
+            resources.ApplyResources(this.scReports, "scReports");
+            this.scReports.Name = "scReports";
+            // 
+            // scReports.Panel1
+            // 
+            this.scReports.Panel1.Controls.Add(this.lblStockReports);
+            // 
+            // scReports.Panel2
+            // 
+            this.scReports.Panel2.Controls.Add(this.lblSalesReports);
+            // 
+            // lblStockReports
+            // 
+            appearance94.FontData.Name = resources.GetString("resource.Name16");
+            appearance94.FontData.SizeInPoints = ((float)(resources.GetObject("resource.SizeInPoints12")));
+            appearance94.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.lblStockReports.Appearance = appearance94;
+            resources.ApplyResources(this.lblStockReports, "lblStockReports");
+            this.lblStockReports.Name = "lblStockReports";
+            // 
+            // lblSalesReports
+            // 
+            appearance95.FontData.Name = resources.GetString("resource.Name17");
+            appearance95.FontData.SizeInPoints = ((float)(resources.GetObject("resource.SizeInPoints13")));
+            appearance95.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.lblSalesReports.Appearance = appearance95;
+            resources.ApplyResources(this.lblSalesReports, "lblSalesReports");
+            this.lblSalesReports.Name = "lblSalesReports";
+            // 
+            // ultraTabPageControl18
+            // 
+            this.ultraTabPageControl18.Controls.Add(this.ultraTabControl3);
+            resources.ApplyResources(this.ultraTabPageControl18, "ultraTabPageControl18");
+            this.ultraTabPageControl18.Name = "ultraTabPageControl18";
+            // 
+            // ultraTabControl3
+            // 
+            appearance96.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(129)))));
+            appearance96.BorderColor = System.Drawing.Color.Transparent;
+            appearance96.FontData.Name = resources.GetString("resource.Name18");
+            appearance96.ForeColor = System.Drawing.Color.White;
+            appearance96.ForeColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(166)))), ((int)(((byte)(218)))));
+            appearance96.ImageBackgroundOrigin = Infragistics.Win.ImageBackgroundOrigin.Form;
+            resources.ApplyResources(appearance96, "appearance96");
+            this.ultraTabControl3.Appearance = appearance96;
+            this.ultraTabControl3.Controls.Add(this.ultraTabSharedControlsPage7);
+            this.ultraTabControl3.Controls.Add(this.ultraTabPageControl44);
+            this.ultraTabControl3.Controls.Add(this.ultraTabPageControl45);
+            resources.ApplyResources(this.ultraTabControl3, "ultraTabControl3");
+            this.ultraTabControl3.ImageSize = new System.Drawing.Size(48, 16);
+            this.ultraTabControl3.Name = "ultraTabControl3";
+            appearance97.BackColor = System.Drawing.Color.White;
+            appearance97.ForeColor = System.Drawing.Color.Black;
+            this.ultraTabControl3.SelectedTabAppearance = appearance97;
+            this.ultraTabControl3.SharedControls.AddRange(new System.Windows.Forms.Control[] {
+            this.ultraLabel1,
+            this.ultraLabel2});
+            this.ultraTabControl3.SharedControlsPage = this.ultraTabSharedControlsPage7;
+            this.ultraTabControl3.SpaceAfterTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.ultraTabControl3.SpaceBeforeTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.ultraTabControl3.Style = Infragistics.Win.UltraWinTabControl.UltraTabControlStyle.Flat;
+            this.ultraTabControl3.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.LeftTop;
+            appearance98.Image = ((object)(resources.GetObject("appearance98.Image")));
+            ultraTab14.Appearance = appearance98;
+            ultraTab14.Key = "Full";
+            appearance99.Image = ((object)(resources.GetObject("appearance99.Image")));
+            ultraTab14.SelectedAppearance = appearance99;
+            ultraTab14.TabPage = this.ultraTabPageControl44;
+            resources.ApplyResources(ultraTab14, "ultraTab14");
+            ultraTab14.ForceApplyResources = "";
+            appearance100.Image = ((object)(resources.GetObject("appearance100.Image")));
+            ultraTab16.Appearance = appearance100;
+            ultraTab16.Key = "NewSupplier";
+            appearance101.Image = ((object)(resources.GetObject("appearance101.Image")));
+            ultraTab16.SelectedAppearance = appearance101;
+            ultraTab16.TabPage = this.ultraTabPageControl45;
+            resources.ApplyResources(ultraTab16, "ultraTab16");
+            ultraTab16.ForceApplyResources = "";
+            this.ultraTabControl3.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
+            ultraTab14,
+            ultraTab16});
+            this.ultraTabControl3.TabSize = new System.Drawing.Size(50, 150);
+            this.ultraTabControl3.TextOrientation = Infragistics.Win.UltraWinTabs.TextOrientation.Horizontal;
+            this.ultraTabControl3.UseAppStyling = false;
+            this.ultraTabControl3.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            // 
+            // ultraTabSharedControlsPage7
+            // 
+            this.ultraTabSharedControlsPage7.Controls.Add(this.ultraLabel1);
+            this.ultraTabSharedControlsPage7.Controls.Add(this.ultraLabel2);
+            resources.ApplyResources(this.ultraTabSharedControlsPage7, "ultraTabSharedControlsPage7");
+            this.ultraTabSharedControlsPage7.Name = "ultraTabSharedControlsPage7";
+            // 
+            // ultraCalendarLook1
+            // 
+            appearance102.BorderColor = System.Drawing.Color.Transparent;
+            appearance102.FontData.BoldAsString = resources.GetString("resource.BoldAsString");
+            this.ultraCalendarLook1.AppointmentAppearance = appearance102;
+            appearance103.BackColor = System.Drawing.Color.White;
+            appearance103.BackColor2 = System.Drawing.Color.White;
+            appearance103.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
+            resources.ApplyResources(appearance103, "appearance103");
+            this.ultraCalendarLook1.DayAppearance = appearance103;
+            appearance104.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(194)))), ((int)(((byte)(194)))));
+            appearance104.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(194)))), ((int)(((byte)(194)))));
+            appearance104.FontData.Name = resources.GetString("resource.Name19");
+            appearance104.FontData.SizeInPoints = ((float)(resources.GetObject("resource.SizeInPoints14")));
+            this.ultraCalendarLook1.DayHeaderAppearance = appearance104;
+            appearance105.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            appearance105.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(194)))), ((int)(((byte)(194)))));
+            appearance105.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(194)))), ((int)(((byte)(194)))));
+            appearance105.FontData.Name = resources.GetString("resource.Name20");
+            appearance105.FontData.SizeInPoints = ((float)(resources.GetObject("resource.SizeInPoints15")));
+            resources.ApplyResources(appearance105, "appearance105");
+            this.ultraCalendarLook1.DayOfWeekHeaderAppearance = appearance105;
+            scrollBarLook4.ViewStyle = Infragistics.Win.UltraWinScrollBar.ScrollBarViewStyle.Office2013;
+            this.ultraCalendarLook1.ScrollBarLook = scrollBarLook4;
+            appearance106.FontData.BoldAsString = resources.GetString("resource.BoldAsString1");
+            appearance106.ForeColor = System.Drawing.Color.Black;
+            this.ultraCalendarLook1.SelectedAppointmentAppearance = appearance106;
+            appearance107.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(169)))), ((int)(((byte)(14)))));
+            appearance107.FontData.Name = resources.GetString("resource.Name21");
+            appearance107.FontData.SizeInPoints = ((float)(resources.GetObject("resource.SizeInPoints16")));
+            appearance107.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(appearance107, "appearance107");
+            this.ultraCalendarLook1.SelectedDayAppearance = appearance107;
+            appearance108.ForeColor = System.Drawing.Color.White;
+            this.ultraCalendarLook1.TodayAppearance = appearance108;
+            appearance109.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(211)))), ((int)(((byte)(133)))));
+            appearance109.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
+            appearance109.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
+            this.ultraCalendarLook1.TodayHeaderAppearance = appearance109;
+            // 
+            // ultraFormManager1
+            // 
+            this.ultraFormManager1.Form = this;
+            appearance135.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            resources.ApplyResources(appearance135, "appearance135");
+            this.ultraFormManager1.FormStyleSettings.CaptionAreaAppearance = appearance135;
+            appearance136.BorderAlpha = Infragistics.Win.Alpha.Transparent;
+            appearance136.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.ultraFormManager1.FormStyleSettings.CaptionButtonsAppearances.DefaultButtonAppearances.Appearance = appearance136;
+            appearance137.BackColor = System.Drawing.Color.Transparent;
+            appearance137.ForeColor = System.Drawing.Color.White;
+            this.ultraFormManager1.FormStyleSettings.CaptionButtonsAppearances.DefaultButtonAppearances.HotTrackAppearance = appearance137;
+            appearance138.BackColor = System.Drawing.Color.Transparent;
+            appearance138.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
+            this.ultraFormManager1.FormStyleSettings.CaptionButtonsAppearances.DefaultButtonAppearances.PressedAppearance = appearance138;
+            this.ultraFormManager1.FormStyleSettings.Style = Infragistics.Win.UltraWinForm.UltraFormStyle.Office2013;
+            // 
+            // _Form1_UltraFormManager_Dock_Area_Left
+            // 
+            this._Form1_UltraFormManager_Dock_Area_Left.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this._Form1_UltraFormManager_Dock_Area_Left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this._Form1_UltraFormManager_Dock_Area_Left.DockedPosition = Infragistics.Win.UltraWinForm.DockedPosition.Left;
+            this._Form1_UltraFormManager_Dock_Area_Left.ForeColor = System.Drawing.SystemColors.WindowText;
+            this._Form1_UltraFormManager_Dock_Area_Left.FormManager = this.ultraFormManager1;
+            this._Form1_UltraFormManager_Dock_Area_Left.InitialResizeAreaExtent = 1;
+            resources.ApplyResources(this._Form1_UltraFormManager_Dock_Area_Left, "_Form1_UltraFormManager_Dock_Area_Left");
+            this._Form1_UltraFormManager_Dock_Area_Left.Name = "_Form1_UltraFormManager_Dock_Area_Left";
+            // 
+            // _Form1_UltraFormManager_Dock_Area_Right
+            // 
+            this._Form1_UltraFormManager_Dock_Area_Right.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this._Form1_UltraFormManager_Dock_Area_Right.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this._Form1_UltraFormManager_Dock_Area_Right.DockedPosition = Infragistics.Win.UltraWinForm.DockedPosition.Right;
+            this._Form1_UltraFormManager_Dock_Area_Right.ForeColor = System.Drawing.SystemColors.WindowText;
+            this._Form1_UltraFormManager_Dock_Area_Right.FormManager = this.ultraFormManager1;
+            this._Form1_UltraFormManager_Dock_Area_Right.InitialResizeAreaExtent = 1;
+            resources.ApplyResources(this._Form1_UltraFormManager_Dock_Area_Right, "_Form1_UltraFormManager_Dock_Area_Right");
+            this._Form1_UltraFormManager_Dock_Area_Right.Name = "_Form1_UltraFormManager_Dock_Area_Right";
+            // 
+            // _Form1_UltraFormManager_Dock_Area_Top
+            // 
+            this._Form1_UltraFormManager_Dock_Area_Top.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this._Form1_UltraFormManager_Dock_Area_Top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this._Form1_UltraFormManager_Dock_Area_Top.DockedPosition = Infragistics.Win.UltraWinForm.DockedPosition.Top;
+            this._Form1_UltraFormManager_Dock_Area_Top.ForeColor = System.Drawing.SystemColors.WindowText;
+            this._Form1_UltraFormManager_Dock_Area_Top.FormManager = this.ultraFormManager1;
+            resources.ApplyResources(this._Form1_UltraFormManager_Dock_Area_Top, "_Form1_UltraFormManager_Dock_Area_Top");
+            this._Form1_UltraFormManager_Dock_Area_Top.Name = "_Form1_UltraFormManager_Dock_Area_Top";
+            // 
+            // _Form1_UltraFormManager_Dock_Area_Bottom
+            // 
+            this._Form1_UltraFormManager_Dock_Area_Bottom.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this._Form1_UltraFormManager_Dock_Area_Bottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this._Form1_UltraFormManager_Dock_Area_Bottom.DockedPosition = Infragistics.Win.UltraWinForm.DockedPosition.Bottom;
+            this._Form1_UltraFormManager_Dock_Area_Bottom.ForeColor = System.Drawing.SystemColors.WindowText;
+            this._Form1_UltraFormManager_Dock_Area_Bottom.FormManager = this.ultraFormManager1;
+            this._Form1_UltraFormManager_Dock_Area_Bottom.InitialResizeAreaExtent = 1;
+            resources.ApplyResources(this._Form1_UltraFormManager_Dock_Area_Bottom, "_Form1_UltraFormManager_Dock_Area_Bottom");
+            this._Form1_UltraFormManager_Dock_Area_Bottom.Name = "_Form1_UltraFormManager_Dock_Area_Bottom";
+            // 
+            // tcMain
+            // 
+            appearance110.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(33)))), ((int)(((byte)(70)))));
+            appearance110.BorderColor = System.Drawing.Color.Transparent;
+            appearance110.FontData.Name = resources.GetString("resource.Name22");
+            appearance110.FontData.SizeInPoints = ((float)(resources.GetObject("resource.SizeInPoints17")));
+            appearance110.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            appearance110.ImageBackgroundOrigin = Infragistics.Win.ImageBackgroundOrigin.Form;
+            appearance110.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance110.ImageVAlign = Infragistics.Win.VAlign.Top;
+            resources.ApplyResources(appearance110, "appearance110");
+            this.tcMain.Appearance = appearance110;
+            appearance111.BackColor = System.Drawing.Color.White;
+            this.tcMain.ClientAreaAppearance = appearance111;
+            this.tcMain.Controls.Add(this.ultraTabSharedControlsPage1);
+            this.tcMain.Controls.Add(this.ultraTabPageControl1);
+            this.tcMain.Controls.Add(this.ultraTabPageControl2);
+            this.tcMain.Controls.Add(this.ultraTabPageControl3);
+            this.tcMain.Controls.Add(this.ultraTabPageControl4);
+            this.tcMain.Controls.Add(this.ultraTabPageControl5);
+            this.tcMain.Controls.Add(this.ultraTabPageControl18);
+            resources.ApplyResources(this.tcMain, "tcMain");
+            appearance112.ForeColor = System.Drawing.Color.White;
+            this.tcMain.HotTrackAppearance = appearance112;
+            this.tcMain.ImageSize = new System.Drawing.Size(36, 36);
+            this.tcMain.MinTabWidth = 80;
+            this.tcMain.Name = "tcMain";
+            appearance113.ForeColor = System.Drawing.Color.White;
+            this.tcMain.SelectedTabAppearance = appearance113;
+            this.tcMain.SharedControlsPage = this.ultraTabSharedControlsPage1;
+            this.tcMain.SpaceAfterTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.tcMain.SpaceBeforeTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.tcMain.Style = Infragistics.Win.UltraWinTabControl.UltraTabControlStyle.Flat;
+            this.tcMain.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.LeftTop;
+            this.tcMain.TabPadding = new System.Drawing.Size(10, 10);
+            appearance114.Image = ((object)(resources.GetObject("appearance114.Image")));
+            ultraTab1.Appearance = appearance114;
+            appearance115.BackColor = System.Drawing.Color.White;
+            ultraTab1.ClientAreaAppearance = appearance115;
+            appearance116.Image = ((object)(resources.GetObject("appearance116.Image")));
+            ultraTab1.HotTrackAppearance = appearance116;
+            ultraTab1.Key = "Home";
+            appearance117.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(33)))), ((int)(((byte)(70)))));
+            appearance117.Image = ((object)(resources.GetObject("appearance117.Image")));
+            ultraTab1.SelectedAppearance = appearance117;
+            ultraTab1.TabPage = this.ultraTabPageControl1;
+            resources.ApplyResources(ultraTab1, "ultraTab1");
+            ultraTab1.ForceApplyResources = "";
+            appearance118.Image = ((object)(resources.GetObject("appearance118.Image")));
+            ultraTab2.Appearance = appearance118;
+            appearance119.Image = ((object)(resources.GetObject("appearance119.Image")));
+            ultraTab2.HotTrackAppearance = appearance119;
+            ultraTab2.Key = "keycatalogos";
+            appearance120.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(33)))), ((int)(((byte)(70)))));
+            appearance120.Image = ((object)(resources.GetObject("appearance120.Image")));
+            ultraTab2.SelectedAppearance = appearance120;
+            ultraTab2.TabPage = this.ultraTabPageControl2;
+            resources.ApplyResources(ultraTab2, "ultraTab2");
+            ultraTab2.ForceApplyResources = "";
+            appearance121.Image = ((object)(resources.GetObject("appearance121.Image")));
+            ultraTab3.Appearance = appearance121;
+            appearance122.Image = ((object)(resources.GetObject("appearance122.Image")));
+            ultraTab3.HotTrackAppearance = appearance122;
+            ultraTab3.Key = "keydocumentos";
+            appearance123.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(33)))), ((int)(((byte)(70)))));
+            appearance123.Image = ((object)(resources.GetObject("appearance123.Image")));
+            ultraTab3.SelectedAppearance = appearance123;
+            ultraTab3.TabPage = this.ultraTabPageControl3;
+            resources.ApplyResources(ultraTab3, "ultraTab3");
+            ultraTab3.ForceApplyResources = "";
+            appearance124.Image = ((object)(resources.GetObject("appearance124.Image")));
+            ultraTab4.Appearance = appearance124;
+            appearance125.Image = ((object)(resources.GetObject("appearance125.Image")));
+            ultraTab4.HotTrackAppearance = appearance125;
+            ultraTab4.Key = "Orders";
+            appearance126.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(33)))), ((int)(((byte)(70)))));
+            appearance126.Image = ((object)(resources.GetObject("appearance126.Image")));
+            ultraTab4.SelectedAppearance = appearance126;
+            ultraTab4.TabPage = this.ultraTabPageControl4;
+            resources.ApplyResources(ultraTab4, "ultraTab4");
+            ultraTab4.ForceApplyResources = "";
+            appearance127.Image = ((object)(resources.GetObject("appearance127.Image")));
+            ultraTab5.Appearance = appearance127;
+            appearance128.BackColor = System.Drawing.Color.White;
+            ultraTab5.ClientAreaAppearance = appearance128;
+            appearance129.Image = ((object)(resources.GetObject("appearance129.Image")));
+            ultraTab5.HotTrackAppearance = appearance129;
+            ultraTab5.Key = "keyreportes";
+            appearance130.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(33)))), ((int)(((byte)(70)))));
+            appearance130.Image = ((object)(resources.GetObject("appearance130.Image")));
+            ultraTab5.SelectedAppearance = appearance130;
+            ultraTab5.TabPage = this.ultraTabPageControl5;
+            resources.ApplyResources(ultraTab5, "ultraTab5");
+            ultraTab5.ForceApplyResources = "";
+            appearance131.Image = ((object)(resources.GetObject("appearance131.Image")));
+            ultraTab19.Appearance = appearance131;
+            appearance132.BackColor = System.Drawing.Color.White;
+            ultraTab19.ClientAreaAppearance = appearance132;
+            appearance133.Image = ((object)(resources.GetObject("appearance133.Image")));
+            ultraTab19.HotTrackAppearance = appearance133;
+            appearance134.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(33)))), ((int)(((byte)(70)))));
+            appearance134.Image = ((object)(resources.GetObject("appearance134.Image")));
+            ultraTab19.SelectedAppearance = appearance134;
+            ultraTab19.TabPage = this.ultraTabPageControl18;
+            resources.ApplyResources(ultraTab19, "ultraTab19");
+            ultraTab19.ForceApplyResources = "";
+            this.tcMain.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
+            ultraTab1,
+            ultraTab2,
+            ultraTab3,
+            ultraTab4,
+            ultraTab5,
+            ultraTab19});
+            this.tcMain.TextOrientation = Infragistics.Win.UltraWinTabs.TextOrientation.Horizontal;
+            this.tcMain.UseAppStyling = false;
+            this.tcMain.UseHotTracking = Infragistics.Win.DefaultableBoolean.True;
+            this.tcMain.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.tcMain.SelectedTabChanged += new Infragistics.Win.UltraWinTabControl.SelectedTabChangedEventHandler(this.tcMain_SelectedTabChanged);
+            // 
+            // ultraTabSharedControlsPage1
+            // 
+            resources.ApplyResources(this.ultraTabSharedControlsPage1, "ultraTabSharedControlsPage1");
+            this.ultraTabSharedControlsPage1.Name = "ultraTabSharedControlsPage1";
+            // 
+            // ultraTabSharedControlsPage3
+            // 
+            resources.ApplyResources(this.ultraTabSharedControlsPage3, "ultraTabSharedControlsPage3");
+            this.ultraTabSharedControlsPage3.Name = "ultraTabSharedControlsPage3";
+            // 
+            // ultraTabPageControl10
+            // 
+            resources.ApplyResources(this.ultraTabPageControl10, "ultraTabPageControl10");
+            this.ultraTabPageControl10.Name = "ultraTabPageControl10";
+            // 
+            // ultraTabPageControl11
+            // 
+            resources.ApplyResources(this.ultraTabPageControl11, "ultraTabPageControl11");
+            this.ultraTabPageControl11.Name = "ultraTabPageControl11";
+            // 
+            // ultraTabPageControl12
+            // 
+            resources.ApplyResources(this.ultraTabPageControl12, "ultraTabPageControl12");
+            this.ultraTabPageControl12.Name = "ultraTabPageControl12";
+            // 
+            // ultraTabControl1
+            // 
+            appearance139.BorderColor = System.Drawing.Color.Transparent;
+            appearance139.ForeColor = System.Drawing.Color.White;
+            this.ultraTabControl1.Appearance = appearance139;
+            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl10);
+            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl11);
+            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl12);
+            resources.ApplyResources(this.ultraTabControl1, "ultraTabControl1");
+            this.ultraTabControl1.Name = "ultraTabControl1";
+            this.ultraTabControl1.SharedControlsPage = this.ultraTabSharedControlsPage3;
+            // 
+            // ultraCalendarInfo1
+            // 
+            this.ultraCalendarInfo1.AllowAllDayEvents = false;
+            this.ultraCalendarInfo1.AppointmentActionsEnabled = false;
+            this.ultraCalendarInfo1.DataBindingsForAppointments.BindingContextControl = this;
+            this.ultraCalendarInfo1.DataBindingsForOwners.BindingContextControl = this;
+            this.ultraCalendarInfo1.MaxAlternateSelectedDays = 5;
+            this.ultraCalendarInfo1.MaxSelectedDays = 1;
+            this.ultraCalendarInfo1.SelectTypeActivity = Infragistics.Win.UltraWinSchedule.SelectType.Single;
+            this.ultraCalendarInfo1.SelectTypeDay = Infragistics.Win.UltraWinSchedule.SelectType.Single;
+            this.ultraCalendarInfo1.BeforeDisplayAppointmentDialog += new Infragistics.Win.UltraWinSchedule.DisplayAppointmentDialogEventHandler(this.ultraCalendarInfo1_BeforeDisplayAppointmentDialog);
+            this.ultraCalendarInfo1.AfterSelectedDateRangeChange += new System.EventHandler(this.ultraCalendarInfo1_AfterSelectedDateRangeChange);
+            this.ultraCalendarInfo1.AppointmentDataInitialized += new Infragistics.Win.UltraWinSchedule.AppointmentDataInitializedEventHandler(this.ultraCalendarInfo1_AppointmentDataInitialized);
+            this.ultraCalendarInfo1.BeforeAlternateSelectedDateRangeChange += new Infragistics.Win.UltraWinSchedule.BeforeSelectedDateRangeChangeEventHandler(this.ultraCalendarInfo1_BeforeAlternateSelectedDateRangeChange);
+            // 
+            // ultraTabPageControl40
+            // 
+            resources.ApplyResources(this.ultraTabPageControl40, "ultraTabPageControl40");
+            this.ultraTabPageControl40.Name = "ultraTabPageControl40";
+            // 
+            // ultraTabPageControl41
+            // 
+            this.ultraTabPageControl41.Controls.Add(this.ultraGrid1);
+            resources.ApplyResources(this.ultraTabPageControl41, "ultraTabPageControl41");
+            this.ultraTabPageControl41.Name = "ultraTabPageControl41";
+            // 
+            // ultraGrid1
+            // 
+            appearance140.BackColor = System.Drawing.Color.White;
+            this.ultraGrid1.DisplayLayout.Appearance = appearance140;
+            this.ultraGrid1.DisplayLayout.AutoFitStyle = Infragistics.Win.UltraWinGrid.AutoFitStyle.ResizeAllColumns;
+            this.ultraGrid1.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.None;
+            appearance141.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            appearance141.BorderColor = System.Drawing.Color.White;
+            this.ultraGrid1.DisplayLayout.GroupByBox.Appearance = appearance141;
+            this.ultraGrid1.DisplayLayout.GroupByBox.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
+            appearance142.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            appearance142.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            appearance142.ForeColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
+            this.ultraGrid1.DisplayLayout.GroupByBox.PromptAppearance = appearance142;
+            this.ultraGrid1.DisplayLayout.Override.AllowGroupBy = Infragistics.Win.DefaultableBoolean.True;
+            this.ultraGrid1.DisplayLayout.Override.BorderStyleCell = Infragistics.Win.UIElementBorderStyle.None;
+            this.ultraGrid1.DisplayLayout.Override.BorderStyleHeader = Infragistics.Win.UIElementBorderStyle.None;
+            this.ultraGrid1.DisplayLayout.Override.BorderStyleRow = Infragistics.Win.UIElementBorderStyle.None;
+            this.ultraGrid1.DisplayLayout.Override.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.RowSelect;
+            this.ultraGrid1.DisplayLayout.Override.ColumnHeaderTextOrientation = new Infragistics.Win.TextOrientationInfo(0, Infragistics.Win.TextFlowDirection.Horizontal);
+            appearance143.BackColor = System.Drawing.Color.Transparent;
+            this.ultraGrid1.DisplayLayout.Override.GroupByRowAppearance = appearance143;
+            appearance144.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            appearance144.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            appearance144.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            appearance144.FontData.Name = resources.GetString("resource.Name23");
+            appearance144.FontData.SizeInPoints = ((float)(resources.GetObject("resource.SizeInPoints18")));
+            resources.ApplyResources(appearance144, "appearance144");
+            this.ultraGrid1.DisplayLayout.Override.HeaderAppearance = appearance144;
+            appearance145.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.ultraGrid1.DisplayLayout.Override.HotTrackRowAppearance = appearance145;
+            this.ultraGrid1.DisplayLayout.Override.MaxSelectedRows = 1;
+            this.ultraGrid1.DisplayLayout.Override.ReserveSortIndicatorSpaceWhenAutoSizing = Infragistics.Win.UltraWinGrid.ReserveSortIndicatorSpaceWhenAutoSizing.WhenColumnIsSortable;
+            resources.ApplyResources(appearance146, "appearance146");
+            this.ultraGrid1.DisplayLayout.Override.RowAppearance = appearance146;
+            this.ultraGrid1.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
+            appearance147.BackColor = System.Drawing.Color.LightGray;
+            appearance147.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ultraGrid1.DisplayLayout.Override.SelectedRowAppearance = appearance147;
+            scrollBarLook5.ViewStyle = Infragistics.Win.UltraWinScrollBar.ScrollBarViewStyle.Office2013;
+            this.ultraGrid1.DisplayLayout.ScrollBarLook = scrollBarLook5;
+            this.ultraGrid1.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
+            this.ultraGrid1.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy;
+            resources.ApplyResources(this.ultraGrid1, "ultraGrid1");
+            this.ultraGrid1.Name = "ultraGrid1";
+            this.ultraGrid1.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
+            this.ultraGrid1.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.ultraGrid1.InitializeLayout += new Infragistics.Win.UltraWinGrid.InitializeLayoutEventHandler(this.Grid_InitializeLayout);
+            this.ultraGrid1.AfterRowActivate += new System.EventHandler(this.Grid_AfterRowActivate);
+            // 
+            // ultraTabPageControl42
+            // 
+            resources.ApplyResources(this.ultraTabPageControl42, "ultraTabPageControl42");
+            this.ultraTabPageControl42.Name = "ultraTabPageControl42";
+            // 
+            // ultraTabControl2
+            // 
+            appearance148.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(129)))));
+            appearance148.BorderColor = System.Drawing.Color.Transparent;
+            appearance148.FontData.Name = resources.GetString("resource.Name24");
+            appearance148.ForeColor = System.Drawing.Color.White;
+            appearance148.ForeColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(166)))), ((int)(((byte)(218)))));
+            appearance148.ImageBackgroundOrigin = Infragistics.Win.ImageBackgroundOrigin.Form;
+            resources.ApplyResources(appearance148, "appearance148");
+            this.ultraTabControl2.Appearance = appearance148;
+            resources.ApplyResources(this.ultraTabControl2, "ultraTabControl2");
+            this.ultraTabControl2.Name = "ultraTabControl2";
+            this.ultraTabControl2.SharedControlsPage = null;
+            // 
+            // ultraTabPageControl13
+            // 
+            resources.ApplyResources(this.ultraTabPageControl13, "ultraTabPageControl13");
+            this.ultraTabPageControl13.Name = "ultraTabPageControl13";
+            // 
+            // ultraTabPageControl14
+            // 
+            resources.ApplyResources(this.ultraTabPageControl14, "ultraTabPageControl14");
+            this.ultraTabPageControl14.Name = "ultraTabPageControl14";
+            // 
+            // ultraTabPageControl15
+            // 
+            resources.ApplyResources(this.ultraTabPageControl15, "ultraTabPageControl15");
+            this.ultraTabPageControl15.Name = "ultraTabPageControl15";
+            // 
+            // ultraTabPageControl16
+            // 
+            resources.ApplyResources(this.ultraTabPageControl16, "ultraTabPageControl16");
+            this.ultraTabPageControl16.Name = "ultraTabPageControl16";
+            // 
+            // ultraTabPageControl47
+            // 
+            resources.ApplyResources(this.ultraTabPageControl47, "ultraTabPageControl47");
+            this.ultraTabPageControl47.Name = "ultraTabPageControl47";
+            // 
+            // ultraTabPageControl48
+            // 
+            resources.ApplyResources(this.ultraTabPageControl48, "ultraTabPageControl48");
+            this.ultraTabPageControl48.Name = "ultraTabPageControl48";
+            // 
+            // ultraTabControl4
+            // 
+            appearance149.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(129)))));
+            appearance149.BorderColor = System.Drawing.Color.Transparent;
+            appearance149.FontData.Name = resources.GetString("resource.Name25");
+            appearance149.ForeColor = System.Drawing.Color.White;
+            appearance149.ForeColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(202)))), ((int)(((byte)(108)))));
+            appearance149.ImageBackgroundOrigin = Infragistics.Win.ImageBackgroundOrigin.Form;
+            this.ultraTabControl4.Appearance = appearance149;
+            resources.ApplyResources(this.ultraTabControl4, "ultraTabControl4");
+            this.ultraTabControl4.Name = "ultraTabControl4";
+            this.ultraTabControl4.SharedControlsPage = null;
+            // 
+            // ultraTabSharedControlsPage8
+            // 
+            resources.ApplyResources(this.ultraTabSharedControlsPage8, "ultraTabSharedControlsPage8");
+            this.ultraTabSharedControlsPage8.Name = "ultraTabSharedControlsPage8";
+            // 
+            // ultraTabPageControl50
+            // 
+            resources.ApplyResources(this.ultraTabPageControl50, "ultraTabPageControl50");
+            this.ultraTabPageControl50.Name = "ultraTabPageControl50";
+            // 
+            // ultraTabPageControl51
+            // 
+            resources.ApplyResources(this.ultraTabPageControl51, "ultraTabPageControl51");
+            this.ultraTabPageControl51.Name = "ultraTabPageControl51";
+            // 
+            // ultraTabSharedControlsPage9
+            // 
+            resources.ApplyResources(this.ultraTabSharedControlsPage9, "ultraTabSharedControlsPage9");
+            this.ultraTabSharedControlsPage9.Name = "ultraTabSharedControlsPage9";
+            // 
+            // ultraTabPageControl39
+            // 
+            resources.ApplyResources(this.ultraTabPageControl39, "ultraTabPageControl39");
+            this.ultraTabPageControl39.Name = "ultraTabPageControl39";
+            // 
+            // ultraTabPageControl53
+            // 
+            resources.ApplyResources(this.ultraTabPageControl53, "ultraTabPageControl53");
+            this.ultraTabPageControl53.Name = "ultraTabPageControl53";
+            // 
+            // ultraTabPageControl54
+            // 
+            resources.ApplyResources(this.ultraTabPageControl54, "ultraTabPageControl54");
+            this.ultraTabPageControl54.Name = "ultraTabPageControl54";
+            // 
+            // ultraTabPageControl55
+            // 
+            resources.ApplyResources(this.ultraTabPageControl55, "ultraTabPageControl55");
+            this.ultraTabPageControl55.Name = "ultraTabPageControl55";
+            // 
+            // frmCIPAL
+            // 
+            resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.tcMain);
+            this.Controls.Add(this._Form1_UltraFormManager_Dock_Area_Left);
+            this.Controls.Add(this._Form1_UltraFormManager_Dock_Area_Right);
+            this.Controls.Add(this._Form1_UltraFormManager_Dock_Area_Top);
+            this.Controls.Add(this._Form1_UltraFormManager_Dock_Area_Bottom);
+            this.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Name = "frmCIPAL";
+            this.TransparencyKey = System.Drawing.Color.Transparent;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmCIPAL_Load);
+            this.ultraTabPageControl7.ResumeLayout(false);
+            this.ultraTabPageControl7.PerformLayout();
+            this.ultraTabPageControl6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridInventory)).EndInit();
+            this.ultraTabPageControl44.ResumeLayout(false);
+            this.ultraTabPageControl44.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraGrid2)).EndInit();
+            this.ultraTabPageControl1.ResumeLayout(false);
+            this.scHome1.Panel1.ResumeLayout(false);
+            this.scHome1.Panel1.PerformLayout();
+            this.scHome1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.scHome1)).EndInit();
+            this.scHome1.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.scHome2)).EndInit();
+            this.scHome2.ResumeLayout(false);
+            this.ultraTabPageControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tccatalogos)).EndInit();
+            this.tccatalogos.ResumeLayout(false);
+            this.ultraTabPageControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl5)).EndInit();
+            this.ultraTabControl5.ResumeLayout(false);
+            this.ultraTabPageControl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl6)).EndInit();
+            this.ultraTabControl6.ResumeLayout(false);
+            this.ultraTabPageControl5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tcGestion)).EndInit();
+            this.tcGestion.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridReports)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.scReports.Panel1.ResumeLayout(false);
+            this.scReports.Panel1.PerformLayout();
+            this.scReports.Panel2.ResumeLayout(false);
+            this.scReports.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.scReports)).EndInit();
+            this.scReports.ResumeLayout(false);
+            this.ultraTabPageControl18.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl3)).EndInit();
+            this.ultraTabControl3.ResumeLayout(false);
+            this.ultraTabSharedControlsPage7.ResumeLayout(false);
+            this.ultraTabSharedControlsPage7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraFormManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tcMain)).EndInit();
+            this.tcMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl1)).EndInit();
+            this.ultraTabControl1.ResumeLayout(false);
+            this.ultraTabPageControl41.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ultraGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl4)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private Infragistics.Win.UltraWinForm.UltraFormManager ultraFormManager1;
+        private Infragistics.Win.UltraWinTabControl.UltraTabControl tcMain;
+        private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage ultraTabSharedControlsPage1;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl2;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl4;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl5;
+        private Infragistics.Win.UltraWinForm.UltraFormDockArea _Form1_UltraFormManager_Dock_Area_Left;
+        private Infragistics.Win.UltraWinForm.UltraFormDockArea _Form1_UltraFormManager_Dock_Area_Right;
+        private Infragistics.Win.UltraWinForm.UltraFormDockArea _Form1_UltraFormManager_Dock_Area_Top;
+        private Infragistics.Win.UltraWinForm.UltraFormDockArea _Form1_UltraFormManager_Dock_Area_Bottom;
+        private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage ultraTabSharedControlsPage3;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl10;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl11;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl12;
+        private Infragistics.Win.UltraWinTabControl.UltraTabControl ultraTabControl1;
+        private Infragistics.Win.Misc.UltraButton btnReports;
+        private Infragistics.Win.Misc.UltraButton btnOrders;
+        private Infragistics.Win.Misc.UltraButton btnContacts;
+        private Infragistics.Win.Misc.UltraButton btnInventory;
+        private Infragistics.Win.Misc.UltraLabel lblCategories;
+        private Infragistics.Win.UltraWinSchedule.UltraCalendarInfo ultraCalendarInfo1;
+        private Infragistics.Win.UltraWinSchedule.UltraCalendarLook ultraCalendarLook1;
+        private Infragistics.Win.Misc.UltraLabel lblStockReports;
+        private Infragistics.Win.Misc.UltraLabel lblSalesReports;
+        private Infragistics.Win.UltraWinGrid.UltraGrid gridReports;
+        public Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.SplitContainer scReports;
+        private System.Windows.Forms.SplitContainer scHome2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.SplitContainer scHome1;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl18;
+        private Infragistics.Win.UltraWinTabControl.UltraTabControl tcGestion;
+        private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage ultraTabSharedControlsPage6;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl34;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl36;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl37;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl38;
+        private Infragistics.Win.UltraWinTabControl.UltraTabControl tccatalogos;
+        private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage ultraTabSharedControlsPage2;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl6;
+        private Infragistics.Win.UltraWinGrid.UltraGrid gridInventory;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl7;
+        private Infragistics.Win.Misc.UltraLabel lblProductInventory;
+        private Infragistics.Win.Misc.UltraLabel lblStoreName_Inventory;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl8;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl9;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl17;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl22;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl23;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl24;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl25;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl26;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl27;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl28;
+        private Infragistics.Win.UltraWinTabControl.UltraTabControl ultraTabControl3;
+        private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage ultraTabSharedControlsPage7;
+        private Infragistics.Win.Misc.UltraLabel ultraLabel1;
+        private Infragistics.Win.Misc.UltraLabel ultraLabel2;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl44;
+        private Infragistics.Win.UltraWinGrid.UltraGrid ultraGrid2;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl45;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl40;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl41;
+        private Infragistics.Win.UltraWinGrid.UltraGrid ultraGrid1;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl42;
+        private Infragistics.Win.UltraWinTabControl.UltraTabControl ultraTabControl2;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl13;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl14;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl15;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl16;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl47;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl48;
+        private Infragistics.Win.UltraWinTabControl.UltraTabControl ultraTabControl4;
+        private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage ultraTabSharedControlsPage8;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl50;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl51;
+        private Infragistics.Win.UltraWinTabControl.UltraTabControl ultraTabControl6;
+        private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage ultraTabSharedControlsPage5;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl19;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl20;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl21;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl29;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl30;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl31;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl32;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl3;
+        private Infragistics.Win.UltraWinTabControl.UltraTabControl ultraTabControl5;
+        private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage ultraTabSharedControlsPage4;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl49;
+        private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage ultraTabSharedControlsPage9;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl39;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl53;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl54;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl55;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl52;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl56;
+    }
+}
+

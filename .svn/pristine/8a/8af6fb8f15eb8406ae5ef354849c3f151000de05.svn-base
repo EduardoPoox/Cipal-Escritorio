@@ -1,0 +1,707 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using Infragistics.Win.Misc;
+using Infragistics.Win.UltraWinGrid;
+using Infragistics.Win.UltraWinListView;
+using Infragistics.Win.UltraWinSchedule;
+using System.Resources;
+
+namespace cipal
+{
+    public partial class frmCIPAL : Form
+    {
+
+        private string _token;
+        private string _tokendecript;
+
+        private string _cnn;
+        private string _cnndecript;
+
+        private string _tipodeinstalacion;
+        private string _servidor;
+        private string _instancia;
+        private string _username;
+        private string _password;
+
+        //PARAMETROS GLOBALES DE CONTROL DE ACCESO
+        private string _usuario = "";
+        private string _dbempresa = "";
+        private string _conexionString = "";
+
+        private int _idusuario;
+        private int _id =0; //IDENTIFICADOR DE LA EMPRESA ACTIVA
+        private int _idconfig =0; //IDENTIFICADOR DE PARAMETROS DE EMPRESA
+        //FIN DE PARAMETROS GLOBALES DE CONTROL DE ACCESO
+
+        //public void AbrirFormulario<T>() where T : Form, new()
+        //{
+        //    Form formulario = pdocdigitales.Controls.OfType<T>().FirstOrDefault();
+        //    if (formulario != null)
+        //    {
+        //        formulario.FormBorderStyle = FormBorderStyle.None;
+        //        //Si la instancia esta minimizada la dejamos en su estado normal
+        //        if (formulario.WindowState == FormWindowState.Minimized)
+        //        {
+        //            formulario.WindowState = FormWindowState.Normal;
+        //        }
+        //        //Si la instancia existe la pongo en primer plano
+        //        formulario.BringToFront();
+        //        return;
+        //    }
+        //    //Se abre el form
+        //    formulario = new T();
+        //    formulario.TopLevel = false;
+        //    pdocdigitales.Controls.Add(formulario);
+        //    pdocdigitales.Tag = formulario;
+        //    formulario.Show();
+        //}
+        private void AddFormInPanel(Form fh)
+        {
+            if (this.ultraTabPageControl19.Controls.Count>0 )
+                this.ultraTabPageControl19.Controls.RemoveAt(0);
+            fh.TopLevel = false;
+            fh.FormBorderStyle = FormBorderStyle.None;
+
+            fh.Dock = DockStyle.Fill;
+            this.ultraTabPageControl19.Controls.Add(fh);
+            this.ultraTabPageControl19.Tag = fh;
+
+            fh.Show();
+        }
+
+
+        public frmCIPAL(string token, string cnn)
+        {
+            try
+            {
+                InitializeComponent();
+                this._conexionString = cnn;
+                this._id = 1;
+                this._idconfig = 1;
+
+                this._idusuario = 0;
+                if (this._idusuario == 0)
+                {
+                    this._usuario = "";
+                }
+
+
+                _token = token;
+                _tokendecript = genericas.generales.desencriptar(_token);
+
+                _cnn = cnn;
+                _cnndecript = genericas.generales.desencriptar(_cnn);
+
+                string[] _cnnsplit = _cnndecript.Split('|');
+                _tipodeinstalacion = _cnnsplit[0];
+                _servidor = _cnnsplit[1];
+                _instancia = _cnnsplit[2];
+                _username = _cnnsplit[3];
+                _password = genericas.generales.desencriptar(_cnnsplit[4]);
+
+
+                if (_usuario == "")
+                {
+                    componentes.seguridad.frmLogin ofrmLogin = new componentes.seguridad.frmLogin(_token, _cnn);
+                    ofrmLogin.ShowDialog();
+                    if (ofrmLogin.username != "")
+                    {
+                        _usuario = ofrmLogin.username;
+                        if (_dbempresa == "")
+                        {
+                            componentes.empresas.frmListadoEmpresas ofrmListadoEmpresas = new componentes.empresas.frmListadoEmpresas(_token, _cnn);
+                            ofrmListadoEmpresas.ShowDialog();
+                            if (ofrmListadoEmpresas.dbname != "")
+                            {
+                                _dbempresa = ofrmListadoEmpresas.dbname;
+                                _conexionString = genericas.generales.getconnexionstring(_tipodeinstalacion, _servidor, _instancia, _username, _password, _dbempresa);
+                            }
+                            else
+                            {
+                                //Formatear MDI Sin Usuario Ni Empresa
+
+                            }
+                        }
+
+                    }
+                    else
+                    {
+                        //Formatear MDI Sin Usuario
+
+                    }
+
+                }
+
+                //CADENA DE CONEXIÓN MONOUSUARIO
+                //this._connexionstring = @"Data Source=DESKTOP-JBJ6MI3\SQLSERVER2012;Initial Catalog=cipal_aaa010101aaa_municipio_de_merida;Integrated Security=true";
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+            if (!this.DesignMode)
+            {
+                Infragistics.Win.Office2013ColorTable.ColorScheme = Infragistics.Win.Office2013ColorScheme.DarkGray;
+
+                //Cargar datos de primera vista
+            }
+        }
+
+
+
+        #region Members
+
+        private bool dateSelectionRecursionFlag = false;
+        private bool timeSlotSelectionRecursionFlag = false;
+
+        #endregion //Members
+
+
+        #region Event Handlers
+
+        #region CategoryButton_Click
+
+        /// <summary>
+        /// Handles the Click event of the Category buttons.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        private void CategoryButton_Click(object sender, EventArgs e)
+        {
+            UltraButton button = sender as UltraButton;
+            if (button != null)
+            {
+                // Activate the tab that corresponds to the clicked button.
+                tcMain.SelectedTab = tcMain.Tabs[button.Tag as string];                
+            }
+        }
+
+        #endregion // CategoryButton_Click
+
+
+        #region Grid_AfterRowActivate
+
+        /// <summary>
+        /// Handles the AfterRowActivate event of the UltraGrid controls.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        private void Grid_AfterRowActivate(object sender, EventArgs e)
+        {
+            // Keep the SelectedRow and ActiveRow synchronized
+            UltraGrid grid = (UltraGrid)sender;
+            grid.Selected.Rows.Clear();
+            grid.ActiveRow.Selected = true;
+        }
+
+        #endregion //Grid_AfterRowActivate
+
+        #region Grid_InitializeLayout
+
+        /// <summary>
+        /// Handles the InitializeLayout event of the UltraGrid controls.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="Infragistics.Win.UltraWinGrid.InitializeLayoutEventArgs"/> instance containing the event data.</param>
+        private void Grid_InitializeLayout(object sender, Infragistics.Win.UltraWinGrid.InitializeLayoutEventArgs e)
+        {
+            e.Layout.Override.DefaultRowHeight = 30;
+
+            ColumnsCollection columns = e.Layout.Bands[0].Columns;
+            foreach (UltraGridColumn column in columns)
+            {
+
+                column.Header.Caption = GetLocalizedString(column.Header.Caption);
+
+                switch (column.Key)
+                {
+                    case "Cost":
+                    case "Price":
+                    case "Sales":
+                    case "Profit":
+                        {
+                            column.Format = "c";
+                            column.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.CurrencyNonNegative;
+                        }
+                        break;
+                }
+            }
+
+            // Hide the unnecessary columns
+            if (sender == this.gridInventory)
+            {
+                columns["Sales"].Hidden = true;
+                columns["Profit"].Hidden = true;
+                columns["IsNew"].Hidden = true;
+            }
+            else if (sender == this.gridReports)
+            {
+                columns["Quantity"].Hidden = true;
+                columns["IsNew"].Hidden = true;
+            }
+        }
+
+        #endregion //Grid_InitializeLayout
+
+        #region llDateNavigation_EditorButtonClick
+
+        /// <summary>
+        /// Handles the EditorButtonClick event of the llDateNavigation control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="Infragistics.Win.UltraWinEditors.EditorButtonEventArgs"/> instance containing the event data.</param>
+        private void llDateNavigation_EditorButtonClick(object sender, Infragistics.Win.UltraWinEditors.EditorButtonEventArgs e)
+        {            
+            this.NavigateSchedule(this.tcOrders.SelectedTab.Key, (e.Button.Key == "Next"));
+        }
+
+        #endregion //llDateNavigation_EditorButtonClick
+
+        #region mvMonthly_MoreActivityIndicatorClicked
+        /// <summary>
+        /// Handles the MoreActivityIndicatorClicked event of the mvMonthly control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="MoreActivityIndicatorClickedEventArgs"/> instance containing the event data.</param>
+        private void mvMonthly_MoreActivityIndicatorClicked(object sender, MoreActivityIndicatorClickedEventArgs e)
+        {
+            // Activate the day and switch to the Daily view.
+            this.ultraCalendarInfo1.ActiveDay = e.Day;
+            this.ultraCalendarInfo1.SelectedDateRanges.Add(this.ultraCalendarInfo1.ActiveDay.Date, true);
+            this.tcOrders.SelectedTab = this.tcOrders.Tabs["Daily"];
+        }
+
+        #endregion //mvMonthly_MoreActivityIndicatorClicked
+
+        #region scHome1_Panel1_SizeChanged
+
+        /// <summary>
+        /// Handles the SizeChanged event of the scHome1_Panel1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        private void scHome1_Panel1_SizeChanged(object sender, EventArgs e)
+        {
+            // when the panel's size changes we should resize the child TableLayoutPanel and maintain it's size ratio
+            Size panelSize = this.scHome1.Panel1.Size;
+            int extent = Math.Min(panelSize.Width - this.tableLayoutPanel1.Left, panelSize.Height - this.tableLayoutPanel1.Top);
+            this.tableLayoutPanel1.Size = new Size(extent, extent);
+
+            this.scHome2.SplitterDistance = extent / 2;
+        }
+
+        #endregion //scHome1_Panel1_SizeChanged
+
+        #region tcOrders_SelectedTabChanged
+
+        /// <summary>
+        /// Handles the SelectedTabChanged event of the tcOrders control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="Infragistics.Win.UltraWinTabControl.SelectedTabChangedEventArgs"/> instance containing the event data.</param>
+        private void tcOrders_SelectedTabChanged(object sender, Infragistics.Win.UltraWinTabControl.SelectedTabChangedEventArgs e)
+        {
+            switch (tcOrders.SelectedTab.Key)
+            {
+                case "Daily":
+                    //this.lblSchedule.Text = Properties.Resources.DailyOrdersSchedule;
+                    break;
+                case "Weekly":
+                    //this.lblSchedule.Text = Properties.Resources.WeeklyOrdersSchedule;
+                    break;
+                case "Monthly":
+                    //this.lblSchedule.Text = Properties.Resources.MonthlyOrdersSchedule;
+                    break;
+            }
+        }
+
+        #endregion //tcOrders_SelectedTabChanged
+
+        #region tableLayoutPanel3_SizeChanged
+
+        /// <summary>
+        /// Handles the SizeChanged event of the tableLayoutPanel3 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        /*private void tableLayoutPanel3_SizeChanged(object sender, EventArgs e)
+        {
+
+            float fontSize1 = 11;
+            float fontSize2 = 17;
+
+            if (this.tableLayoutPanel3.Width < 380)
+            {
+                fontSize1 = 8;
+                fontSize2 = 12;
+            }
+            else if (this.tableLayoutPanel3.Width < 450)
+            {
+                fontSize1 = 10;
+                fontSize2 = 14;
+            }
+
+            if (this.lblSold.Appearance.FontData.SizeInPoints != fontSize1)
+            {
+                    this.lblSold.Appearance.FontData.SizeInPoints = fontSize1;
+                    this.lblQuantity.Appearance.FontData.SizeInPoints = fontSize1;
+                    this.lblRevenue.Appearance.FontData.SizeInPoints = fontSize1;
+                    this.lblProfit.Appearance.FontData.SizeInPoints = fontSize1;
+                    this.lblSoldValue.Appearance.FontData.SizeInPoints = fontSize2;
+                    this.lblQuantityValue.Appearance.FontData.SizeInPoints = fontSize2;
+                    this.lblRevenueValue.Appearance.FontData.SizeInPoints = fontSize2;
+                    this.lblProfitValue.Appearance.FontData.SizeInPoints = fontSize2;
+            }
+        }*/
+
+        #endregion //tableLayoutPanel3_SizeChanged
+
+        #region ultraCalendarInfo1_AfterSelectedDateRangeChange
+
+        /// <summary>
+        /// Handles the AfterSelectedDateRangeChange event of the ultraCalendarInfo1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        private void ultraCalendarInfo1_AfterSelectedDateRangeChange(object sender, EventArgs e)
+        {
+            if (this.dateSelectionRecursionFlag)
+                return;
+
+            // If the selected days change, make sure the weekly DayView is showing the correct days.
+            if (this.ultraCalendarInfo1.SelectedDateRanges.SelectedDaysCount > 0)
+            {
+                Week week = this.ultraCalendarInfo1.SelectedDateRanges[0].FirstDay.Week;
+                this.SelectWorkWeek(week.WeekNumber, week.Year.YearNumber);
+            }
+        }
+
+        #endregion //ultraCalendarInfo1_AfterSelectedDateRangeChange
+
+        #region ultraCalendarInfo1_AppointmentDataInitialized
+
+        /// <summary>
+        /// Handles the AppointmentDataInitialized event of the ultraCalendarInfo1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="Infragistics.Win.UltraWinSchedule.AppointmentDataInitializedEventArgs"/> instance containing the event data.</param>
+        private void ultraCalendarInfo1_AppointmentDataInitialized(object sender, Infragistics.Win.UltraWinSchedule.AppointmentDataInitializedEventArgs e)
+        {
+            // Assign the bar and appointment color
+            Color[] colors = new Color[] 
+                {
+                    Color.FromArgb(255, 158, 179, 6),
+                    Color.FromArgb(255, 2, 107, 193),
+                    Color.FromArgb(255, 248, 90, 50),
+                    Color.FromArgb(255, 206, 26, 55),
+                    Color.FromArgb(255, 243, 156, 21),
+                    Color.FromArgb(255, 102, 24, 136)
+                };
+
+            Color color = colors[e.Appointment.BindingListIndex % colors.Length];
+
+            e.Appointment.BarColor = color;
+            e.Appointment.Appearance.BackColor = ControlPaint.Light(ControlPaint.LightLight(color));
+        }
+
+        #endregion //ultraCalendarInfo1_AppointmentDataInitialized
+
+        #region ultraCalendarInfo1_BeforeAlternateSelectedDateRangeChange
+
+        /// <summary>
+        /// Handles the BeforeAlternateSelectedDateRangeChange event of the ultraCalendarInfo1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="BeforeSelectedDateRangeChangeEventArgs"/> instance containing the event data.</param>
+        private void ultraCalendarInfo1_BeforeAlternateSelectedDateRangeChange(object sender, BeforeSelectedDateRangeChangeEventArgs e)
+        {
+
+            if (this.timeSlotSelectionRecursionFlag)
+            {
+                e.Cancel = true;
+                return;
+            }
+
+            if (this.dateSelectionRecursionFlag)
+                return;
+
+            if (this.ultraCalendarInfo1.AlternateSelectedDateRanges.SelectedDaysCount > 0 &&
+                e.NewSelectedDateRanges.SelectedDaysCount > 0)
+            {
+                Infragistics.Win.UltraWinSchedule.Day currentFirstDay = this.ultraCalendarInfo1.AlternateSelectedDateRanges[0].FirstDay;
+                Infragistics.Win.UltraWinSchedule.Day newFirstDay = e.NewSelectedDateRanges[0].FirstDay;
+
+                int compareValue = DateTime.Compare(currentFirstDay.Date, newFirstDay.Date);
+                if (compareValue > 0)
+                {
+                    this.SelectWorkWeek(currentFirstDay.Week.WeekNumber - 1, currentFirstDay.Week.Year.YearNumber);
+                    e.Cancel = true;
+                }
+                else if (compareValue < 0)
+                {
+                    this.SelectWorkWeek(currentFirstDay.Week.WeekNumber + 1, currentFirstDay.Week.Year.YearNumber);
+                    e.Cancel = true;
+                }
+            }
+        }
+
+        #endregion //ultraCalendarInfo1_BeforeAlternateSelectedDateRangeChange
+
+        #region Cancelled Schedule events
+
+        #region ultraCalendarInfo1_BeforeAppointmentAdded
+
+        /// <summary>
+        /// Handles the BeforeAppointmentAdded event of the ultraCalendarInfo1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="CancelableAppointmentEventArgs"/> instance containing the event data.</param>
+        /// <exception cref="System.NotImplementedException"></exception>
+        private void ultraCalendarInfo1_BeforeAppointmentAdded(object sender, CancelableAppointmentEventArgs e)
+        {
+            e.Cancel = true;
+        }
+
+        #endregion //ultraCalendarInfo1_BeforeAppointmentAdded
+
+        #region dayView_BeforeAppointmentsDeleted
+
+        /// <summary>
+        /// Handles the BeforeAppointmentsDeleted event of the dayView control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="BeforeAppointmentsDeletedEventArgs"/> instance containing the event data.</param>
+        private void dayView_BeforeAppointmentsDeleted(object sender, BeforeAppointmentsDeletedEventArgs e)
+        {
+            e.Cancel = true;
+        }
+
+        #endregion //dayView_BeforeAppointmentsDeleted
+
+        #region dayView_BeforeAppointmentEdited
+
+        /// <summary>
+        /// Handles the BeforeAppointmentEdited event of the UltraDayView controls.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="CancelableAppointmentEventArgs"/> instance containing the event data.</param>
+        private void dayView_BeforeAppointmentEdited(object sender, CancelableAppointmentEventArgs e)
+        {
+            // We don't want to show the default appointment dialog, so cancel the event
+            e.Cancel = true;
+        }
+
+        #endregion //dayView_BeforeAppointmentEdited
+
+        #region dayView_BeforeAppointmentsMoved
+
+        /// <summary>
+        /// Handles the BeforeAppointmentsMoved event of the dayView control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="CancelableAppointmentsEventArgs"/> instance containing the event data.</param>
+        private void dayView_BeforeAppointmentsMoved(object sender, CancelableAppointmentsEventArgs e)
+        {
+            e.Cancel = true;
+        }
+
+        #endregion //dayView_BeforeAppointmentsMoved
+
+        #region dayView_BeforeAppointmentResized
+
+        /// <summary>
+        /// Handles the BeforeAppointmentResized event of the dayView control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="BeforeAppointmentResizedEventArgs"/> instance containing the event data.</param>
+        private void dayView_BeforeAppointmentResized(object sender, BeforeAppointmentResizedEventArgs e)
+        {
+            e.Cancel = true;
+        }
+
+        #endregion //dayView_BeforeAppointmentResized
+
+        #region ultraCalendarInfo1_BeforeDisplayAppointmentDialog
+
+        /// <summary>
+        /// Handles the BeforeDisplayAppointmentDialog event of the ultraCalendarInfo1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="Infragistics.Win.UltraWinSchedule.DisplayAppointmentDialogEventArgs"/> instance containing the event data.</param>
+        private void ultraCalendarInfo1_BeforeDisplayAppointmentDialog(object sender, Infragistics.Win.UltraWinSchedule.DisplayAppointmentDialogEventArgs e)
+        {
+            // don't show the appointment dialog
+            e.Cancel = true;
+        }
+
+        #endregion //ultraCalendarInfo1_BeforeDisplayAppointmentDialog
+
+        #region mvMonthly_AppointmentsDragging
+
+        /// <summary>
+        /// Handles the AppointmentsDragging event of the mvMonthly control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="AppointmentsDraggingEventArgs"/> instance containing the event data.</param>
+        private void mvMonthly_AppointmentsDragging(object sender, AppointmentsDraggingEventArgs e)
+        {
+            e.Cancel = true;
+        }
+
+        #endregion //mvMonthly_AppointmentsDragging
+
+        #region mvMonthly_AppointmentResizing
+
+        /// <summary>
+        /// Handles the AppointmentResizing event of the mvMonthly control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="AppointmentResizingEventArgs"/> instance containing the event data.</param>
+        private void mvMonthly_AppointmentResizing(object sender, AppointmentResizingEventArgs e)
+        {
+            e.Cancel = true;
+        }
+
+        #endregion //mvMonthly_AppointmentResizing
+
+        #endregion //Cancelled Schedule events
+
+        #endregion //Event Handlers
+
+        #region Methods
+
+        #region GetLocalizedString
+        /// <summary>
+        /// Localizes a string using the ResourceManager.
+        /// </summary>
+        /// <param name="currentString"></param>
+        /// <returns></returns>
+        internal static string GetLocalizedString(string currentString)
+        {
+            ResourceManager rm = cipal.Properties.Resources.ResourceManager;
+            string localizedString = rm.GetString(currentString);
+            return (string.IsNullOrEmpty(localizedString) ? currentString : localizedString).Replace('_', ' ');
+        }
+        #endregion // GetLocalizedString
+
+        #region NavigateSchedule
+
+        /// <summary>
+        /// Navigates the schedule schedule controls.
+        /// </summary>
+        private void NavigateSchedule(string selectedTabKey, bool forward)
+        {
+            int directionOffset = forward ? 1 : -1;
+
+            switch (selectedTabKey)
+            {
+                case "Daily":
+                    this.ultraCalendarInfo1.ActivateDay(this.ultraCalendarInfo1.ActiveDay.Date.AddDays(directionOffset));
+                    this.ultraCalendarInfo1.SelectedDateRanges.Add(this.ultraCalendarInfo1.ActiveDay.Date, true);
+                    break;
+                case "Weekly":
+                    Week week = this.ultraCalendarInfo1.AlternateSelectedDateRanges[0].FirstDay.Week;
+                    this.SelectWorkWeek(week.WeekNumber + directionOffset, week.Year.YearNumber);
+                    break;
+                case "Monthly":
+                    this.ultraCalendarInfo1.ActivateDay(this.ultraCalendarInfo1.ActiveDay.Date.AddMonths(directionOffset));
+                    break;
+            }
+        }
+
+        #endregion //NavigateSchedule
+
+        #region SelectWorkWeek
+
+        private void SelectWorkWeek(int weekNum, int year)
+        {
+            if (this.dateSelectionRecursionFlag)
+                return;
+
+            this.dateSelectionRecursionFlag = true;
+            try
+            {
+                DateTime startOfWeek = this.ultraCalendarInfo1.GetDateForFirstDayOfWeek(weekNum, year);
+                while (this.ultraCalendarInfo1.DaysOfWeek[startOfWeek.DayOfWeek].IsWorkDay == false)
+                    startOfWeek = startOfWeek.AddDays(1);
+
+                this.ultraCalendarInfo1.AlternateSelectedDateRanges.Add(startOfWeek, this.ultraCalendarInfo1.WorkDaysPerWeek - 1, true);
+            }
+            finally
+            {
+                this.dateSelectionRecursionFlag = false;
+            }
+        }
+
+        #endregion // SelectWorkWeek
+
+        #region SetAppointmentBindings
+
+        /// <summary>
+        /// Set the Data Bindings for Appointments
+        /// </summary>
+        /// <param name="table"></param>
+        private void SetAppointmentBindings(DataTable table)
+        {
+            this.ultraCalendarInfo1.DataBindingsForAppointments.BindingContextControl = this;
+
+            // Basic Appointment properties
+            this.ultraCalendarInfo1.DataBindingsForAppointments.SubjectMember = "Subject";
+            this.ultraCalendarInfo1.DataBindingsForAppointments.DescriptionMember = "Description";
+
+            this.ultraCalendarInfo1.DataBindingsForAppointments.StartDateTimeMember = "StartDateTime";
+            this.ultraCalendarInfo1.DataBindingsForAppointments.EndDateTimeMember = "EndDateTime";
+
+            // DataSource & DataMember
+            this.ultraCalendarInfo1.DataBindingsForAppointments.SetDataBinding(table, null);
+        }
+
+
+
+        #endregion //SetAppointmentBindings
+
+        #endregion //Methods
+
+        private void frmCIPAL_Load(object sender, EventArgs e)
+        {
+            cipal.descargas.frmdocumentodigitalconsulta ofrmdocdigitales = new descargas.frmdocumentodigitalconsulta(0, 1, 1, this._conexionString);
+            AddFormInPanel(ofrmdocdigitales);
+        }
+
+        private void tccatalogos_SelectedTabChanged(object sender, Infragistics.Win.UltraWinTabControl.SelectedTabChangedEventArgs e)
+        {
+
+        }
+
+        private void ultraTabPageControl1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblStoreName_Inventory_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tcMain_SelectedTabChanged(object sender, Infragistics.Win.UltraWinTabControl.SelectedTabChangedEventArgs e)
+        {
+
+        }
+
+      
+    }
+}

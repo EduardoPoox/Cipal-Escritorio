@@ -1,0 +1,182 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using cipal.egresos;
+using cipal.entidades;
+using cipal.negocios;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
+
+namespace cipal.descargas
+{
+    public partial class frmopcionesrecibidos : Form
+    {
+        private string _connexionstring;
+        private int _idusuario;
+        private int _id;
+        private int _idconfig;
+
+        public bool update = false;
+
+        parametros oparametros = null;
+        empresa oempresa = null;
+        public frmopcionesrecibidos(int id, int idconfig, int idusuario, string connexionstring)
+        {
+            InitializeComponent();
+            this._connexionstring = connexionstring;
+            this._idusuario = idusuario;
+            this._id = id;
+            this._idconfig = idconfig;
+        }
+
+        private void frmopcionesrecibidos_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                cargainfo();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void cargainfo()
+        {
+            try
+            {
+                oempresa = empresanc.getempresa(this._id, this._connexionstring);
+                oparametros = parametronc.getparametro(this._idconfig, this._connexionstring);
+                this.txtdirinformes.Text = oparametros.dirinformes;
+
+                documentosdigitales odoc = documentodigitalnc.getgetdocumentodigital(this._id, this._connexionstring);
+                this.txtfoliointerno.Text = odoc.serie + odoc.folio;
+                this.txtuuid.Text = odoc.uuid;
+            }
+            catch (System.Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        private void btnsolicitud_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //if (grdsolicitudes.ActiveRow != null)
+                //{
+                //    int id = Convert.ToInt32(this.grdsolicitudes.ActiveRow.Cells["idsolicitud"].Value);
+                //    generarreporte(id);
+                //}
+
+
+
+
+
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+
+        public void generarreportesolicitud(int id)
+        {
+            try
+            {
+                solicitudes osolicitud = solicitudnc.getsolicitud(id, this._connexionstring);
+                empleados oempleado = empleadonc.getempleado((int)osolicitud.idempleado, this._connexionstring);
+                departamentos odepartamento = departamentonc.getdepartamento((int)osolicitud.iddepartamento, this._connexionstring);
+
+                //IMPUESTOS DEL CFDI
+                string query = "Select";
+                query += " isnull(unidades.simbologia,'SN') as unidad,";
+                query += " detsolicitudes.* ";
+                query += " From detsolicitudes ";
+                query += " Left Join unidades on detsolicitudes.idunidad = unidades.idunidad";
+                query += " where detsolicitudes.idsolicitud = " + osolicitud.idsolicitud.ToString();
+                DataTable dtDetalle = genericas.generales.executeDS(query, this._connexionstring).Tables[0];
+
+
+                DataSet dsEgresos = (DataSet)new cipal.egresos.datasets.dsegresos();
+                DataRow dataRow = dsEgresos.Tables["dtEncabezado"].NewRow();
+                dataRow["nombreempresa"] = oempresa.nombre;
+                dataRow["rfc"] = oempresa.rfc;
+                dataRow["domicilio"] = string.Empty;
+                dataRow["telefono"] = string.Empty;
+                dataRow["logo1"] = oparametros.logoizquierdo;
+                dataRow["logo2"] = oparametros.logoderecho;
+                dataRow["titulo"] = oparametros.leyenda1;
+                dataRow["subtitulo"] = "SOLICITUD DE MATERIALES";
+                dsEgresos.Tables["dtEncabezado"].Rows.Add(dataRow);
+
+                dataRow = dsEgresos.Tables["dtfirmas"].NewRow();
+                dataRow["fnombre1"] = oparametros.presidente;
+                dataRow["fpuesto1"] = "Presidente Municipal";
+                dataRow["fnombre2"] = oparametros.tesorero;
+                dataRow["fpuesto2"] = "Tesorero Municipal";
+                dataRow["fnombresolicita"] = oempleado.nombres + " " + oempleado.apellidopaterno + " " + oempleado.apellidomaterno;
+                dataRow["fpuestosolicita"] = odepartamento.nombre;
+                dsEgresos.Tables["dtfirmas"].Rows.Add(dataRow);
+
+                dataRow = dsEgresos.Tables["dtDocumento"].NewRow();
+                dataRow["fecha"] = osolicitud.fecha;
+                dataRow["folio"] = osolicitud.folio;
+                dataRow["nombreproveedor"] = string.Empty;
+                dataRow["rfcproveedor"] = string.Empty;
+                dataRow["comentarios"] = osolicitud.comentarios;
+                dataRow["subtotal"] = 0;
+                dataRow["iva"] = 0;
+                dataRow["ieps"] = 0;
+                dataRow["ivaretenido"] = 0;
+                dataRow["isr"] = 0;
+                dataRow["trasladoslocales"] = 0;
+                dataRow["retencioneslocales"] = 0;
+                dataRow["total"] = 0;
+                dataRow["comentarios"] = string.Empty;
+                dsEgresos.Tables["dtDocumento"].Rows.Add(dataRow);
+
+                for (int x = 0; x < dtDetalle.Rows.Count; x++)
+                {
+                    dataRow = dsEgresos.Tables["dtDocumentoDetalle"].NewRow();
+                    dataRow["unidad"] = Convert.ToString(dtDetalle.Rows[x]["unidad"]);
+                    dataRow["cantidad"] = Convert.ToDecimal(dtDetalle.Rows[x]["cantidad"]);
+                    dataRow["descripcion"] = Convert.ToString(dtDetalle.Rows[x]["descripcion"]);
+                    dsEgresos.Tables["dtDocumentoDetalle"].Rows.Add(dataRow);
+                }
+
+                dsEgresos.AcceptChanges();
+
+                String reportpath = Application.StartupPath + "\\Formatos\\rptsolicitud.rpt";
+                ReportDocument reportDocument = new ReportDocument();
+                reportDocument.Load(reportpath, OpenReportMethod.OpenReportByTempCopy);
+                reportDocument.SetDataSource(dsEgresos);
+
+
+                frmvisualizadoregresos frmVisualizador = new frmvisualizadoregresos(reportDocument);
+                frmVisualizador.Name = "Visualizador" + base.Name;
+                frmVisualizador.Text = "Solicitud";
+                frmVisualizador.ShowDialog();
+                reportDocument.Dispose();
+
+            }
+            catch (System.Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+
+
+
+    }
+}

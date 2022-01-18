@@ -1,0 +1,178 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+using cipal.entidades;
+using cipal.negocios;
+
+namespace cipal.gestion
+{
+    public partial class frmapoyoconsulta : Form
+    {
+        private string _connexionstring;
+        private int _idusuario;
+        public frmapoyoconsulta(int idusuario, string connexionstring)
+        {
+            InitializeComponent();
+            this._idusuario = idusuario;
+            this._connexionstring = connexionstring;
+        }
+
+        private void frmapoyoconsulta_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                cargartiposapoyos();
+
+                consultar();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void cargartiposapoyos()
+        {
+            try
+            {
+                List<tipoapoyos> olisttiposapoyos = tipoapoyonc.gettipoapoyos(this._connexionstring);
+                this.cmbtipoapoyo.SetDataBinding(olisttiposapoyos, null);
+                this.cmbtipoapoyo.ValueMember = "idtipoapoyo";
+                this.cmbtipoapoyo.DisplayMember = "nombre";
+                this.cmbtipoapoyo.SelectedIndex = 0;
+            }
+            catch (System.Exception ex)
+            {
+                throw ex;
+            }
+        }
+        private void consultar()
+        {
+            try
+            {
+                string folio = this.txtfolio.Text;
+                int idtipoapoyo = Convert.ToInt32(cmbtipoapoyo.Value);
+
+                List<vapoyos> olistvapoyos = vapoyonc.getapoyosbyparams(folio, idtipoapoyo,this._connexionstring);
+                this.grdapoyos.SetDataBinding(olistvapoyos, null);
+                foreach(Infragistics.Win.UltraWinGrid.UltraGridColumn oColumn in this.grdapoyos.DisplayLayout.Bands[0].Columns)
+                {
+                    oColumn.Hidden = true;
+                }
+                this.grdapoyos.DisplayLayout.Bands[0].Columns["nombreapoyo"].Hidden = false;
+                this.grdapoyos.DisplayLayout.Bands[0].Columns["nombrebeneficiario"].Hidden = false;
+                this.grdapoyos.DisplayLayout.Bands[0].Columns["folio"].Hidden = false;
+                this.grdapoyos.DisplayLayout.Bands[0].Columns["comentarios"].Hidden = false;
+                this.grdapoyos.DisplayLayout.Bands[0].Columns["fechasolicitud"].Hidden = false;
+                this.grdapoyos.DisplayLayout.Bands[0].Columns["fechaentrega"].Hidden = false;
+                this.grdapoyos.DisplayLayout.Bands[0].Columns["comentarios"].Hidden = false;
+
+                this.grdapoyos.DisplayLayout.Bands[0].Columns["nombreapoyo"].Header.Caption = "Tipo de apoyo";
+                this.grdapoyos.DisplayLayout.Bands[0].Columns["nombrebeneficiario"].Header.Caption = "Beneficiario";
+                this.grdapoyos.DisplayLayout.Bands[0].Columns["folio"].Header.Caption = "Folio";
+                this.grdapoyos.DisplayLayout.Bands[0].Columns["comentarios"].Header.Caption = "Comentarios";
+                this.grdapoyos.DisplayLayout.Bands[0].Columns["fechasolicitud"].Header.Caption = "Fecha de Solicitud";
+                this.grdapoyos.DisplayLayout.Bands[0].Columns["fechaentrega"].Header.Caption = "Fecha de Entrega";
+                this.grdapoyos.DisplayLayout.Bands[0].Columns["comentarios"].Header.Caption = "Estatus";
+
+
+                this.grdapoyos.DisplayLayout.AutoFitStyle = Infragistics.Win.UltraWinGrid.AutoFitStyle.ResizeAllColumns;
+            }
+            catch (System.Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        private void btnregistrar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmapoyo ofrmapoyo = new frmapoyo(0, this._idusuario, this._connexionstring);
+                ofrmapoyo.ShowDialog();
+                if (ofrmapoyo._update)
+                {
+                    consultar();
+                }
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+
+        private void btnconsultar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                consultar();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnborrar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int id = Convert.ToInt32(this.grdapoyos.ActiveRow.Cells["idapoyo"].Value);
+                if (MessageBox.Show("¿Esta seguro de borrar el registro", "Mensaje del Sistema", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    apoyos oapoyo = apoyonc.getapoyo(id, this._connexionstring);
+                    oapoyo.baja = true;
+                    apoyonc.update(oapoyo, this._connexionstring);
+
+                    consultar();
+
+                }
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btneditar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int id = Convert.ToInt32(this.grdapoyos.ActiveRow.Cells["idapoyo"].Value);
+                frmapoyo ofrmapoyo = new frmapoyo(id, this._idusuario, this._connexionstring);
+                ofrmapoyo.ShowDialog();
+                if (ofrmapoyo._update)
+                {
+                    consultar();
+                }
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+
+        private void grdapoyos_DoubleClickRow(object sender, Infragistics.Win.UltraWinGrid.DoubleClickRowEventArgs e)
+        {
+            try
+            {
+                btneditar_Click(null, null);
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+    }
+}

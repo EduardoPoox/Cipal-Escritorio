@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C81DDDE9-CECA-40BA-89B6-68D652D5CA66}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cipal.gestion</RootNamespace>
+    <AssemblyName>cipal.gestion</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.Shared.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.Misc.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinSchedule.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmapoyo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmapoyo.Designer.cs">
+      <DependentUpon>frmapoyo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmapoyoconsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmapoyoconsulta.Designer.cs">
+      <DependentUpon>frmapoyoconsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmapoyodetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmapoyodetalle.Designer.cs">
+      <DependentUpon>frmapoyodetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmconfdapempleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconfdapempleado.Designer.cs">
+      <DependentUpon>frmconfdapempleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmconfdapempleadosconsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconfdapempleadosconsulta.Designer.cs">
+      <DependentUpon>frmconfdapempleadosconsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmgestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgestion.Designer.cs">
+      <DependentUpon>frmgestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frminventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frminventario.Designer.cs">
+      <DependentUpon>frminventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frminventarioconsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frminventarioconsulta.Designer.cs">
+      <DependentUpon>frminventarioconsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frminventariodetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frminventariodetalle.Designer.cs">
+      <DependentUpon>frminventariodetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmapoyo.resx">
+      <DependentUpon>frmapoyo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmapoyoconsulta.resx">
+      <DependentUpon>frmapoyoconsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmapoyodetalle.resx">
+      <DependentUpon>frmapoyodetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconfdapempleado.resx">
+      <DependentUpon>frmconfdapempleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconfdapempleadosconsulta.resx">
+      <DependentUpon>frmconfdapempleadosconsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgestion.resx">
+      <DependentUpon>frmgestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frminventario.resx">
+      <DependentUpon>frminventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frminventarioconsulta.resx">
+      <DependentUpon>frminventarioconsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frminventariodetalle.resx">
+      <DependentUpon>frminventariodetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cipal.catalogos\cipal.catalogos.csproj">
+      <Project>{24AC37E4-D98F-4543-819F-EC731557B1F8}</Project>
+      <Name>cipal.catalogos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cipal.entidades\cipal.entidades.csproj">
+      <Project>{67b9c38e-bf2b-4e18-b83e-b057dcf2a0fb}</Project>
+      <Name>cipal.entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cipal.genericas\cipal.genericas.csproj">
+      <Project>{4dfbf486-a9e2-4a1e-93f0-590b0b20ec20}</Project>
+      <Name>cipal.genericas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cipal.negocios\cipal.negocios.csproj">
+      <Project>{ab1f3b7c-a49e-48a6-8a3a-b3112337bf66}</Project>
+      <Name>cipal.negocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

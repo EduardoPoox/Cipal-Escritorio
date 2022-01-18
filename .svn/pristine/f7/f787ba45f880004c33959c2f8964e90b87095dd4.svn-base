@@ -1,0 +1,37 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using cipal.entidades;
+using cipal.datos;
+
+namespace cipal.negocios
+{
+    public class vmantenimientonc
+    {
+        public static List<vmantenimientos> getvmantenimientos(string cnn)
+        {
+            vmantenimientodalc obj = new vmantenimientodalc(cnn);
+            return obj.getvmantenimientos();
+        }
+
+        public static List<vmantenimientos> getvmantenimientosbyparams(string folio, int idvehiculo,string cnn)
+        {
+            vmantenimientodalc obj = new vmantenimientodalc(cnn);
+            return obj.getvmantenimientosbyparams(folio, idvehiculo);
+        }
+
+        public static vmantenimientos getvmantenimiento(int id, string cnn)
+        {
+            vmantenimientodalc obj = new vmantenimientodalc(cnn);
+            return obj.getvmantenimiento(id);
+        }
+
+        public static List<vmantenimientos> getvmantenimientosbyiddocumentodigital(int iddocumentodigital,string cnn)
+        {
+            vmantenimientodalc obj = new vmantenimientodalc(cnn);
+            return obj.getvmantenimientosbyiddocumentodigital(iddocumentodigital);
+        }
+    }
+}

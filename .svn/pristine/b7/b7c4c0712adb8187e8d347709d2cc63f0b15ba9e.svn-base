@@ -1,0 +1,472 @@
+﻿namespace cipal.egresos
+{
+    partial class frmgasolinaconsulta
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance7 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance8 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance9 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance10 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance11 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance12 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance13 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance20 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance14 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance15 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance16 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance17 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance18 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance19 = new Infragistics.Win.Appearance();
+            this.gbgeneral = new Infragistics.Win.Misc.UltraGroupBox();
+            this.btnexportar = new Infragistics.Win.Misc.UltraButton();
+            this.btnvisualizar = new Infragistics.Win.Misc.UltraButton();
+            this.btnborrar = new Infragistics.Win.Misc.UltraButton();
+            this.btneditar = new Infragistics.Win.Misc.UltraButton();
+            this.btnregistrar = new Infragistics.Win.Misc.UltraButton();
+            this.grdgasolinas = new Infragistics.Win.UltraWinGrid.UltraGrid();
+            this.gbbusqueda = new Infragistics.Win.Misc.UltraGroupBox();
+            this.txtfolio = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.ultraLabel5 = new Infragistics.Win.Misc.UltraLabel();
+            this.cmbejercicios = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
+            this.ultraLabel3 = new Infragistics.Win.Misc.UltraLabel();
+            this.cmbperiodo = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
+            this.ultraLabel4 = new Infragistics.Win.Misc.UltraLabel();
+            this.cmbdepartamentos = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
+            this.ultraLabel2 = new Infragistics.Win.Misc.UltraLabel();
+            this.cmbfechafinal = new Infragistics.Win.UltraWinEditors.UltraDateTimeEditor();
+            this.ultraLabel1 = new Infragistics.Win.Misc.UltraLabel();
+            this.cmbfechainicial = new Infragistics.Win.UltraWinEditors.UltraDateTimeEditor();
+            this.cmbidempleado = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
+            this.lblidempleado = new Infragistics.Win.Misc.UltraLabel();
+            this.cmbvehiculos = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
+            this.lblidvehiculo = new Infragistics.Win.Misc.UltraLabel();
+            this.btnconsultar = new Infragistics.Win.Misc.UltraButton();
+            this.lblfolio = new Infragistics.Win.Misc.UltraLabel();
+            this.ugExcel = new Infragistics.Win.UltraWinGrid.ExcelExport.UltraGridExcelExporter(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.gbgeneral)).BeginInit();
+            this.gbgeneral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdgasolinas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gbbusqueda)).BeginInit();
+            this.gbbusqueda.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtfolio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbejercicios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbperiodo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbdepartamentos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbfechafinal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbfechainicial)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbidempleado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbvehiculos)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // gbgeneral
+            // 
+            this.gbgeneral.Controls.Add(this.btnexportar);
+            this.gbgeneral.Controls.Add(this.btnvisualizar);
+            this.gbgeneral.Controls.Add(this.btnborrar);
+            this.gbgeneral.Controls.Add(this.btneditar);
+            this.gbgeneral.Controls.Add(this.btnregistrar);
+            this.gbgeneral.Controls.Add(this.grdgasolinas);
+            this.gbgeneral.Controls.Add(this.gbbusqueda);
+            this.gbgeneral.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbgeneral.Location = new System.Drawing.Point(0, 0);
+            this.gbgeneral.Name = "gbgeneral";
+            this.gbgeneral.Size = new System.Drawing.Size(945, 450);
+            this.gbgeneral.TabIndex = 4;
+            this.gbgeneral.ViewStyle = Infragistics.Win.Misc.GroupBoxViewStyle.Office2003;
+            // 
+            // btnexportar
+            // 
+            this.btnexportar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnexportar.Location = new System.Drawing.Point(647, 28);
+            this.btnexportar.Name = "btnexportar";
+            this.btnexportar.Size = new System.Drawing.Size(293, 29);
+            this.btnexportar.TabIndex = 35;
+            this.btnexportar.Text = "EXPORTAR A EXCEL";
+            this.btnexportar.Click += new System.EventHandler(this.btnexportar_Click);
+            // 
+            // btnvisualizar
+            // 
+            this.btnvisualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnvisualizar.Location = new System.Drawing.Point(842, 61);
+            this.btnvisualizar.Name = "btnvisualizar";
+            this.btnvisualizar.Size = new System.Drawing.Size(98, 45);
+            this.btnvisualizar.TabIndex = 31;
+            this.btnvisualizar.Text = "VISUALIZAR";
+            this.btnvisualizar.Click += new System.EventHandler(this.btnvisualizar_Click);
+            // 
+            // btnborrar
+            // 
+            this.btnborrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnborrar.Location = new System.Drawing.Point(646, 108);
+            this.btnborrar.Name = "btnborrar";
+            this.btnborrar.Size = new System.Drawing.Size(98, 45);
+            this.btnborrar.TabIndex = 30;
+            this.btnborrar.Text = "BORRAR";
+            this.btnborrar.Click += new System.EventHandler(this.btnborrar_Click);
+            // 
+            // btneditar
+            // 
+            this.btneditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btneditar.Location = new System.Drawing.Point(744, 108);
+            this.btneditar.Name = "btneditar";
+            this.btneditar.Size = new System.Drawing.Size(98, 45);
+            this.btneditar.TabIndex = 29;
+            this.btneditar.Text = "EDITAR";
+            this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
+            // 
+            // btnregistrar
+            // 
+            this.btnregistrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnregistrar.Location = new System.Drawing.Point(842, 108);
+            this.btnregistrar.Name = "btnregistrar";
+            this.btnregistrar.Size = new System.Drawing.Size(98, 45);
+            this.btnregistrar.TabIndex = 28;
+            this.btnregistrar.Text = "REGISTRAR";
+            this.btnregistrar.Click += new System.EventHandler(this.btnregistrar_Click);
+            // 
+            // grdgasolinas
+            // 
+            this.grdgasolinas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            appearance1.BackColor = System.Drawing.SystemColors.Window;
+            appearance1.BorderColor = System.Drawing.SystemColors.InactiveCaption;
+            this.grdgasolinas.DisplayLayout.Appearance = appearance1;
+            this.grdgasolinas.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.grdgasolinas.DisplayLayout.CaptionVisible = Infragistics.Win.DefaultableBoolean.False;
+            appearance2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            appearance2.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance2.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance2.BorderColor = System.Drawing.SystemColors.Window;
+            this.grdgasolinas.DisplayLayout.GroupByBox.Appearance = appearance2;
+            appearance3.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.grdgasolinas.DisplayLayout.GroupByBox.BandLabelAppearance = appearance3;
+            this.grdgasolinas.DisplayLayout.GroupByBox.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
+            appearance4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            appearance4.BackColor2 = System.Drawing.SystemColors.Control;
+            appearance4.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance4.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.grdgasolinas.DisplayLayout.GroupByBox.PromptAppearance = appearance4;
+            this.grdgasolinas.DisplayLayout.MaxColScrollRegions = 1;
+            this.grdgasolinas.DisplayLayout.MaxRowScrollRegions = 1;
+            appearance5.BackColor = System.Drawing.SystemColors.Window;
+            appearance5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.grdgasolinas.DisplayLayout.Override.ActiveCellAppearance = appearance5;
+            appearance6.BackColor = System.Drawing.SystemColors.Highlight;
+            appearance6.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.grdgasolinas.DisplayLayout.Override.ActiveRowAppearance = appearance6;
+            this.grdgasolinas.DisplayLayout.Override.BorderStyleCell = Infragistics.Win.UIElementBorderStyle.Dotted;
+            this.grdgasolinas.DisplayLayout.Override.BorderStyleRow = Infragistics.Win.UIElementBorderStyle.Dotted;
+            appearance7.BackColor = System.Drawing.SystemColors.Window;
+            this.grdgasolinas.DisplayLayout.Override.CardAreaAppearance = appearance7;
+            appearance8.BorderColor = System.Drawing.Color.Silver;
+            appearance8.TextTrimming = Infragistics.Win.TextTrimming.EllipsisCharacter;
+            this.grdgasolinas.DisplayLayout.Override.CellAppearance = appearance8;
+            this.grdgasolinas.DisplayLayout.Override.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.RowSelect;
+            this.grdgasolinas.DisplayLayout.Override.CellPadding = 0;
+            appearance9.BackColor = System.Drawing.SystemColors.Control;
+            appearance9.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance9.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance9.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance9.BorderColor = System.Drawing.SystemColors.Window;
+            this.grdgasolinas.DisplayLayout.Override.GroupByRowAppearance = appearance9;
+            appearance10.TextHAlignAsString = "Left";
+            this.grdgasolinas.DisplayLayout.Override.HeaderAppearance = appearance10;
+            this.grdgasolinas.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti;
+            this.grdgasolinas.DisplayLayout.Override.HeaderStyle = Infragistics.Win.HeaderStyle.WindowsXPCommand;
+            appearance11.BackColor = System.Drawing.SystemColors.Window;
+            appearance11.BorderColor = System.Drawing.Color.Silver;
+            this.grdgasolinas.DisplayLayout.Override.RowAppearance = appearance11;
+            this.grdgasolinas.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
+            appearance12.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.grdgasolinas.DisplayLayout.Override.TemplateAddRowAppearance = appearance12;
+            this.grdgasolinas.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
+            this.grdgasolinas.DisplayLayout.ScrollStyle = Infragistics.Win.UltraWinGrid.ScrollStyle.Immediate;
+            this.grdgasolinas.DisplayLayout.ViewStyle = Infragistics.Win.UltraWinGrid.ViewStyle.SingleBand;
+            this.grdgasolinas.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.Horizontal;
+            this.grdgasolinas.Location = new System.Drawing.Point(9, 169);
+            this.grdgasolinas.Name = "grdgasolinas";
+            this.grdgasolinas.Size = new System.Drawing.Size(931, 276);
+            this.grdgasolinas.TabIndex = 25;
+            this.grdgasolinas.DoubleClickRow += new Infragistics.Win.UltraWinGrid.DoubleClickRowEventHandler(this.grdgasolinas_DoubleClickRow);
+            // 
+            // gbbusqueda
+            // 
+            appearance13.BackColor = System.Drawing.Color.Transparent;
+            this.gbbusqueda.Appearance = appearance13;
+            this.gbbusqueda.Controls.Add(this.txtfolio);
+            this.gbbusqueda.Controls.Add(this.ultraLabel5);
+            this.gbbusqueda.Controls.Add(this.cmbejercicios);
+            this.gbbusqueda.Controls.Add(this.ultraLabel3);
+            this.gbbusqueda.Controls.Add(this.cmbperiodo);
+            this.gbbusqueda.Controls.Add(this.ultraLabel4);
+            this.gbbusqueda.Controls.Add(this.cmbdepartamentos);
+            this.gbbusqueda.Controls.Add(this.ultraLabel2);
+            this.gbbusqueda.Controls.Add(this.cmbfechafinal);
+            this.gbbusqueda.Controls.Add(this.ultraLabel1);
+            this.gbbusqueda.Controls.Add(this.cmbfechainicial);
+            this.gbbusqueda.Controls.Add(this.cmbidempleado);
+            this.gbbusqueda.Controls.Add(this.lblidempleado);
+            this.gbbusqueda.Controls.Add(this.cmbvehiculos);
+            this.gbbusqueda.Controls.Add(this.lblidvehiculo);
+            this.gbbusqueda.Controls.Add(this.btnconsultar);
+            this.gbbusqueda.Controls.Add(this.lblfolio);
+            appearance20.FontData.BoldAsString = "True";
+            this.gbbusqueda.HeaderAppearance = appearance20;
+            this.gbbusqueda.Location = new System.Drawing.Point(7, 10);
+            this.gbbusqueda.Name = "gbbusqueda";
+            this.gbbusqueda.Size = new System.Drawing.Size(515, 153);
+            this.gbbusqueda.TabIndex = 24;
+            this.gbbusqueda.Text = "Búsqueda de información";
+            // 
+            // txtfolio
+            // 
+            this.txtfolio.Location = new System.Drawing.Point(96, 125);
+            this.txtfolio.Name = "txtfolio";
+            this.txtfolio.Size = new System.Drawing.Size(113, 21);
+            this.txtfolio.TabIndex = 67;
+            // 
+            // ultraLabel5
+            // 
+            appearance14.BackColor = System.Drawing.Color.Transparent;
+            this.ultraLabel5.Appearance = appearance14;
+            this.ultraLabel5.AutoSize = true;
+            this.ultraLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ultraLabel5.Location = new System.Drawing.Point(9, 129);
+            this.ultraLabel5.Name = "ultraLabel5";
+            this.ultraLabel5.Size = new System.Drawing.Size(29, 14);
+            this.ultraLabel5.TabIndex = 66;
+            this.ultraLabel5.Text = "Folio";
+            // 
+            // cmbejercicios
+            // 
+            this.cmbejercicios.Location = new System.Drawing.Point(96, 74);
+            this.cmbejercicios.Name = "cmbejercicios";
+            this.cmbejercicios.Size = new System.Drawing.Size(113, 21);
+            this.cmbejercicios.TabIndex = 65;
+            // 
+            // ultraLabel3
+            // 
+            this.ultraLabel3.AutoSize = true;
+            this.ultraLabel3.Location = new System.Drawing.Point(9, 78);
+            this.ultraLabel3.Name = "ultraLabel3";
+            this.ultraLabel3.Size = new System.Drawing.Size(47, 14);
+            this.ultraLabel3.TabIndex = 63;
+            this.ultraLabel3.Text = "Ejercicio";
+            // 
+            // cmbperiodo
+            // 
+            this.cmbperiodo.Location = new System.Drawing.Point(277, 75);
+            this.cmbperiodo.Name = "cmbperiodo";
+            this.cmbperiodo.Size = new System.Drawing.Size(116, 21);
+            this.cmbperiodo.TabIndex = 64;
+            this.cmbperiodo.ValueChanged += new System.EventHandler(this.cmbperiodo_ValueChanged);
+            // 
+            // ultraLabel4
+            // 
+            this.ultraLabel4.AutoSize = true;
+            this.ultraLabel4.Location = new System.Drawing.Point(228, 78);
+            this.ultraLabel4.Name = "ultraLabel4";
+            this.ultraLabel4.Size = new System.Drawing.Size(43, 14);
+            this.ultraLabel4.TabIndex = 62;
+            this.ultraLabel4.Text = "Periodo";
+            // 
+            // cmbdepartamentos
+            // 
+            this.cmbdepartamentos.Location = new System.Drawing.Point(97, 21);
+            this.cmbdepartamentos.Name = "cmbdepartamentos";
+            this.cmbdepartamentos.Size = new System.Drawing.Size(410, 21);
+            this.cmbdepartamentos.TabIndex = 36;
+            // 
+            // ultraLabel2
+            // 
+            appearance15.BackColor = System.Drawing.Color.Transparent;
+            this.ultraLabel2.Appearance = appearance15;
+            this.ultraLabel2.AutoSize = true;
+            this.ultraLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ultraLabel2.Location = new System.Drawing.Point(9, 24);
+            this.ultraLabel2.Name = "ultraLabel2";
+            this.ultraLabel2.Size = new System.Drawing.Size(82, 14);
+            this.ultraLabel2.TabIndex = 35;
+            this.ultraLabel2.Text = "Departamentos";
+            // 
+            // cmbfechafinal
+            // 
+            this.cmbfechafinal.Location = new System.Drawing.Point(277, 100);
+            this.cmbfechafinal.Name = "cmbfechafinal";
+            this.cmbfechafinal.Size = new System.Drawing.Size(116, 21);
+            this.cmbfechafinal.TabIndex = 34;
+            // 
+            // ultraLabel1
+            // 
+            appearance16.BackColor = System.Drawing.Color.Transparent;
+            this.ultraLabel1.Appearance = appearance16;
+            this.ultraLabel1.AutoSize = true;
+            this.ultraLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ultraLabel1.Location = new System.Drawing.Point(228, 105);
+            this.ultraLabel1.Name = "ultraLabel1";
+            this.ultraLabel1.Size = new System.Drawing.Size(13, 14);
+            this.ultraLabel1.TabIndex = 33;
+            this.ultraLabel1.Text = "al";
+            // 
+            // cmbfechainicial
+            // 
+            this.cmbfechainicial.Location = new System.Drawing.Point(96, 100);
+            this.cmbfechainicial.Name = "cmbfechainicial";
+            this.cmbfechainicial.Size = new System.Drawing.Size(113, 21);
+            this.cmbfechainicial.TabIndex = 32;
+            // 
+            // cmbidempleado
+            // 
+            this.cmbidempleado.Location = new System.Drawing.Point(-100, -100);
+            this.cmbidempleado.Name = "cmbidempleado";
+            this.cmbidempleado.Size = new System.Drawing.Size(378, 21);
+            this.cmbidempleado.TabIndex = 31;
+            this.cmbidempleado.Visible = false;
+            // 
+            // lblidempleado
+            // 
+            appearance17.BackColor = System.Drawing.Color.Transparent;
+            this.lblidempleado.Appearance = appearance17;
+            this.lblidempleado.AutoSize = true;
+            this.lblidempleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lblidempleado.Location = new System.Drawing.Point(-100, -100);
+            this.lblidempleado.Name = "lblidempleado";
+            this.lblidempleado.Size = new System.Drawing.Size(57, 14);
+            this.lblidempleado.TabIndex = 30;
+            this.lblidempleado.Text = "Empleado";
+            this.lblidempleado.Visible = false;
+            // 
+            // cmbvehiculos
+            // 
+            this.cmbvehiculos.Location = new System.Drawing.Point(96, 48);
+            this.cmbvehiculos.Name = "cmbvehiculos";
+            this.cmbvehiculos.Size = new System.Drawing.Size(410, 21);
+            this.cmbvehiculos.TabIndex = 29;
+            // 
+            // lblidvehiculo
+            // 
+            appearance18.BackColor = System.Drawing.Color.Transparent;
+            this.lblidvehiculo.Appearance = appearance18;
+            this.lblidvehiculo.AutoSize = true;
+            this.lblidvehiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblidvehiculo.Location = new System.Drawing.Point(9, 51);
+            this.lblidvehiculo.Name = "lblidvehiculo";
+            this.lblidvehiculo.Size = new System.Drawing.Size(53, 14);
+            this.lblidvehiculo.TabIndex = 28;
+            this.lblidvehiculo.Text = "Vehículos";
+            // 
+            // btnconsultar
+            // 
+            this.btnconsultar.Location = new System.Drawing.Point(399, 100);
+            this.btnconsultar.Name = "btnconsultar";
+            this.btnconsultar.Size = new System.Drawing.Size(107, 46);
+            this.btnconsultar.TabIndex = 27;
+            this.btnconsultar.Text = "CONSULTAR";
+            this.btnconsultar.Click += new System.EventHandler(this.btnconsultar_Click);
+            // 
+            // lblfolio
+            // 
+            appearance19.BackColor = System.Drawing.Color.Transparent;
+            this.lblfolio.Appearance = appearance19;
+            this.lblfolio.AutoSize = true;
+            this.lblfolio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblfolio.Location = new System.Drawing.Point(9, 105);
+            this.lblfolio.Name = "lblfolio";
+            this.lblfolio.Size = new System.Drawing.Size(61, 14);
+            this.lblfolio.TabIndex = 18;
+            this.lblfolio.Text = "Periodo del ";
+            // 
+            // frmgasolinaconsulta
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(945, 450);
+            this.Controls.Add(this.gbgeneral);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "frmgasolinaconsulta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Bitácoras de combustible";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmgasolinaconsulta_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gbgeneral)).EndInit();
+            this.gbgeneral.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.grdgasolinas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gbbusqueda)).EndInit();
+            this.gbbusqueda.ResumeLayout(false);
+            this.gbbusqueda.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtfolio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbejercicios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbperiodo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbdepartamentos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbfechafinal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbfechainicial)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbidempleado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbvehiculos)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private Infragistics.Win.Misc.UltraGroupBox gbgeneral;
+        private Infragistics.Win.Misc.UltraButton btnborrar;
+        private Infragistics.Win.Misc.UltraButton btneditar;
+        private Infragistics.Win.Misc.UltraButton btnregistrar;
+        private Infragistics.Win.UltraWinGrid.UltraGrid grdgasolinas;
+        private Infragistics.Win.Misc.UltraGroupBox gbbusqueda;
+        private Infragistics.Win.UltraWinEditors.UltraComboEditor cmbidempleado;
+        private Infragistics.Win.Misc.UltraLabel lblidempleado;
+        private Infragistics.Win.UltraWinEditors.UltraComboEditor cmbvehiculos;
+        private Infragistics.Win.Misc.UltraLabel lblidvehiculo;
+        private Infragistics.Win.Misc.UltraButton btnconsultar;
+        private Infragistics.Win.Misc.UltraLabel lblfolio;
+        private Infragistics.Win.UltraWinEditors.UltraDateTimeEditor cmbfechafinal;
+        private Infragistics.Win.Misc.UltraLabel ultraLabel1;
+        private Infragistics.Win.UltraWinEditors.UltraDateTimeEditor cmbfechainicial;
+        private Infragistics.Win.UltraWinEditors.UltraComboEditor cmbdepartamentos;
+        private Infragistics.Win.Misc.UltraLabel ultraLabel2;
+        private Infragistics.Win.UltraWinEditors.UltraComboEditor cmbejercicios;
+        private Infragistics.Win.Misc.UltraLabel ultraLabel3;
+        private Infragistics.Win.UltraWinEditors.UltraComboEditor cmbperiodo;
+        private Infragistics.Win.Misc.UltraLabel ultraLabel4;
+        private Infragistics.Win.Misc.UltraLabel ultraLabel5;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtfolio;
+        private Infragistics.Win.Misc.UltraButton btnvisualizar;
+        private Infragistics.Win.Misc.UltraButton btnexportar;
+        private Infragistics.Win.UltraWinGrid.ExcelExport.UltraGridExcelExporter ugExcel;
+    }
+}

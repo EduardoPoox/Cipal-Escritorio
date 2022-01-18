@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67B9C38E-BF2B-4E18-B83E-B057DCF2A0FB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cipal.entidades</RootNamespace>
+    <AssemblyName>cipal.entidades</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <HintPath>..\packages\Office.Interop.Excel.12.0.0\lib\net40\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Office, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <HintPath>..\packages\Office.12.0.0\lib\net40\Office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="apoyos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="beneficiarios.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cfdiformapago.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cfdimetodopago.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cfdiorigenrecurso.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cfdiperiodicidad.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cfdiregimenfiscal.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cfdiriesgopuesto.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cfditasaimpuesto.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cfditipocontrato.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cfditipojornada.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cfditiponomina.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cfditiporegimen.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cfditiporelacionfiscal.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cfdiuso.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cobropredial.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="conceptos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="confdapempleados.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="constancias.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contribuyentes.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contribuyentesapocrifos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBcipal.cs" />
+    <Compile Include="departamentos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="detapoyos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="detconstancias.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="detgasolinas.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="detinformes.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="detmantenimientos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="detordenes.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="detpedidos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="detsolicitudes.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="documentosdigitales.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="documentosdigitalesconceptos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="documentosdigitalesimpuestos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="empleados.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="empresa.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="formatos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gasolinas.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="impdetpedidos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="impuestos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="informes.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ingresos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="inventarios.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="movinventarios.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ordenes.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="parametros.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pedidos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="proveedores.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="puestos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="seriesfoliacion.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="solicitudes.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="solicitudesdescargas.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tipoapoyos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tipoingresos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="unidades.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="valorpredial.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vapoyos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vconfdapempleados.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vconstancias.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vehiculos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vgasolinas.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vinformes.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vingresos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vinventarios.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vmantenimientos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vordenes.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vpedidos.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vsolicitudes.cs">
+      <DependentUpon>DBcipal.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DBcipal.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DBcipal1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

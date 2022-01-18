@@ -1,0 +1,161 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+using cipal.entidades;
+using cipal.negocios;
+
+namespace cipal.descargas
+{
+    public partial class frmimpresionmultiplesregistros : Form
+    {
+        private string _connexionstring;
+        private int _idusuario;
+        private int _id;
+        private int _idconfig;
+
+        public bool update = false;
+        private string _tipoformato = "";
+        public frmimpresionmultiplesregistros(int id, int idconfig, int idusuario,string tipoformato, string connexionstring)
+        {
+            InitializeComponent();
+            this._connexionstring = connexionstring;
+            this._idusuario = idusuario;
+            this._id = id;
+            this._idconfig = idconfig;
+            this._tipoformato = tipoformato;
+        }
+
+        private void frmimpresionmultiplesregistros_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                cargainfo();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void cargainfo()
+        {
+            try
+            {
+                parametros oconfig = parametronc.getparametro(this._idconfig, this._connexionstring);
+                this.txtdirinformes.Text = oconfig.dirinformes;
+
+                documentosdigitales odoc = documentodigitalnc.getgetdocumentodigital(this._id, this._connexionstring);
+                this.txtfoliointerno.Text = odoc.serie + odoc.folio;
+                this.txtuuid.Text = odoc.uuid;
+                this.txttipoformato.Text = this._tipoformato;
+
+                if (this._tipoformato == "combustible")
+                {
+                    this.btntipoformato.Text = "COMBUSTIBLE";
+                    List<gasolinas> ogasolinas = gasolinanc.getgasolinasbyiddocumentodigital(odoc.iddocumentodigital,this._connexionstring);
+                    this.grdregistrosformatos.SetDataBinding(ogasolinas, null);
+                    foreach (Infragistics.Win.UltraWinGrid.UltraGridColumn oColumn in this.grdregistrosformatos.DisplayLayout.Bands[0].Columns)
+                    {
+                        oColumn.Hidden = true;
+                    }
+                }
+                else
+                {
+                    this.btntipoformato.Text = "MANTENIMIENTO";
+                    List<mantenimientos> omantenimientos = mantenimientonc.getmantenimientosbyiddocumentodigital(odoc.iddocumentodigital, this._connexionstring);
+                    this.grdregistrosformatos.SetDataBinding(omantenimientos, null);
+                    foreach (Infragistics.Win.UltraWinGrid.UltraGridColumn oColumn in this.grdregistrosformatos.DisplayLayout.Bands[0].Columns)
+                    {
+                        oColumn.Hidden = true;
+                    }
+                }
+
+                this.grdregistrosformatos.DisplayLayout.Bands[0].Columns["folio"].Hidden = false;
+                this.grdregistrosformatos.DisplayLayout.Bands[0].Columns["fecha"].Hidden = false;
+                this.grdregistrosformatos.DisplayLayout.Bands[0].Columns["comentarios"].Hidden = false;
+
+                this.grdregistrosformatos.DisplayLayout.Bands[0].Columns["folio"].Header.Caption = "Folio";
+                this.grdregistrosformatos.DisplayLayout.Bands[0].Columns["fecha"].Header.Caption = "Fecha";
+                this.grdregistrosformatos.DisplayLayout.Bands[0].Columns["comentarios"].Header.Caption = "Comentarios";
+
+                this.grdregistrosformatos.DisplayLayout.AutoFitStyle = Infragistics.Win.UltraWinGrid.AutoFitStyle.ResizeAllColumns;
+
+                this.grdregistrosformatos_Click(null, null);
+            }
+            catch (System.Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        private void btntipoformato_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (this.grdregistrosformatos.ActiveRow != null)
+                {
+                    if (this._tipoformato == "combustible")
+                    {
+
+
+                    }
+                    else
+                    {
+
+                    }
+                }
+
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnimprimirtodos_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                foreach (Infragistics.Win.UltraWinGrid.UltraGridRow orow in this.grdregistrosformatos.Rows)
+                {
+                    if (this._tipoformato == "combustible")
+                    {
+
+
+                    }
+                    else
+                    {
+
+                    }
+                }
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void grdregistrosformatos_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.btntipoformato.Enabled = false;
+                if (this.grdregistrosformatos.ActiveRow != null)
+                {
+                    this.btntipoformato.Enabled = true;
+                }
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+    }
+}

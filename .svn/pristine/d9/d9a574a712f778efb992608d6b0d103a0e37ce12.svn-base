@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace cipal
+{
+    public partial class frmSpashScreen : Form
+    {
+		int cnt = 0;
+        public frmSpashScreen()
+        {
+            InitializeComponent();
+        }
+
+
+        private void frmSpashScreen_Load(object sender, EventArgs e)
+        {
+			lbCopyright.Text = "Copyright © " + DateTime.Today.Year;
+			tmrSplash.Start();
+		}
+
+		private void tmrSplash_Tick(object sender, EventArgs e)
+		{
+			if(cnt<5)
+			{
+				cnt++;
+				if (this.Opacity < 100)
+					this.Opacity = this.Opacity + 18;
+			}
+			else
+            {
+				tmrSplash.Stop();
+				Close();
+			}
+		}
+	}
+}

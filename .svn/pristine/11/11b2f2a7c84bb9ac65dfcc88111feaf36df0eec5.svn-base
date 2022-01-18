@@ -1,0 +1,125 @@
+﻿
+namespace cipal
+{
+    partial class frmSpashScreen
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSpashScreen));
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.lbCopyright = new Infragistics.Win.Misc.UltraLabel();
+            this.ultraLabel1 = new Infragistics.Win.Misc.UltraLabel();
+            this.tmrSplash = new System.Windows.Forms.Timer(this.components);
+            this.ultraPictureBox1 = new Infragistics.Win.UltraWinEditors.UltraPictureBox();
+            this.SuspendLayout();
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(33)))), ((int)(((byte)(70)))));
+            this.progressBar1.Location = new System.Drawing.Point(6, 227);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(504, 10);
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.progressBar1.TabIndex = 2;
+            // 
+            // lbCopyright
+            // 
+            appearance1.BackColor = System.Drawing.Color.Transparent;
+            appearance1.ForeColor = System.Drawing.Color.White;
+            appearance1.TextHAlignAsString = "Center";
+            appearance1.TextVAlignAsString = "Middle";
+            this.lbCopyright.Appearance = appearance1;
+            this.lbCopyright.Location = new System.Drawing.Point(6, 243);
+            this.lbCopyright.Name = "lbCopyright";
+            this.lbCopyright.Size = new System.Drawing.Size(504, 17);
+            this.lbCopyright.TabIndex = 23;
+            this.lbCopyright.Text = "Copyright ";
+            // 
+            // ultraLabel1
+            // 
+            appearance2.BackColor = System.Drawing.Color.Transparent;
+            appearance2.ForeColor = System.Drawing.Color.White;
+            appearance2.TextHAlignAsString = "Center";
+            appearance2.TextVAlignAsString = "Middle";
+            this.ultraLabel1.Appearance = appearance2;
+            this.ultraLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ultraLabel1.Location = new System.Drawing.Point(6, 266);
+            this.ultraLabel1.Name = "ultraLabel1";
+            this.ultraLabel1.Size = new System.Drawing.Size(504, 17);
+            this.ultraLabel1.TabIndex = 24;
+            this.ultraLabel1.Text = "cipal.com.mx";
+            // 
+            // tmrSplash
+            // 
+            this.tmrSplash.Interval = 1000;
+            this.tmrSplash.Tick += new System.EventHandler(this.tmrSplash_Tick);
+            // 
+            // ultraPictureBox1
+            // 
+            this.ultraPictureBox1.BorderShadowColor = System.Drawing.Color.Empty;
+            this.ultraPictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ultraPictureBox1.Image = ((object)(resources.GetObject("ultraPictureBox1.Image")));
+            this.ultraPictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.ultraPictureBox1.Name = "ultraPictureBox1";
+            this.ultraPictureBox1.Size = new System.Drawing.Size(516, 221);
+            this.ultraPictureBox1.TabIndex = 0;
+            // 
+            // frmSpashScreen
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(33)))), ((int)(((byte)(70)))));
+            this.ClientSize = new System.Drawing.Size(516, 298);
+            this.Controls.Add(this.ultraLabel1);
+            this.Controls.Add(this.lbCopyright);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.ultraPictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "frmSpashScreen";
+            this.Opacity = 0.1D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "frmSpashScreen";
+            this.Load += new System.EventHandler(this.frmSpashScreen_Load);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private Infragistics.Win.UltraWinEditors.UltraPictureBox ultraPictureBox1;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private Infragistics.Win.Misc.UltraLabel lbCopyright;
+        private Infragistics.Win.Misc.UltraLabel ultraLabel1;
+        private System.Windows.Forms.Timer tmrSplash;
+    }
+}

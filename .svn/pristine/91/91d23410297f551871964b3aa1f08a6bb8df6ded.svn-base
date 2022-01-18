@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<configSections>
+		<!-- For more information on Entity Framework configuration, visit http://go.microsoft.com/fwlink/?LinkID=237468 -->
+		<section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+	<!-- For more information on Entity Framework configuration, visit http://go.microsoft.com/fwlink/?LinkID=237468 --></configSections>
+	<connectionStrings>
+		<add name="DBcipalEntities" connectionString="metadata=res://*/DBcipal.csdl|res://*/DBcipal.ssdl|res://*/DBcipal.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=DESKTOP-K9THJ6R\SQLSERVER2014;initial catalog=cipal_aaa010101aaa_municipio_de_merida;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+	</connectionStrings>
+	<startup useLegacyV2RuntimeActivationPolicy="true">
+		<supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6.1" />
+	</startup>
+	<entityFramework>
+		<defaultConnectionFactory type="System.Data.Entity.Infrastructure.LocalDbConnectionFactory, EntityFramework">
+			<parameters>
+				<parameter value="mssqllocaldb" />
+			</parameters>
+		</defaultConnectionFactory>
+		<providers>
+			<provider invariantName="System.Data.SqlClient" type="System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer" />
+		</providers>
+	</entityFramework>
+  <system.serviceModel>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="BasicHttpBinding_IConsultaCFDIService">
+          <security mode="Transport" />
+        </binding>
+      </basicHttpBinding>
+    </bindings>
+    <client>
+      <endpoint address="https://consultaqr.facturaelectronica.sat.gob.mx/ConsultaCFDIService.svc"
+          binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IConsultaCFDIService"
+          contract="consultaestatus.IConsultaCFDIService" name="BasicHttpBinding_IConsultaCFDIService" />
+    </client>
+  </system.serviceModel>
+</configuration>

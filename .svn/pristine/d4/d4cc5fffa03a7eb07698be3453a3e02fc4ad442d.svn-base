@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{32577CBD-9C6E-4784-8E42-E36E827861DD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>cipal</RootNamespace>
+    <AssemblyName>cipal</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\componentes\CrystalReports\CrystalDecisions.CrystalReports.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\componentes\CrystalReports\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\componentes\CrystalReports\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\componentes\CrystalReports\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\componentes\CrystalReports\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.Misc.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinChart.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinListView.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinSchedule.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.v20.1, Version=20.1.20201.12, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <HintPath>..\packages\Office.Interop.Excel.12.0.0\lib\net40\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Office, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <HintPath>..\packages\Office.12.0.0\lib\net40\Office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Filters\DayViewUIFilter.cs" />
+    <Compile Include="Filters\EditorButtonUIFilter.cs" />
+    <Compile Include="Filters\GridUIFilter.cs" />
+    <Compile Include="Filters\MonthViewUIFilter.cs" />
+    <Compile Include="Filters\NoFocusRectDrawFilter.cs" />
+    <Compile Include="frmMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMDI.Designer.cs">
+      <DependentUpon>frmMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCIPAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCIPAL.Designer.cs">
+      <DependentUpon>frmCIPAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmMDI.resx">
+      <DependentUpon>frmMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCIPAL.ja.resx">
+      <DependentUpon>frmCIPAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCIPAL.resx">
+      <DependentUpon>frmCIPAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\Theme.isl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cipal.catalogos\cipal.catalogos.csproj">
+      <Project>{24ac37e4-d98f-4543-819f-ec731557b1f8}</Project>
+      <Name>cipal.catalogos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cipal.componentes\cipal.componentes.csproj">
+      <Project>{ebf0bd88-a3af-45ef-baf5-f2b76ab04716}</Project>
+      <Name>cipal.componentes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cipal.configuraciones\cipal.configuraciones.csproj">
+      <Project>{bfc9a02f-f300-4ca4-a0df-4c4db9066716}</Project>
+      <Name>cipal.configuraciones</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cipal.datos\cipal.datos.csproj">
+      <Project>{754b6623-e4b0-42fb-8e51-c6f5f45275ed}</Project>
+      <Name>cipal.datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cipal.descargas\cipal.descargas.csproj">
+      <Project>{fff848cd-747c-4829-b0aa-460e68eba7a7}</Project>
+      <Name>cipal.descargas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cipal.egresos\cipal.egresos.csproj">
+      <Project>{0dcdd395-7f01-486d-9f17-6b5ae5f8ac2d}</Project>
+      <Name>cipal.egresos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cipal.entidades\cipal.entidades.csproj">
+      <Project>{67b9c38e-bf2b-4e18-b83e-b057dcf2a0fb}</Project>
+      <Name>cipal.entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cipal.formatos\cipal.formatos.csproj">
+      <Project>{b07b8e89-7e1a-4e0e-b4e3-9471fc1dc349}</Project>
+      <Name>cipal.formatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cipal.genericas\cipal.genericas.csproj">
+      <Project>{4dfbf486-a9e2-4a1e-93f0-590b0b20ec20}</Project>
+      <Name>cipal.genericas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cipal.gestion\cipal.gestion.csproj">
+      <Project>{c81ddde9-ceca-40ba-89b6-68d652d5ca66}</Project>
+      <Name>cipal.gestion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cipal.ingresos\cipal.ingresos.csproj">
+      <Project>{5ae4f7f2-daa3-4460-83ac-5d2d27832e26}</Project>
+      <Name>cipal.ingresos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cipal.negocios\cipal.negocios.csproj">
+      <Project>{ab1f3b7c-a49e-48a6-8a3a-b3112337bf66}</Project>
+      <Name>cipal.negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cipal.seguridad\cipal.seguridad.csproj">
+      <Project>{2f4ae006-de50-476d-9961-a36c723e6d58}</Project>
+      <Name>cipal.seguridad</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logotipo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beneficiarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contribuyentes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proveedores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.ico" />
+    <Content Include="Images\Customers - Gray - 36x36.png" />
+    <Content Include="Images\Customers - White - 36x36.png" />
+    <Content Include="Images\Customers 116x116.png" />
+    <Content Include="Images\Customers Export - Color - 16x16.png" />
+    <Content Include="Images\Customers Export - White - 16x16.png" />
+    <Content Include="Images\Customers FullList - Color - 16x16.png" />
+    <Content Include="Images\Customers FullList - White - 16x16.png" />
+    <Content Include="Images\Customers NewCustomer - Color - 16x16.png" />
+    <Content Include="Images\Customers NewCustomer - White - 16x16.png" />
+    <Content Include="Images\Customers NewSupplier - Color - 16x16.png" />
+    <Content Include="Images\Customers NewSupplier - White - 16x16.png" />
+    <Content Include="Images\Home - Gray - 36x36.png" />
+    <Content Include="Images\Home - White - 36x36.png" />
+    <Content Include="Images\Home NewProduct.png" />
+    <Content Include="Images\Inventory - Gray - 36x36.png" />
+    <Content Include="Images\Inventory - White - 36x36.png" />
+    <Content Include="Images\Inventory 116x116.png" />
+    <Content Include="Images\Inventory AddNewProduct - Color - 16x16.png" />
+    <Content Include="Images\Inventory AddNewProduct - White - 16x16.png" />
+    <Content Include="Images\Inventory ExportProduct - Color - 16x16.png" />
+    <Content Include="Images\Inventory ExportProduct - White - 16x16.png" />
+    <Content Include="Images\Inventory ImportProduct - Color - 16x16.png" />
+    <Content Include="Images\Inventory ImportProduct - White - 16x16.png" />
+    <Content Include="Images\Inventory Product - Color - 16x16.png" />
+    <Content Include="Images\Inventory Product - White - 16x16.png" />
+    <Content Include="Images\MoreActivityIndicator_Down.png" />
+    <Content Include="Images\MoreActivityIndicator_Up.png" />
+    <Content Include="Images\NavigationArrow - Next - 16x16.png" />
+    <Content Include="Images\NavigationArrow - Previous - 16x16.png" />
+    <Content Include="Images\Orders - Gray - 36x36.png" />
+    <Content Include="Images\Orders - White - 36x36.png" />
+    <Content Include="Images\Orders 116x116.png" />
+    <Content Include="Images\Orders Daily - Color - 16x16.png" />
+    <Content Include="Images\Orders Daily - White - 16x16.png" />
+    <Content Include="Images\Orders Monthly - Color - 16x16.png" />
+    <Content Include="Images\Orders Monthly - White - 16x16.png" />
+    <Content Include="Images\Orders Weekly - Color - 16x16.png" />
+    <Content Include="Images\Orders Weekly - White - 16x16.png" />
+    <Content Include="Images\Reports - Gray - 36x36.png" />
+    <Content Include="Images\Reports - White - 36x36.png" />
+    <Content Include="Images\Reports 116x116.png" />
+    <Content Include="Images\WinChart.png" />
+    <Content Include="Images\WinDayView.png" />
+    <Content Include="Images\WinFormManager.png" />
+    <Content Include="Images\WinGrid.png" />
+    <Content Include="Images\WinTab.png" />
+    <None Include="Resources\Mesa de trabajo 1 copia 16.png" />
+    <None Include="Resources\logojpg1.jpeg" />
+    <None Include="Resources\LOGO_FINAL_CIPAL_Mesa de trabajo 1 copia 3.png" />
+    <None Include="Resources\LOGO_FINAL_CIPAL_Mesa de trabajo 1 copia 42.png" />
+    <None Include="Resources\logojpg.jpeg" />
+    <None Include="Resources\LOGO_FINAL_CIPAL_Mesa de trabajo 1 copia 41.png" />
+    <None Include="Resources\LOGO_FINAL_CIPAL_Mesa de trabajo 1 copia 4.png" />
+    <None Include="Resources\Mesa de trabajo 4 copia 3.png" />
+    <None Include="Resources\Mesa de trabajo 10 copia 16-8.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

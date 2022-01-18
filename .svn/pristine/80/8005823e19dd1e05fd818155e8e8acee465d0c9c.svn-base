@@ -1,0 +1,191 @@
+﻿namespace cipal.componentes.seguridad
+{
+    partial class frmLogin
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance7 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance8 = new Infragistics.Win.Appearance();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
+            this.gbcontainer = new Infragistics.Win.Misc.UltraGroupBox();
+            this.txtusername = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.btnCancelar = new Infragistics.Win.Misc.UltraButton();
+            this.btnIniciarSesion = new Infragistics.Win.Misc.UltraButton();
+            this.lblpassword = new Infragistics.Win.Misc.UltraLabel();
+            this.lblusername = new Infragistics.Win.Misc.UltraLabel();
+            this.err = new System.Windows.Forms.ErrorProvider(this.components);
+            this.txtpassword = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.ultraPictureBox1 = new Infragistics.Win.UltraWinEditors.UltraPictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.gbcontainer)).BeginInit();
+            this.gbcontainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtusername)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.err)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtpassword)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // gbcontainer
+            // 
+            this.gbcontainer.Controls.Add(this.ultraPictureBox1);
+            this.gbcontainer.Controls.Add(this.txtpassword);
+            this.gbcontainer.Controls.Add(this.txtusername);
+            this.gbcontainer.Controls.Add(this.btnCancelar);
+            this.gbcontainer.Controls.Add(this.btnIniciarSesion);
+            this.gbcontainer.Controls.Add(this.lblpassword);
+            this.gbcontainer.Controls.Add(this.lblusername);
+            this.gbcontainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbcontainer.Location = new System.Drawing.Point(0, 0);
+            this.gbcontainer.Name = "gbcontainer";
+            this.gbcontainer.Size = new System.Drawing.Size(345, 145);
+            this.gbcontainer.TabIndex = 1;
+            this.gbcontainer.ViewStyle = Infragistics.Win.Misc.GroupBoxViewStyle.Office2003;
+            // 
+            // txtusername
+            // 
+            this.txtusername.Location = new System.Drawing.Point(135, 25);
+            this.txtusername.Name = "txtusername";
+            this.txtusername.Size = new System.Drawing.Size(184, 21);
+            this.txtusername.TabIndex = 0;
+            this.txtusername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtusername_KeyDown);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            appearance5.ForeColor = System.Drawing.Color.White;
+            appearance5.ImageBackground = global::cipal.componentes.Properties.Resources.btnLeave;
+            this.btnCancelar.Appearance = appearance5;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(135, 101);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(72, 31);
+            this.btnCancelar.TabIndex = 3;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnIniciarSesion
+            // 
+            this.btnIniciarSesion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            appearance6.ForeColor = System.Drawing.Color.White;
+            appearance6.ImageBackground = global::cipal.componentes.Properties.Resources.btnLeave;
+            this.btnIniciarSesion.Appearance = appearance6;
+            this.btnIniciarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciarSesion.Location = new System.Drawing.Point(213, 101);
+            this.btnIniciarSesion.Name = "btnIniciarSesion";
+            this.btnIniciarSesion.Size = new System.Drawing.Size(106, 31);
+            this.btnIniciarSesion.TabIndex = 2;
+            this.btnIniciarSesion.Text = "Iniciar Sesión";
+            this.btnIniciarSesion.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
+            // 
+            // lblpassword
+            // 
+            appearance7.BackColor = System.Drawing.Color.Transparent;
+            this.lblpassword.Appearance = appearance7;
+            this.lblpassword.AutoSize = true;
+            this.lblpassword.Location = new System.Drawing.Point(14, 57);
+            this.lblpassword.Name = "lblpassword";
+            this.lblpassword.Size = new System.Drawing.Size(63, 14);
+            this.lblpassword.TabIndex = 47;
+            this.lblpassword.Text = "Contraseña";
+            // 
+            // lblusername
+            // 
+            appearance8.BackColor = System.Drawing.Color.Transparent;
+            this.lblusername.Appearance = appearance8;
+            this.lblusername.AutoSize = true;
+            this.lblusername.Location = new System.Drawing.Point(14, 27);
+            this.lblusername.Name = "lblusername";
+            this.lblusername.Size = new System.Drawing.Size(102, 14);
+            this.lblusername.TabIndex = 46;
+            this.lblusername.Text = "Nombre de Usuario";
+            // 
+            // err
+            // 
+            this.err.ContainerControl = this;
+            this.err.RightToLeft = true;
+            // 
+            // txtpassword
+            // 
+            this.txtpassword.Location = new System.Drawing.Point(135, 55);
+            this.txtpassword.Name = "txtpassword";
+            this.txtpassword.PasswordChar = '#';
+            this.txtpassword.Size = new System.Drawing.Size(184, 21);
+            this.txtpassword.TabIndex = 1;
+            this.txtpassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtpassword_KeyDown);
+            // 
+            // ultraPictureBox1
+            // 
+            this.ultraPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.ultraPictureBox1.BackColor = System.Drawing.Color.White;
+            this.ultraPictureBox1.BackColorInternal = System.Drawing.Color.White;
+            this.ultraPictureBox1.BorderShadowColor = System.Drawing.Color.Empty;
+            this.ultraPictureBox1.Image = ((object)(resources.GetObject("ultraPictureBox1.Image")));
+            this.ultraPictureBox1.Location = new System.Drawing.Point(25, 94);
+            this.ultraPictureBox1.Name = "ultraPictureBox1";
+            this.ultraPictureBox1.Size = new System.Drawing.Size(52, 39);
+            this.ultraPictureBox1.TabIndex = 2;
+            // 
+            // frmLogin
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(345, 145);
+            this.Controls.Add(this.gbcontainer);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Inicio de Sesión";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gbcontainer)).EndInit();
+            this.gbcontainer.ResumeLayout(false);
+            this.gbcontainer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtusername)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.err)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtpassword)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private Infragistics.Win.Misc.UltraGroupBox gbcontainer;
+        private Infragistics.Win.Misc.UltraLabel lblpassword;
+        private Infragistics.Win.Misc.UltraLabel lblusername;
+        private Infragistics.Win.Misc.UltraButton btnCancelar;
+        private Infragistics.Win.Misc.UltraButton btnIniciarSesion;
+        private System.Windows.Forms.ErrorProvider err;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtusername;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtpassword;
+        private Infragistics.Win.UltraWinEditors.UltraPictureBox ultraPictureBox1;
+    }
+}

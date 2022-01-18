@@ -1,0 +1,1543 @@
+﻿namespace cipal
+{
+    partial class frmCIPAL
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab11 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCIPAL));
+            Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab12 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance7 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance8 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab13 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance9 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance10 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab10 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance11 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance12 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab7 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance13 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance14 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab20 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance15 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance16 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab21 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance17 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance18 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab22 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance19 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance20 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab23 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance21 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance22 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab24 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance23 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance24 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab25 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance25 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance26 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab26 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance27 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance28 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance29 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance30 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab6 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance31 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance32 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance33 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance34 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab29 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance35 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance36 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab30 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance37 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance38 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab38 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance39 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance40 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab39 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance41 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance42 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab40 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance43 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance44 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab41 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance45 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance46 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab42 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance47 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance48 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance49 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance50 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab44 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance51 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance52 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab46 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance53 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance54 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab47 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance55 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance56 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab50 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance57 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance58 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab51 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance59 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance60 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab52 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance61 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance62 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance63 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance64 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance69 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance70 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab1 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance71 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance72 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance73 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance74 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab2 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance75 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance76 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance77 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab3 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance78 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance79 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab4 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance80 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance81 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance82 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab5 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance83 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance84 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance85 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance86 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab19 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance87 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance88 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance89 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance90 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance91 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance92 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance93 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance94 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance95 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance96 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance97 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance98 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance99 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinScrollBar.ScrollBarLook scrollBarLook1 = new Infragistics.Win.UltraWinScrollBar.ScrollBarLook();
+            Infragistics.Win.Appearance appearance100 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance101 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance102 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance103 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance104 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance105 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance68 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance65 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance67 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance66 = new Infragistics.Win.Appearance();
+            this.tiposdeingresos = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.lbltitulo = new Infragistics.Win.Misc.UltraLabel();
+            this.lblsubtitulo = new Infragistics.Win.Misc.UltraLabel();
+            this.contribuyentes = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.tiposdeapoyo = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.beneficiarios = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.proveedores = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.departamentos = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.empleados = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.puestos = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.vehiculos = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.unidades = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.impuestos = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.conceptos = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl49 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.tpcsolicitudes = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl20 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl21 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl29 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl30 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl31 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl32 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl34 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl36 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl37 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl38 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl52 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl56 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.catalogos = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.tabcatalogos = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
+            this.catalogos_compartido = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
+            this.ingresos = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.tabingresos = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
+            this.ultraTabSharedControlsPage4 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
+            this.egresos = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.tabegresos = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
+            this.ultraTabSharedControlsPage5 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
+            this.gestion = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.tabgestion = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
+            this.ultraTabSharedControlsPage6 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
+            this.licencia = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.utcmain = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
+            this.compartido = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
+            this.ultraTabSharedControlsPage3 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
+            this.ultraTabPageControl10 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl11 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl12 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabControl1 = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
+            this.ultraTabPageControl40 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl41 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraGrid1 = new Infragistics.Win.UltraWinGrid.UltraGrid();
+            this.ultraTabPageControl42 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabControl2 = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
+            this.ultraTabPageControl13 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl14 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl15 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl16 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl47 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl48 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabControl4 = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
+            this.ultraTabSharedControlsPage8 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
+            this.ultraTabPageControl50 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl51 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabSharedControlsPage9 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
+            this.ultraTabPageControl39 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl53 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl54 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.ultraTabPageControl55 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.fmcipal = new Infragistics.Win.UltraWinForm.UltraFormManager(this.components);
+            this._Form1_UltraFormManager_Dock_Area_Right = new Infragistics.Win.UltraWinForm.UltraFormDockArea();
+            this._Form1_UltraFormManager_Dock_Area_Left = new Infragistics.Win.UltraWinForm.UltraFormDockArea();
+            this._Form1_UltraFormManager_Dock_Area_Bottom = new Infragistics.Win.UltraWinForm.UltraFormDockArea();
+            this._Form1_UltraFormManager_Dock_Area_Top = new Infragistics.Win.UltraWinForm.UltraFormDockArea();
+            this.btnsolicitudesdescargas = new Infragistics.Win.Misc.UltraButton();
+            this.btningresos = new Infragistics.Win.Misc.UltraButton();
+            this.btndocumentosxml = new Infragistics.Win.Misc.UltraButton();
+            this.btnvalidaciondedocumentos = new Infragistics.Win.Misc.UltraButton();
+            this.home = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.pblogoizquierdo = new System.Windows.Forms.PictureBox();
+            this.tiposdeingresos.SuspendLayout();
+            this.catalogos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tabcatalogos)).BeginInit();
+            this.tabcatalogos.SuspendLayout();
+            this.ingresos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tabingresos)).BeginInit();
+            this.tabingresos.SuspendLayout();
+            this.egresos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tabegresos)).BeginInit();
+            this.tabegresos.SuspendLayout();
+            this.gestion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tabgestion)).BeginInit();
+            this.tabgestion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.utcmain)).BeginInit();
+            this.utcmain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl1)).BeginInit();
+            this.ultraTabControl1.SuspendLayout();
+            this.ultraTabPageControl41.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fmcipal)).BeginInit();
+            this.home.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pblogoizquierdo)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // tiposdeingresos
+            // 
+            this.tiposdeingresos.Controls.Add(this.lbltitulo);
+            this.tiposdeingresos.Controls.Add(this.lblsubtitulo);
+            this.tiposdeingresos.Enabled = false;
+            this.tiposdeingresos.Location = new System.Drawing.Point(201, 1);
+            this.tiposdeingresos.Name = "tiposdeingresos";
+            this.tiposdeingresos.Size = new System.Drawing.Size(804, 602);
+            // 
+            // lbltitulo
+            // 
+            appearance1.FontData.Name = "Segoe UI Light";
+            appearance1.FontData.SizeInPoints = 20F;
+            appearance1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.lbltitulo.Appearance = appearance1;
+            this.lbltitulo.AutoSize = true;
+            this.lbltitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbltitulo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbltitulo.Location = new System.Drawing.Point(0, 82);
+            this.lbltitulo.Name = "lbltitulo";
+            this.lbltitulo.Size = new System.Drawing.Size(804, 39);
+            this.lbltitulo.TabIndex = 6;
+            this.lbltitulo.Text = "Product Inventory";
+            // 
+            // lblsubtitulo
+            // 
+            appearance2.FontData.Name = "Segoe UI Light";
+            appearance2.FontData.SizeInPoints = 42F;
+            appearance2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.lblsubtitulo.Appearance = appearance2;
+            this.lblsubtitulo.AutoSize = true;
+            this.lblsubtitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblsubtitulo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblsubtitulo.Location = new System.Drawing.Point(0, 0);
+            this.lblsubtitulo.Name = "lblsubtitulo";
+            this.lblsubtitulo.Size = new System.Drawing.Size(804, 82);
+            this.lblsubtitulo.TabIndex = 5;
+            this.lblsubtitulo.Text = "My Store Name";
+            this.lblsubtitulo.WrapText = false;
+            // 
+            // contribuyentes
+            // 
+            this.contribuyentes.Enabled = false;
+            this.contribuyentes.Location = new System.Drawing.Point(-10000, -10000);
+            this.contribuyentes.Name = "contribuyentes";
+            this.contribuyentes.Size = new System.Drawing.Size(818, 609);
+            // 
+            // tiposdeapoyo
+            // 
+            this.tiposdeapoyo.Enabled = false;
+            this.tiposdeapoyo.Location = new System.Drawing.Point(-10000, -10000);
+            this.tiposdeapoyo.Name = "tiposdeapoyo";
+            this.tiposdeapoyo.Size = new System.Drawing.Size(818, 609);
+            // 
+            // beneficiarios
+            // 
+            this.beneficiarios.Location = new System.Drawing.Point(-10000, -10000);
+            this.beneficiarios.Name = "beneficiarios";
+            this.beneficiarios.Padding = new System.Windows.Forms.Padding(38, 0, 38, 38);
+            this.beneficiarios.Size = new System.Drawing.Size(818, 609);
+            // 
+            // proveedores
+            // 
+            this.proveedores.Location = new System.Drawing.Point(-10000, -10000);
+            this.proveedores.Name = "proveedores";
+            this.proveedores.Size = new System.Drawing.Size(818, 609);
+            // 
+            // departamentos
+            // 
+            this.departamentos.Location = new System.Drawing.Point(-10000, -10000);
+            this.departamentos.Name = "departamentos";
+            this.departamentos.Size = new System.Drawing.Size(818, 609);
+            // 
+            // empleados
+            // 
+            this.empleados.Location = new System.Drawing.Point(-10000, -10000);
+            this.empleados.Name = "empleados";
+            this.empleados.Size = new System.Drawing.Size(818, 609);
+            // 
+            // puestos
+            // 
+            this.puestos.Location = new System.Drawing.Point(-10000, -10000);
+            this.puestos.Name = "puestos";
+            this.puestos.Size = new System.Drawing.Size(818, 609);
+            // 
+            // vehiculos
+            // 
+            this.vehiculos.Location = new System.Drawing.Point(-10000, -10000);
+            this.vehiculos.Name = "vehiculos";
+            this.vehiculos.Size = new System.Drawing.Size(818, 609);
+            // 
+            // unidades
+            // 
+            this.unidades.Location = new System.Drawing.Point(-10000, -10000);
+            this.unidades.Name = "unidades";
+            this.unidades.Size = new System.Drawing.Size(818, 609);
+            // 
+            // impuestos
+            // 
+            this.impuestos.Location = new System.Drawing.Point(-10000, -10000);
+            this.impuestos.Name = "impuestos";
+            this.impuestos.Size = new System.Drawing.Size(818, 609);
+            // 
+            // conceptos
+            // 
+            this.conceptos.Location = new System.Drawing.Point(-10000, -10000);
+            this.conceptos.Name = "conceptos";
+            this.conceptos.Size = new System.Drawing.Size(818, 609);
+            // 
+            // ultraTabPageControl49
+            // 
+            this.ultraTabPageControl49.Location = new System.Drawing.Point(201, 1);
+            this.ultraTabPageControl49.Name = "ultraTabPageControl49";
+            this.ultraTabPageControl49.Padding = new System.Windows.Forms.Padding(38, 0, 38, 38);
+            this.ultraTabPageControl49.Size = new System.Drawing.Size(816, 614);
+            // 
+            // tpcsolicitudes
+            // 
+            this.tpcsolicitudes.Location = new System.Drawing.Point(201, 1);
+            this.tpcsolicitudes.Margin = new System.Windows.Forms.Padding(0);
+            this.tpcsolicitudes.Name = "tpcsolicitudes";
+            this.tpcsolicitudes.Size = new System.Drawing.Size(815, 684);
+            // 
+            // ultraTabPageControl20
+            // 
+            this.ultraTabPageControl20.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl20.Name = "ultraTabPageControl20";
+            this.ultraTabPageControl20.Padding = new System.Windows.Forms.Padding(38, 0, 38, 38);
+            this.ultraTabPageControl20.Size = new System.Drawing.Size(815, 684);
+            // 
+            // ultraTabPageControl21
+            // 
+            this.ultraTabPageControl21.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl21.Name = "ultraTabPageControl21";
+            this.ultraTabPageControl21.Padding = new System.Windows.Forms.Padding(38, 0, 38, 38);
+            this.ultraTabPageControl21.Size = new System.Drawing.Size(815, 684);
+            // 
+            // ultraTabPageControl29
+            // 
+            this.ultraTabPageControl29.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl29.Name = "ultraTabPageControl29";
+            this.ultraTabPageControl29.Size = new System.Drawing.Size(815, 684);
+            // 
+            // ultraTabPageControl30
+            // 
+            this.ultraTabPageControl30.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl30.Name = "ultraTabPageControl30";
+            this.ultraTabPageControl30.Size = new System.Drawing.Size(815, 684);
+            // 
+            // ultraTabPageControl31
+            // 
+            this.ultraTabPageControl31.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl31.Name = "ultraTabPageControl31";
+            this.ultraTabPageControl31.Size = new System.Drawing.Size(815, 684);
+            // 
+            // ultraTabPageControl32
+            // 
+            this.ultraTabPageControl32.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl32.Name = "ultraTabPageControl32";
+            this.ultraTabPageControl32.Size = new System.Drawing.Size(815, 684);
+            // 
+            // ultraTabPageControl34
+            // 
+            this.ultraTabPageControl34.Location = new System.Drawing.Point(201, 1);
+            this.ultraTabPageControl34.Name = "ultraTabPageControl34";
+            this.ultraTabPageControl34.Padding = new System.Windows.Forms.Padding(38, 0, 38, 38);
+            this.ultraTabPageControl34.Size = new System.Drawing.Size(854, 618);
+            // 
+            // ultraTabPageControl36
+            // 
+            this.ultraTabPageControl36.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl36.Name = "ultraTabPageControl36";
+            this.ultraTabPageControl36.Size = new System.Drawing.Size(854, 618);
+            // 
+            // ultraTabPageControl37
+            // 
+            this.ultraTabPageControl37.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl37.Name = "ultraTabPageControl37";
+            this.ultraTabPageControl37.Size = new System.Drawing.Size(854, 618);
+            // 
+            // ultraTabPageControl38
+            // 
+            this.ultraTabPageControl38.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl38.Name = "ultraTabPageControl38";
+            this.ultraTabPageControl38.Size = new System.Drawing.Size(854, 618);
+            // 
+            // ultraTabPageControl52
+            // 
+            this.ultraTabPageControl52.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl52.Name = "ultraTabPageControl52";
+            this.ultraTabPageControl52.Size = new System.Drawing.Size(854, 618);
+            // 
+            // ultraTabPageControl56
+            // 
+            this.ultraTabPageControl56.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl56.Name = "ultraTabPageControl56";
+            this.ultraTabPageControl56.Size = new System.Drawing.Size(854, 618);
+            // 
+            // catalogos
+            // 
+            this.catalogos.Controls.Add(this.tabcatalogos);
+            this.catalogos.Location = new System.Drawing.Point(1, 82);
+            this.catalogos.Name = "catalogos";
+            this.catalogos.Size = new System.Drawing.Size(1006, 604);
+            // 
+            // tabcatalogos
+            // 
+            appearance3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(129)))));
+            appearance3.BorderColor = System.Drawing.Color.Transparent;
+            appearance3.FontData.Name = "Segoe UI";
+            appearance3.ForeColor = System.Drawing.Color.White;
+            appearance3.ForeColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(155)))), ((int)(((byte)(131)))));
+            appearance3.TextHAlignAsString = "Left";
+            this.tabcatalogos.Appearance = appearance3;
+            this.tabcatalogos.Controls.Add(this.catalogos_compartido);
+            this.tabcatalogos.Controls.Add(this.beneficiarios);
+            this.tabcatalogos.Controls.Add(this.tiposdeingresos);
+            this.tabcatalogos.Controls.Add(this.contribuyentes);
+            this.tabcatalogos.Controls.Add(this.tiposdeapoyo);
+            this.tabcatalogos.Controls.Add(this.proveedores);
+            this.tabcatalogos.Controls.Add(this.departamentos);
+            this.tabcatalogos.Controls.Add(this.empleados);
+            this.tabcatalogos.Controls.Add(this.puestos);
+            this.tabcatalogos.Controls.Add(this.vehiculos);
+            this.tabcatalogos.Controls.Add(this.unidades);
+            this.tabcatalogos.Controls.Add(this.impuestos);
+            this.tabcatalogos.Controls.Add(this.conceptos);
+            this.tabcatalogos.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tabcatalogos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabcatalogos.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tabcatalogos.ImageSize = new System.Drawing.Size(48, 16);
+            this.tabcatalogos.Location = new System.Drawing.Point(0, 0);
+            this.tabcatalogos.MinTabWidth = 50;
+            this.tabcatalogos.Name = "tabcatalogos";
+            appearance4.BackColor = System.Drawing.Color.White;
+            appearance4.ForeColor = System.Drawing.Color.Black;
+            this.tabcatalogos.SelectedTabAppearance = appearance4;
+            this.tabcatalogos.SharedControlsPage = this.catalogos_compartido;
+            this.tabcatalogos.Size = new System.Drawing.Size(1006, 604);
+            this.tabcatalogos.SpaceAfterTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.tabcatalogos.SpaceBeforeTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.tabcatalogos.Style = Infragistics.Win.UltraWinTabControl.UltraTabControlStyle.Flat;
+            this.tabcatalogos.TabIndex = 0;
+            this.tabcatalogos.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.LeftTop;
+            appearance5.Image = ((object)(resources.GetObject("appearance5.Image")));
+            ultraTab11.Appearance = appearance5;
+            ultraTab11.Key = "New";
+            appearance6.Image = ((object)(resources.GetObject("appearance6.Image")));
+            ultraTab11.SelectedAppearance = appearance6;
+            ultraTab11.TabPage = this.tiposdeingresos;
+            ultraTab11.Text = "Tipos de ingresos";
+            appearance7.Image = ((object)(resources.GetObject("appearance7.Image")));
+            ultraTab12.Appearance = appearance7;
+            ultraTab12.Key = "Import";
+            appearance8.Image = ((object)(resources.GetObject("appearance8.Image")));
+            ultraTab12.SelectedAppearance = appearance8;
+            ultraTab12.TabPage = this.contribuyentes;
+            ultraTab12.Text = "Contribuyentes";
+            appearance9.Image = ((object)(resources.GetObject("appearance9.Image")));
+            ultraTab13.Appearance = appearance9;
+            ultraTab13.Key = "Export";
+            appearance10.Image = ((object)(resources.GetObject("appearance10.Image")));
+            ultraTab13.SelectedAppearance = appearance10;
+            ultraTab13.TabPage = this.tiposdeapoyo;
+            ultraTab13.Text = "Tipos de apoyo";
+            appearance11.Image = ((object)(resources.GetObject("appearance11.Image")));
+            ultraTab10.Appearance = appearance11;
+            ultraTab10.Key = "Inventory";
+            appearance12.Image = ((object)(resources.GetObject("appearance12.Image")));
+            ultraTab10.SelectedAppearance = appearance12;
+            ultraTab10.TabPage = this.beneficiarios;
+            ultraTab10.Text = "Beneficiarios";
+            appearance13.Image = ((object)(resources.GetObject("appearance13.Image")));
+            ultraTab7.Appearance = appearance13;
+            appearance14.Image = ((object)(resources.GetObject("appearance14.Image")));
+            ultraTab7.SelectedAppearance = appearance14;
+            ultraTab7.TabPage = this.proveedores;
+            ultraTab7.Text = "Proveedores";
+            appearance15.Image = ((object)(resources.GetObject("appearance15.Image")));
+            ultraTab20.Appearance = appearance15;
+            appearance16.Image = ((object)(resources.GetObject("appearance16.Image")));
+            ultraTab20.SelectedAppearance = appearance16;
+            ultraTab20.TabPage = this.departamentos;
+            ultraTab20.Text = "Departamentos";
+            appearance17.Image = ((object)(resources.GetObject("appearance17.Image")));
+            ultraTab21.Appearance = appearance17;
+            appearance18.Image = ((object)(resources.GetObject("appearance18.Image")));
+            ultraTab21.SelectedAppearance = appearance18;
+            ultraTab21.TabPage = this.empleados;
+            ultraTab21.Text = "Empleados";
+            appearance19.Image = ((object)(resources.GetObject("appearance19.Image")));
+            ultraTab22.Appearance = appearance19;
+            appearance20.Image = ((object)(resources.GetObject("appearance20.Image")));
+            ultraTab22.SelectedAppearance = appearance20;
+            ultraTab22.TabPage = this.puestos;
+            ultraTab22.Text = "Puestos";
+            appearance21.Image = ((object)(resources.GetObject("appearance21.Image")));
+            ultraTab23.Appearance = appearance21;
+            appearance22.Image = ((object)(resources.GetObject("appearance22.Image")));
+            ultraTab23.SelectedAppearance = appearance22;
+            ultraTab23.TabPage = this.vehiculos;
+            ultraTab23.Text = "Vehiculos";
+            appearance23.Image = ((object)(resources.GetObject("appearance23.Image")));
+            ultraTab24.Appearance = appearance23;
+            appearance24.Image = ((object)(resources.GetObject("appearance24.Image")));
+            ultraTab24.SelectedAppearance = appearance24;
+            ultraTab24.TabPage = this.unidades;
+            ultraTab24.Text = "Unidades";
+            appearance25.Image = ((object)(resources.GetObject("appearance25.Image")));
+            ultraTab25.Appearance = appearance25;
+            appearance26.Image = ((object)(resources.GetObject("appearance26.Image")));
+            ultraTab25.SelectedAppearance = appearance26;
+            ultraTab25.TabPage = this.impuestos;
+            ultraTab25.Text = "Impuestos";
+            appearance27.Image = ((object)(resources.GetObject("appearance27.Image")));
+            ultraTab26.Appearance = appearance27;
+            appearance28.Image = ((object)(resources.GetObject("appearance28.Image")));
+            ultraTab26.SelectedAppearance = appearance28;
+            ultraTab26.TabPage = this.conceptos;
+            ultraTab26.Text = "Conceptos";
+            this.tabcatalogos.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
+            ultraTab11,
+            ultraTab12,
+            ultraTab13,
+            ultraTab10,
+            ultraTab7,
+            ultraTab20,
+            ultraTab21,
+            ultraTab22,
+            ultraTab23,
+            ultraTab24,
+            ultraTab25,
+            ultraTab26});
+            this.tabcatalogos.TabSize = new System.Drawing.Size(50, 200);
+            this.tabcatalogos.TextOrientation = Infragistics.Win.UltraWinTabs.TextOrientation.Horizontal;
+            this.tabcatalogos.UseAppStyling = false;
+            this.tabcatalogos.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            // 
+            // catalogos_compartido
+            // 
+            this.catalogos_compartido.Location = new System.Drawing.Point(-10000, -10000);
+            this.catalogos_compartido.Name = "catalogos_compartido";
+            this.catalogos_compartido.Size = new System.Drawing.Size(804, 602);
+            // 
+            // ingresos
+            // 
+            this.ingresos.Controls.Add(this.tabingresos);
+            this.ingresos.Location = new System.Drawing.Point(-10000, -10000);
+            this.ingresos.Name = "ingresos";
+            this.ingresos.Size = new System.Drawing.Size(1020, 611);
+            // 
+            // tabingresos
+            // 
+            this.tabingresos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            appearance29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(129)))));
+            appearance29.BorderColor = System.Drawing.Color.Transparent;
+            appearance29.FontData.Name = "Segoe UI";
+            appearance29.ForeColor = System.Drawing.Color.White;
+            appearance29.ForeColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(202)))), ((int)(((byte)(108)))));
+            appearance29.Image = ((object)(resources.GetObject("appearance29.Image")));
+            appearance29.ImageBackgroundOrigin = Infragistics.Win.ImageBackgroundOrigin.Form;
+            appearance29.TextHAlignAsString = "Left";
+            this.tabingresos.Appearance = appearance29;
+            this.tabingresos.Controls.Add(this.ultraTabSharedControlsPage4);
+            this.tabingresos.Controls.Add(this.ultraTabPageControl49);
+            this.tabingresos.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tabingresos.ImageSize = new System.Drawing.Size(48, 16);
+            this.tabingresos.Location = new System.Drawing.Point(0, -1);
+            this.tabingresos.MinTabWidth = 50;
+            this.tabingresos.Name = "tabingresos";
+            appearance30.BackColor = System.Drawing.Color.White;
+            appearance30.ForeColor = System.Drawing.Color.Black;
+            this.tabingresos.SelectedTabAppearance = appearance30;
+            this.tabingresos.SharedControlsPage = this.ultraTabSharedControlsPage4;
+            this.tabingresos.Size = new System.Drawing.Size(1018, 616);
+            this.tabingresos.SpaceAfterTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.tabingresos.SpaceBeforeTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.tabingresos.Style = Infragistics.Win.UltraWinTabControl.UltraTabControlStyle.Flat;
+            this.tabingresos.TabIndex = 12;
+            this.tabingresos.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.LeftTop;
+            appearance31.Image = ((object)(resources.GetObject("appearance31.Image")));
+            ultraTab6.Appearance = appearance31;
+            ultraTab6.Key = "Daily";
+            appearance32.Image = ((object)(resources.GetObject("appearance32.Image")));
+            ultraTab6.SelectedAppearance = appearance32;
+            ultraTab6.TabPage = this.ultraTabPageControl49;
+            ultraTab6.Text = "Registro de ingresos";
+            this.tabingresos.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
+            ultraTab6});
+            this.tabingresos.TabSize = new System.Drawing.Size(50, 200);
+            this.tabingresos.TextOrientation = Infragistics.Win.UltraWinTabs.TextOrientation.Horizontal;
+            this.tabingresos.UseAppStyling = false;
+            this.tabingresos.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            // 
+            // ultraTabSharedControlsPage4
+            // 
+            this.ultraTabSharedControlsPage4.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabSharedControlsPage4.Name = "ultraTabSharedControlsPage4";
+            this.ultraTabSharedControlsPage4.Size = new System.Drawing.Size(816, 614);
+            // 
+            // egresos
+            // 
+            this.egresos.Controls.Add(this.tabegresos);
+            this.egresos.Location = new System.Drawing.Point(-10000, -10000);
+            this.egresos.Name = "egresos";
+            this.egresos.Size = new System.Drawing.Size(1020, 611);
+            // 
+            // tabegresos
+            // 
+            this.tabegresos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            appearance33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(129)))));
+            appearance33.BorderColor = System.Drawing.Color.Transparent;
+            appearance33.FontData.Name = "Segoe UI";
+            appearance33.ForeColor = System.Drawing.Color.White;
+            appearance33.ForeColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(202)))), ((int)(((byte)(108)))));
+            appearance33.Image = ((object)(resources.GetObject("appearance33.Image")));
+            appearance33.ImageBackgroundOrigin = Infragistics.Win.ImageBackgroundOrigin.Form;
+            appearance33.TextHAlignAsString = "Left";
+            this.tabegresos.Appearance = appearance33;
+            this.tabegresos.Controls.Add(this.ultraTabSharedControlsPage5);
+            this.tabegresos.Controls.Add(this.tpcsolicitudes);
+            this.tabegresos.Controls.Add(this.ultraTabPageControl20);
+            this.tabegresos.Controls.Add(this.ultraTabPageControl21);
+            this.tabegresos.Controls.Add(this.ultraTabPageControl29);
+            this.tabegresos.Controls.Add(this.ultraTabPageControl30);
+            this.tabegresos.Controls.Add(this.ultraTabPageControl31);
+            this.tabegresos.Controls.Add(this.ultraTabPageControl32);
+            this.tabegresos.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tabegresos.ImageSize = new System.Drawing.Size(48, 16);
+            this.tabegresos.Location = new System.Drawing.Point(0, -1);
+            this.tabegresos.MinTabWidth = 50;
+            this.tabegresos.Name = "tabegresos";
+            appearance34.BackColor = System.Drawing.Color.White;
+            appearance34.ForeColor = System.Drawing.Color.Black;
+            this.tabegresos.SelectedTabAppearance = appearance34;
+            this.tabegresos.SharedControlsPage = this.ultraTabSharedControlsPage5;
+            this.tabegresos.Size = new System.Drawing.Size(1017, 686);
+            this.tabegresos.SpaceAfterTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.tabegresos.SpaceBeforeTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.tabegresos.Style = Infragistics.Win.UltraWinTabControl.UltraTabControlStyle.Flat;
+            this.tabegresos.TabIndex = 12;
+            this.tabegresos.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.LeftTop;
+            appearance35.Image = ((object)(resources.GetObject("appearance35.Image")));
+            ultraTab29.Appearance = appearance35;
+            ultraTab29.Key = "0";
+            appearance36.Image = ((object)(resources.GetObject("appearance36.Image")));
+            ultraTab29.SelectedAppearance = appearance36;
+            ultraTab29.TabPage = this.tpcsolicitudes;
+            ultraTab29.Text = "Solicitudes";
+            appearance37.Image = ((object)(resources.GetObject("appearance37.Image")));
+            ultraTab30.Appearance = appearance37;
+            ultraTab30.Key = "1";
+            appearance38.Image = ((object)(resources.GetObject("appearance38.Image")));
+            ultraTab30.SelectedAppearance = appearance38;
+            ultraTab30.TabPage = this.ultraTabPageControl20;
+            ultraTab30.Text = "Ordenes";
+            appearance39.Image = ((object)(resources.GetObject("appearance39.Image")));
+            ultraTab38.Appearance = appearance39;
+            ultraTab38.Key = "2";
+            appearance40.Image = ((object)(resources.GetObject("appearance40.Image")));
+            ultraTab38.SelectedAppearance = appearance40;
+            ultraTab38.TabPage = this.ultraTabPageControl21;
+            ultraTab38.Text = "Pedidos";
+            appearance41.Image = ((object)(resources.GetObject("appearance41.Image")));
+            ultraTab39.Appearance = appearance41;
+            ultraTab39.Key = "3";
+            appearance42.Image = ((object)(resources.GetObject("appearance42.Image")));
+            ultraTab39.SelectedAppearance = appearance42;
+            ultraTab39.TabPage = this.ultraTabPageControl29;
+            ultraTab39.Text = "Constancias";
+            appearance43.Image = ((object)(resources.GetObject("appearance43.Image")));
+            ultraTab40.Appearance = appearance43;
+            ultraTab40.Key = "4";
+            appearance44.Image = ((object)(resources.GetObject("appearance44.Image")));
+            ultraTab40.SelectedAppearance = appearance44;
+            ultraTab40.TabPage = this.ultraTabPageControl30;
+            ultraTab40.Text = "Informes";
+            appearance45.Image = ((object)(resources.GetObject("appearance45.Image")));
+            ultraTab41.Appearance = appearance45;
+            ultraTab41.Key = "5";
+            appearance46.Image = ((object)(resources.GetObject("appearance46.Image")));
+            ultraTab41.SelectedAppearance = appearance46;
+            ultraTab41.TabPage = this.ultraTabPageControl31;
+            ultraTab41.Text = "Bitácora de combustible";
+            appearance47.Image = ((object)(resources.GetObject("appearance47.Image")));
+            ultraTab42.Appearance = appearance47;
+            ultraTab42.Key = "6";
+            appearance48.Image = ((object)(resources.GetObject("appearance48.Image")));
+            ultraTab42.SelectedAppearance = appearance48;
+            ultraTab42.TabPage = this.ultraTabPageControl32;
+            ultraTab42.Text = "Bitácora de mantenimiento";
+            this.tabegresos.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
+            ultraTab29,
+            ultraTab30,
+            ultraTab38,
+            ultraTab39,
+            ultraTab40,
+            ultraTab41,
+            ultraTab42});
+            this.tabegresos.TabSize = new System.Drawing.Size(50, 200);
+            this.tabegresos.TextOrientation = Infragistics.Win.UltraWinTabs.TextOrientation.Horizontal;
+            this.tabegresos.SelectedTabChanged += new Infragistics.Win.UltraWinTabControl.SelectedTabChangedEventHandler(this.tcEgresos_SelectedTabChanged);
+            // 
+            // ultraTabSharedControlsPage5
+            // 
+            this.ultraTabSharedControlsPage5.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabSharedControlsPage5.Name = "ultraTabSharedControlsPage5";
+            this.ultraTabSharedControlsPage5.Size = new System.Drawing.Size(815, 684);
+            // 
+            // gestion
+            // 
+            this.gestion.Controls.Add(this.tabgestion);
+            this.gestion.Location = new System.Drawing.Point(-10000, -10000);
+            this.gestion.Name = "gestion";
+            this.gestion.Padding = new System.Windows.Forms.Padding(38, 0, 38, 38);
+            this.gestion.Size = new System.Drawing.Size(1020, 611);
+            // 
+            // tabgestion
+            // 
+            this.tabgestion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            appearance49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(129)))));
+            appearance49.BorderColor = System.Drawing.Color.Transparent;
+            appearance49.FontData.Name = "Segoe UI";
+            appearance49.ForeColor = System.Drawing.Color.White;
+            appearance49.ForeColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(202)))), ((int)(((byte)(108)))));
+            appearance49.Image = ((object)(resources.GetObject("appearance49.Image")));
+            appearance49.ImageBackgroundOrigin = Infragistics.Win.ImageBackgroundOrigin.Form;
+            appearance49.TextHAlignAsString = "Left";
+            this.tabgestion.Appearance = appearance49;
+            this.tabgestion.Controls.Add(this.ultraTabSharedControlsPage6);
+            this.tabgestion.Controls.Add(this.ultraTabPageControl34);
+            this.tabgestion.Controls.Add(this.ultraTabPageControl36);
+            this.tabgestion.Controls.Add(this.ultraTabPageControl37);
+            this.tabgestion.Controls.Add(this.ultraTabPageControl38);
+            this.tabgestion.Controls.Add(this.ultraTabPageControl52);
+            this.tabgestion.Controls.Add(this.ultraTabPageControl56);
+            this.tabgestion.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tabgestion.ImageSize = new System.Drawing.Size(48, 16);
+            this.tabgestion.Location = new System.Drawing.Point(0, -1);
+            this.tabgestion.MinTabWidth = 50;
+            this.tabgestion.Name = "tabgestion";
+            appearance50.BackColor = System.Drawing.Color.White;
+            appearance50.ForeColor = System.Drawing.Color.Black;
+            this.tabgestion.SelectedTabAppearance = appearance50;
+            this.tabgestion.SharedControlsPage = this.ultraTabSharedControlsPage6;
+            this.tabgestion.Size = new System.Drawing.Size(1056, 620);
+            this.tabgestion.SpaceAfterTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.tabgestion.SpaceBeforeTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.tabgestion.Style = Infragistics.Win.UltraWinTabControl.UltraTabControlStyle.Flat;
+            this.tabgestion.TabIndex = 11;
+            this.tabgestion.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.LeftTop;
+            appearance51.Image = ((object)(resources.GetObject("appearance51.Image")));
+            ultraTab44.Appearance = appearance51;
+            ultraTab44.Key = "Weekly";
+            appearance52.Image = ((object)(resources.GetObject("appearance52.Image")));
+            ultraTab44.SelectedAppearance = appearance52;
+            ultraTab44.TabPage = this.ultraTabPageControl34;
+            ultraTab44.Text = "Puestos de empleado";
+            appearance53.Image = ((object)(resources.GetObject("appearance53.Image")));
+            ultraTab46.Appearance = appearance53;
+            appearance54.Image = ((object)(resources.GetObject("appearance54.Image")));
+            ultraTab46.SelectedAppearance = appearance54;
+            ultraTab46.TabPage = this.ultraTabPageControl36;
+            ultraTab46.Text = "Registros de apoyos";
+            appearance55.Image = ((object)(resources.GetObject("appearance55.Image")));
+            ultraTab47.Appearance = appearance55;
+            appearance56.Image = ((object)(resources.GetObject("appearance56.Image")));
+            ultraTab47.SelectedAppearance = appearance56;
+            ultraTab47.TabPage = this.ultraTabPageControl37;
+            ultraTab47.Text = "Contribuyentes apócrifos";
+            appearance57.Image = ((object)(resources.GetObject("appearance57.Image")));
+            ultraTab50.Appearance = appearance57;
+            appearance58.Image = ((object)(resources.GetObject("appearance58.Image")));
+            ultraTab50.SelectedAppearance = appearance58;
+            ultraTab50.TabPage = this.ultraTabPageControl38;
+            ultraTab50.Text = "Documentos digitales XML";
+            appearance59.Image = ((object)(resources.GetObject("appearance59.Image")));
+            ultraTab51.Appearance = appearance59;
+            appearance60.Image = ((object)(resources.GetObject("appearance60.Image")));
+            ultraTab51.SelectedAppearance = appearance60;
+            ultraTab51.TabPage = this.ultraTabPageControl52;
+            ultraTab51.Text = "Validación de documentos digítales XML";
+            appearance61.Image = ((object)(resources.GetObject("appearance61.Image")));
+            ultraTab52.Appearance = appearance61;
+            appearance62.Image = ((object)(resources.GetObject("appearance62.Image")));
+            ultraTab52.SelectedAppearance = appearance62;
+            ultraTab52.TabPage = this.ultraTabPageControl56;
+            ultraTab52.Text = "Descarga de documentos digítales +500";
+            this.tabgestion.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
+            ultraTab44,
+            ultraTab46,
+            ultraTab47,
+            ultraTab50,
+            ultraTab51,
+            ultraTab52});
+            this.tabgestion.TabSize = new System.Drawing.Size(50, 200);
+            this.tabgestion.TextOrientation = Infragistics.Win.UltraWinTabs.TextOrientation.Horizontal;
+            this.tabgestion.UseAppStyling = false;
+            this.tabgestion.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            // 
+            // ultraTabSharedControlsPage6
+            // 
+            this.ultraTabSharedControlsPage6.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabSharedControlsPage6.Name = "ultraTabSharedControlsPage6";
+            this.ultraTabSharedControlsPage6.Size = new System.Drawing.Size(854, 618);
+            // 
+            // licencia
+            // 
+            this.licencia.Location = new System.Drawing.Point(-10000, -10000);
+            this.licencia.Name = "licencia";
+            this.licencia.Size = new System.Drawing.Size(1020, 611);
+            // 
+            // utcmain
+            // 
+            appearance63.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(33)))), ((int)(((byte)(70)))));
+            appearance63.BorderColor = System.Drawing.Color.Transparent;
+            appearance63.FontData.Name = "Segoe UI";
+            appearance63.FontData.SizeInPoints = 12F;
+            appearance63.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            appearance63.ImageBackgroundOrigin = Infragistics.Win.ImageBackgroundOrigin.Form;
+            appearance63.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance63.ImageVAlign = Infragistics.Win.VAlign.Top;
+            appearance63.TextHAlignAsString = "Center";
+            appearance63.TextVAlignAsString = "Middle";
+            this.utcmain.Appearance = appearance63;
+            appearance64.BackColor = System.Drawing.Color.White;
+            this.utcmain.ClientAreaAppearance = appearance64;
+            this.utcmain.Controls.Add(this.compartido);
+            this.utcmain.Controls.Add(this.home);
+            this.utcmain.Controls.Add(this.catalogos);
+            this.utcmain.Controls.Add(this.ingresos);
+            this.utcmain.Controls.Add(this.egresos);
+            this.utcmain.Controls.Add(this.gestion);
+            this.utcmain.Controls.Add(this.licencia);
+            this.utcmain.Dock = System.Windows.Forms.DockStyle.Fill;
+            appearance69.ForeColor = System.Drawing.Color.White;
+            this.utcmain.HotTrackAppearance = appearance69;
+            this.utcmain.ImageSize = new System.Drawing.Size(36, 36);
+            this.utcmain.Location = new System.Drawing.Point(8, 31);
+            this.utcmain.MinTabWidth = 80;
+            this.utcmain.Name = "utcmain";
+            appearance70.ForeColor = System.Drawing.Color.White;
+            this.utcmain.SelectedTabAppearance = appearance70;
+            this.utcmain.SharedControlsPage = this.compartido;
+            this.utcmain.Size = new System.Drawing.Size(1008, 687);
+            this.utcmain.SpaceAfterTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.utcmain.SpaceBeforeTabs = new Infragistics.Win.DefaultableInteger(0);
+            this.utcmain.Style = Infragistics.Win.UltraWinTabControl.UltraTabControlStyle.Flat;
+            this.utcmain.TabIndex = 4;
+            this.utcmain.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.TopLeft;
+            this.utcmain.TabPadding = new System.Drawing.Size(10, 10);
+            appearance71.Image = ((object)(resources.GetObject("appearance71.Image")));
+            ultraTab1.Appearance = appearance71;
+            appearance72.BackColor = System.Drawing.Color.White;
+            ultraTab1.ClientAreaAppearance = appearance72;
+            appearance73.Image = ((object)(resources.GetObject("appearance73.Image")));
+            ultraTab1.HotTrackAppearance = appearance73;
+            ultraTab1.Key = "home";
+            appearance74.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(33)))), ((int)(((byte)(70)))));
+            appearance74.Image = ((object)(resources.GetObject("appearance74.Image")));
+            ultraTab1.SelectedAppearance = appearance74;
+            ultraTab1.TabPage = this.home;
+            ultraTab1.Text = "Home";
+            appearance75.Image = ((object)(resources.GetObject("appearance75.Image")));
+            ultraTab2.Appearance = appearance75;
+            appearance76.Image = ((object)(resources.GetObject("appearance76.Image")));
+            ultraTab2.HotTrackAppearance = appearance76;
+            ultraTab2.Key = "catalogos";
+            appearance77.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(33)))), ((int)(((byte)(70)))));
+            appearance77.Image = ((object)(resources.GetObject("appearance77.Image")));
+            ultraTab2.SelectedAppearance = appearance77;
+            ultraTab2.TabPage = this.catalogos;
+            ultraTab2.Text = "Catálogos";
+            appearance78.Image = global::cipal.Properties.Resources.Ingresos;
+            ultraTab3.Appearance = appearance78;
+            ultraTab3.Key = "ingresos";
+            appearance79.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(33)))), ((int)(((byte)(70)))));
+            appearance79.Image = ((object)(resources.GetObject("appearance79.Image")));
+            ultraTab3.SelectedAppearance = appearance79;
+            ultraTab3.TabPage = this.ingresos;
+            ultraTab3.Text = "Ingresos";
+            appearance80.Image = ((object)(resources.GetObject("appearance80.Image")));
+            ultraTab4.Appearance = appearance80;
+            appearance81.Image = ((object)(resources.GetObject("appearance81.Image")));
+            ultraTab4.HotTrackAppearance = appearance81;
+            ultraTab4.Key = "egresos";
+            appearance82.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(33)))), ((int)(((byte)(70)))));
+            appearance82.Image = ((object)(resources.GetObject("appearance82.Image")));
+            ultraTab4.SelectedAppearance = appearance82;
+            ultraTab4.TabPage = this.egresos;
+            ultraTab4.Text = "Egresos";
+            appearance83.Image = ((object)(resources.GetObject("appearance83.Image")));
+            ultraTab5.Appearance = appearance83;
+            appearance84.BackColor = System.Drawing.Color.White;
+            ultraTab5.ClientAreaAppearance = appearance84;
+            appearance85.Image = ((object)(resources.GetObject("appearance85.Image")));
+            ultraTab5.HotTrackAppearance = appearance85;
+            ultraTab5.Key = "gestion";
+            appearance86.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(33)))), ((int)(((byte)(70)))));
+            appearance86.Image = ((object)(resources.GetObject("appearance86.Image")));
+            ultraTab5.SelectedAppearance = appearance86;
+            ultraTab5.TabPage = this.gestion;
+            ultraTab5.Text = "Gestión";
+            appearance87.Image = ((object)(resources.GetObject("appearance87.Image")));
+            ultraTab19.Appearance = appearance87;
+            appearance88.BackColor = System.Drawing.Color.White;
+            ultraTab19.ClientAreaAppearance = appearance88;
+            appearance89.Image = ((object)(resources.GetObject("appearance89.Image")));
+            ultraTab19.HotTrackAppearance = appearance89;
+            ultraTab19.Key = "licencia";
+            appearance90.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(33)))), ((int)(((byte)(70)))));
+            appearance90.Image = ((object)(resources.GetObject("appearance90.Image")));
+            ultraTab19.SelectedAppearance = appearance90;
+            ultraTab19.TabPage = this.licencia;
+            ultraTab19.Text = "Información de Licencia";
+            this.utcmain.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
+            ultraTab1,
+            ultraTab2,
+            ultraTab3,
+            ultraTab4,
+            ultraTab5,
+            ultraTab19});
+            this.utcmain.TextOrientation = Infragistics.Win.UltraWinTabs.TextOrientation.Horizontal;
+            // 
+            // compartido
+            // 
+            this.compartido.Location = new System.Drawing.Point(-10000, -10000);
+            this.compartido.Name = "compartido";
+            this.compartido.Size = new System.Drawing.Size(1006, 604);
+            // 
+            // ultraTabSharedControlsPage3
+            // 
+            this.ultraTabSharedControlsPage3.Location = new System.Drawing.Point(1, 20);
+            this.ultraTabSharedControlsPage3.Name = "ultraTabSharedControlsPage3";
+            this.ultraTabSharedControlsPage3.Size = new System.Drawing.Size(196, 77);
+            // 
+            // ultraTabPageControl10
+            // 
+            this.ultraTabPageControl10.Location = new System.Drawing.Point(99, 1);
+            this.ultraTabPageControl10.Name = "ultraTabPageControl10";
+            this.ultraTabPageControl10.Size = new System.Drawing.Size(555, 496);
+            // 
+            // ultraTabPageControl11
+            // 
+            this.ultraTabPageControl11.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl11.Name = "ultraTabPageControl11";
+            this.ultraTabPageControl11.Size = new System.Drawing.Size(555, 496);
+            // 
+            // ultraTabPageControl12
+            // 
+            this.ultraTabPageControl12.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl12.Name = "ultraTabPageControl12";
+            this.ultraTabPageControl12.Size = new System.Drawing.Size(555, 496);
+            // 
+            // ultraTabControl1
+            // 
+            appearance91.BorderColor = System.Drawing.Color.Transparent;
+            appearance91.ForeColor = System.Drawing.Color.White;
+            this.ultraTabControl1.Appearance = appearance91;
+            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl10);
+            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl11);
+            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl12);
+            this.ultraTabControl1.Location = new System.Drawing.Point(0, 0);
+            this.ultraTabControl1.Name = "ultraTabControl1";
+            this.ultraTabControl1.SharedControlsPage = this.ultraTabSharedControlsPage3;
+            this.ultraTabControl1.Size = new System.Drawing.Size(200, 100);
+            this.ultraTabControl1.TabIndex = 0;
+            // 
+            // ultraTabPageControl40
+            // 
+            this.ultraTabPageControl40.Enabled = false;
+            this.ultraTabPageControl40.Location = new System.Drawing.Point(151, 1);
+            this.ultraTabPageControl40.Name = "ultraTabPageControl40";
+            this.ultraTabPageControl40.Size = new System.Drawing.Size(939, 679);
+            // 
+            // ultraTabPageControl41
+            // 
+            this.ultraTabPageControl41.Controls.Add(this.ultraGrid1);
+            this.ultraTabPageControl41.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl41.Name = "ultraTabPageControl41";
+            this.ultraTabPageControl41.Padding = new System.Windows.Forms.Padding(38, 0, 38, 38);
+            this.ultraTabPageControl41.Size = new System.Drawing.Size(939, 679);
+            // 
+            // ultraGrid1
+            // 
+            appearance92.BackColor = System.Drawing.Color.White;
+            this.ultraGrid1.DisplayLayout.Appearance = appearance92;
+            this.ultraGrid1.DisplayLayout.AutoFitStyle = Infragistics.Win.UltraWinGrid.AutoFitStyle.ResizeAllColumns;
+            this.ultraGrid1.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.None;
+            appearance93.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            appearance93.BorderColor = System.Drawing.Color.White;
+            this.ultraGrid1.DisplayLayout.GroupByBox.Appearance = appearance93;
+            this.ultraGrid1.DisplayLayout.GroupByBox.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
+            appearance94.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            appearance94.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            appearance94.ForeColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
+            this.ultraGrid1.DisplayLayout.GroupByBox.PromptAppearance = appearance94;
+            this.ultraGrid1.DisplayLayout.Override.AllowGroupBy = Infragistics.Win.DefaultableBoolean.True;
+            this.ultraGrid1.DisplayLayout.Override.BorderStyleCell = Infragistics.Win.UIElementBorderStyle.None;
+            this.ultraGrid1.DisplayLayout.Override.BorderStyleHeader = Infragistics.Win.UIElementBorderStyle.None;
+            this.ultraGrid1.DisplayLayout.Override.BorderStyleRow = Infragistics.Win.UIElementBorderStyle.None;
+            this.ultraGrid1.DisplayLayout.Override.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.RowSelect;
+            this.ultraGrid1.DisplayLayout.Override.ColumnHeaderTextOrientation = new Infragistics.Win.TextOrientationInfo(0, Infragistics.Win.TextFlowDirection.Horizontal);
+            appearance95.BackColor = System.Drawing.Color.Transparent;
+            this.ultraGrid1.DisplayLayout.Override.GroupByRowAppearance = appearance95;
+            appearance96.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            appearance96.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            appearance96.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            appearance96.FontData.Name = "Segoe UI";
+            appearance96.FontData.SizeInPoints = 12F;
+            appearance96.TextHAlignAsString = "Left";
+            this.ultraGrid1.DisplayLayout.Override.HeaderAppearance = appearance96;
+            appearance97.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.ultraGrid1.DisplayLayout.Override.HotTrackRowAppearance = appearance97;
+            this.ultraGrid1.DisplayLayout.Override.MaxSelectedRows = 1;
+            this.ultraGrid1.DisplayLayout.Override.ReserveSortIndicatorSpaceWhenAutoSizing = Infragistics.Win.UltraWinGrid.ReserveSortIndicatorSpaceWhenAutoSizing.WhenColumnIsSortable;
+            appearance98.TextVAlignAsString = "Middle";
+            this.ultraGrid1.DisplayLayout.Override.RowAppearance = appearance98;
+            this.ultraGrid1.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
+            appearance99.BackColor = System.Drawing.Color.LightGray;
+            appearance99.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ultraGrid1.DisplayLayout.Override.SelectedRowAppearance = appearance99;
+            scrollBarLook1.ViewStyle = Infragistics.Win.UltraWinScrollBar.ScrollBarViewStyle.Office2013;
+            this.ultraGrid1.DisplayLayout.ScrollBarLook = scrollBarLook1;
+            this.ultraGrid1.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
+            this.ultraGrid1.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy;
+            this.ultraGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ultraGrid1.Location = new System.Drawing.Point(38, 0);
+            this.ultraGrid1.Name = "ultraGrid1";
+            this.ultraGrid1.Size = new System.Drawing.Size(863, 641);
+            this.ultraGrid1.TabIndex = 8;
+            this.ultraGrid1.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
+            this.ultraGrid1.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            // 
+            // ultraTabPageControl42
+            // 
+            this.ultraTabPageControl42.Enabled = false;
+            this.ultraTabPageControl42.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl42.Name = "ultraTabPageControl42";
+            this.ultraTabPageControl42.Size = new System.Drawing.Size(939, 679);
+            // 
+            // ultraTabControl2
+            // 
+            appearance100.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(129)))));
+            appearance100.BorderColor = System.Drawing.Color.Transparent;
+            appearance100.FontData.Name = "Segoe UI";
+            appearance100.ForeColor = System.Drawing.Color.White;
+            appearance100.ForeColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(166)))), ((int)(((byte)(218)))));
+            appearance100.ImageBackgroundOrigin = Infragistics.Win.ImageBackgroundOrigin.Form;
+            appearance100.TextHAlignAsString = "Left";
+            this.ultraTabControl2.Appearance = appearance100;
+            this.ultraTabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ultraTabControl2.Location = new System.Drawing.Point(0, 0);
+            this.ultraTabControl2.Name = "ultraTabControl2";
+            this.ultraTabControl2.SharedControlsPage = null;
+            this.ultraTabControl2.Size = new System.Drawing.Size(1091, 681);
+            this.ultraTabControl2.TabIndex = 1;
+            // 
+            // ultraTabPageControl13
+            // 
+            this.ultraTabPageControl13.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl13.Name = "ultraTabPageControl13";
+            this.ultraTabPageControl13.Padding = new System.Windows.Forms.Padding(38, 0, 38, 38);
+            this.ultraTabPageControl13.Size = new System.Drawing.Size(939, 679);
+            // 
+            // ultraTabPageControl14
+            // 
+            this.ultraTabPageControl14.Enabled = false;
+            this.ultraTabPageControl14.Location = new System.Drawing.Point(151, 1);
+            this.ultraTabPageControl14.Name = "ultraTabPageControl14";
+            this.ultraTabPageControl14.Size = new System.Drawing.Size(939, 679);
+            // 
+            // ultraTabPageControl15
+            // 
+            this.ultraTabPageControl15.Enabled = false;
+            this.ultraTabPageControl15.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl15.Name = "ultraTabPageControl15";
+            this.ultraTabPageControl15.Size = new System.Drawing.Size(939, 679);
+            // 
+            // ultraTabPageControl16
+            // 
+            this.ultraTabPageControl16.Enabled = false;
+            this.ultraTabPageControl16.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl16.Name = "ultraTabPageControl16";
+            this.ultraTabPageControl16.Size = new System.Drawing.Size(939, 679);
+            // 
+            // ultraTabPageControl47
+            // 
+            this.ultraTabPageControl47.Location = new System.Drawing.Point(0, 0);
+            this.ultraTabPageControl47.Name = "ultraTabPageControl47";
+            this.ultraTabPageControl47.Size = new System.Drawing.Size(200, 100);
+            // 
+            // ultraTabPageControl48
+            // 
+            this.ultraTabPageControl48.Location = new System.Drawing.Point(0, 0);
+            this.ultraTabPageControl48.Name = "ultraTabPageControl48";
+            this.ultraTabPageControl48.Size = new System.Drawing.Size(200, 100);
+            // 
+            // ultraTabControl4
+            // 
+            appearance101.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(129)))));
+            appearance101.BorderColor = System.Drawing.Color.Transparent;
+            appearance101.FontData.Name = "Segoe UI";
+            appearance101.ForeColor = System.Drawing.Color.White;
+            appearance101.ForeColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(202)))), ((int)(((byte)(108)))));
+            appearance101.ImageBackgroundOrigin = Infragistics.Win.ImageBackgroundOrigin.Form;
+            this.ultraTabControl4.Appearance = appearance101;
+            this.ultraTabControl4.Location = new System.Drawing.Point(0, 0);
+            this.ultraTabControl4.Name = "ultraTabControl4";
+            this.ultraTabControl4.SharedControlsPage = null;
+            this.ultraTabControl4.Size = new System.Drawing.Size(200, 100);
+            this.ultraTabControl4.TabIndex = 0;
+            // 
+            // ultraTabSharedControlsPage8
+            // 
+            this.ultraTabSharedControlsPage8.Location = new System.Drawing.Point(0, 0);
+            this.ultraTabSharedControlsPage8.Name = "ultraTabSharedControlsPage8";
+            this.ultraTabSharedControlsPage8.Size = new System.Drawing.Size(200, 100);
+            // 
+            // ultraTabPageControl50
+            // 
+            this.ultraTabPageControl50.Location = new System.Drawing.Point(0, 0);
+            this.ultraTabPageControl50.Name = "ultraTabPageControl50";
+            this.ultraTabPageControl50.Size = new System.Drawing.Size(200, 100);
+            // 
+            // ultraTabPageControl51
+            // 
+            this.ultraTabPageControl51.Location = new System.Drawing.Point(0, 0);
+            this.ultraTabPageControl51.Name = "ultraTabPageControl51";
+            this.ultraTabPageControl51.Size = new System.Drawing.Size(200, 100);
+            // 
+            // ultraTabSharedControlsPage9
+            // 
+            this.ultraTabSharedControlsPage9.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabSharedControlsPage9.Name = "ultraTabSharedControlsPage9";
+            this.ultraTabSharedControlsPage9.Size = new System.Drawing.Size(48, 98);
+            // 
+            // ultraTabPageControl39
+            // 
+            this.ultraTabPageControl39.Location = new System.Drawing.Point(151, 1);
+            this.ultraTabPageControl39.Name = "ultraTabPageControl39";
+            this.ultraTabPageControl39.Size = new System.Drawing.Size(48, 98);
+            // 
+            // ultraTabPageControl53
+            // 
+            this.ultraTabPageControl53.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl53.Name = "ultraTabPageControl53";
+            this.ultraTabPageControl53.Size = new System.Drawing.Size(48, 98);
+            // 
+            // ultraTabPageControl54
+            // 
+            this.ultraTabPageControl54.Location = new System.Drawing.Point(151, 1);
+            this.ultraTabPageControl54.Name = "ultraTabPageControl54";
+            this.ultraTabPageControl54.Size = new System.Drawing.Size(48, 98);
+            // 
+            // ultraTabPageControl55
+            // 
+            this.ultraTabPageControl55.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl55.Name = "ultraTabPageControl55";
+            this.ultraTabPageControl55.Size = new System.Drawing.Size(48, 98);
+            // 
+            // fmcipal
+            // 
+            this.fmcipal.Form = this;
+            appearance102.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            appearance102.TextHAlignAsString = "Left";
+            this.fmcipal.FormStyleSettings.CaptionAreaAppearance = appearance102;
+            appearance103.BorderAlpha = Infragistics.Win.Alpha.Transparent;
+            appearance103.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.fmcipal.FormStyleSettings.CaptionButtonsAppearances.DefaultButtonAppearances.Appearance = appearance103;
+            appearance104.BackColor = System.Drawing.Color.Transparent;
+            appearance104.ForeColor = System.Drawing.Color.White;
+            this.fmcipal.FormStyleSettings.CaptionButtonsAppearances.DefaultButtonAppearances.HotTrackAppearance = appearance104;
+            appearance105.BackColor = System.Drawing.Color.Transparent;
+            appearance105.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
+            this.fmcipal.FormStyleSettings.CaptionButtonsAppearances.DefaultButtonAppearances.PressedAppearance = appearance105;
+            this.fmcipal.FormStyleSettings.Style = Infragistics.Win.UltraWinForm.UltraFormStyle.ScenicRibbon;
+            // 
+            // _Form1_UltraFormManager_Dock_Area_Right
+            // 
+            this._Form1_UltraFormManager_Dock_Area_Right.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this._Form1_UltraFormManager_Dock_Area_Right.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this._Form1_UltraFormManager_Dock_Area_Right.DockedPosition = Infragistics.Win.UltraWinForm.DockedPosition.Right;
+            this._Form1_UltraFormManager_Dock_Area_Right.ForeColor = System.Drawing.SystemColors.WindowText;
+            this._Form1_UltraFormManager_Dock_Area_Right.FormManager = this.fmcipal;
+            this._Form1_UltraFormManager_Dock_Area_Right.InitialResizeAreaExtent = 8;
+            this._Form1_UltraFormManager_Dock_Area_Right.Location = new System.Drawing.Point(1016, 31);
+            this._Form1_UltraFormManager_Dock_Area_Right.Name = "_Form1_UltraFormManager_Dock_Area_Right";
+            this._Form1_UltraFormManager_Dock_Area_Right.Size = new System.Drawing.Size(8, 687);
+            // 
+            // _Form1_UltraFormManager_Dock_Area_Left
+            // 
+            this._Form1_UltraFormManager_Dock_Area_Left.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this._Form1_UltraFormManager_Dock_Area_Left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this._Form1_UltraFormManager_Dock_Area_Left.DockedPosition = Infragistics.Win.UltraWinForm.DockedPosition.Left;
+            this._Form1_UltraFormManager_Dock_Area_Left.ForeColor = System.Drawing.SystemColors.WindowText;
+            this._Form1_UltraFormManager_Dock_Area_Left.FormManager = this.fmcipal;
+            this._Form1_UltraFormManager_Dock_Area_Left.InitialResizeAreaExtent = 8;
+            this._Form1_UltraFormManager_Dock_Area_Left.Location = new System.Drawing.Point(0, 31);
+            this._Form1_UltraFormManager_Dock_Area_Left.Name = "_Form1_UltraFormManager_Dock_Area_Left";
+            this._Form1_UltraFormManager_Dock_Area_Left.Size = new System.Drawing.Size(8, 687);
+            // 
+            // _Form1_UltraFormManager_Dock_Area_Bottom
+            // 
+            this._Form1_UltraFormManager_Dock_Area_Bottom.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this._Form1_UltraFormManager_Dock_Area_Bottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this._Form1_UltraFormManager_Dock_Area_Bottom.DockedPosition = Infragistics.Win.UltraWinForm.DockedPosition.Bottom;
+            this._Form1_UltraFormManager_Dock_Area_Bottom.ForeColor = System.Drawing.SystemColors.WindowText;
+            this._Form1_UltraFormManager_Dock_Area_Bottom.FormManager = this.fmcipal;
+            this._Form1_UltraFormManager_Dock_Area_Bottom.InitialResizeAreaExtent = 8;
+            this._Form1_UltraFormManager_Dock_Area_Bottom.Location = new System.Drawing.Point(0, 718);
+            this._Form1_UltraFormManager_Dock_Area_Bottom.Name = "_Form1_UltraFormManager_Dock_Area_Bottom";
+            this._Form1_UltraFormManager_Dock_Area_Bottom.Size = new System.Drawing.Size(1024, 8);
+            // 
+            // _Form1_UltraFormManager_Dock_Area_Top
+            // 
+            this._Form1_UltraFormManager_Dock_Area_Top.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this._Form1_UltraFormManager_Dock_Area_Top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this._Form1_UltraFormManager_Dock_Area_Top.DockedPosition = Infragistics.Win.UltraWinForm.DockedPosition.Top;
+            this._Form1_UltraFormManager_Dock_Area_Top.ForeColor = System.Drawing.SystemColors.WindowText;
+            this._Form1_UltraFormManager_Dock_Area_Top.FormManager = this.fmcipal;
+            this._Form1_UltraFormManager_Dock_Area_Top.Location = new System.Drawing.Point(0, 0);
+            this._Form1_UltraFormManager_Dock_Area_Top.Name = "_Form1_UltraFormManager_Dock_Area_Top";
+            this._Form1_UltraFormManager_Dock_Area_Top.Size = new System.Drawing.Size(1024, 31);
+            // 
+            // btnsolicitudesdescargas
+            // 
+            appearance68.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(90)))), ((int)(((byte)(50)))));
+            appearance68.FontData.Name = "Segoe UI Black";
+            appearance68.FontData.SizeInPoints = 14F;
+            appearance68.ForeColor = System.Drawing.Color.White;
+            appearance68.ImageHAlign = Infragistics.Win.HAlign.Center;
+            this.btnsolicitudesdescargas.Appearance = appearance68;
+            this.btnsolicitudesdescargas.ButtonStyle = Infragistics.Win.UIElementButtonStyle.FlatBorderless;
+            this.btnsolicitudesdescargas.ImageSize = new System.Drawing.Size(116, 116);
+            this.btnsolicitudesdescargas.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnsolicitudesdescargas.Location = new System.Drawing.Point(25, 459);
+            this.btnsolicitudesdescargas.Name = "btnsolicitudesdescargas";
+            this.btnsolicitudesdescargas.Size = new System.Drawing.Size(219, 111);
+            this.btnsolicitudesdescargas.TabIndex = 0;
+            this.btnsolicitudesdescargas.Tag = "";
+            this.btnsolicitudesdescargas.Text = "Solicitudes de Descargas";
+            this.btnsolicitudesdescargas.UseAppStyling = false;
+            this.btnsolicitudesdescargas.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            // 
+            // btningresos
+            // 
+            appearance65.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(24)))), ((int)(((byte)(136)))));
+            appearance65.FontData.Name = "Segoe UI Black";
+            appearance65.FontData.SizeInPoints = 14F;
+            appearance65.ForeColor = System.Drawing.Color.White;
+            appearance65.ImageHAlign = Infragistics.Win.HAlign.Center;
+            this.btningresos.Appearance = appearance65;
+            this.btningresos.ButtonStyle = Infragistics.Win.UIElementButtonStyle.FlatBorderless;
+            this.btningresos.ImageSize = new System.Drawing.Size(116, 116);
+            this.btningresos.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btningresos.Location = new System.Drawing.Point(772, 458);
+            this.btningresos.Name = "btningresos";
+            this.btningresos.Size = new System.Drawing.Size(219, 111);
+            this.btningresos.TabIndex = 3;
+            this.btningresos.Tag = "";
+            this.btningresos.Text = "Ingresos ";
+            this.btningresos.UseAppStyling = false;
+            this.btningresos.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            // 
+            // btndocumentosxml
+            // 
+            appearance67.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(107)))), ((int)(((byte)(193)))));
+            appearance67.FontData.Name = "Segoe UI Black";
+            appearance67.FontData.SizeInPoints = 14F;
+            appearance67.ForeColor = System.Drawing.Color.White;
+            appearance67.ImageHAlign = Infragistics.Win.HAlign.Center;
+            this.btndocumentosxml.Appearance = appearance67;
+            this.btndocumentosxml.ButtonStyle = Infragistics.Win.UIElementButtonStyle.FlatBorderless;
+            this.btndocumentosxml.ImageSize = new System.Drawing.Size(116, 116);
+            this.btndocumentosxml.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btndocumentosxml.Location = new System.Drawing.Point(274, 459);
+            this.btndocumentosxml.Name = "btndocumentosxml";
+            this.btndocumentosxml.Size = new System.Drawing.Size(219, 111);
+            this.btndocumentosxml.TabIndex = 1;
+            this.btndocumentosxml.Tag = "";
+            this.btndocumentosxml.Text = "Documentos Digitales XML";
+            this.btndocumentosxml.UseAppStyling = false;
+            this.btndocumentosxml.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            // 
+            // btnvalidaciondedocumentos
+            // 
+            appearance66.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
+            appearance66.FontData.Name = "Segoe UI Black";
+            appearance66.FontData.SizeInPoints = 14F;
+            appearance66.ForeColor = System.Drawing.Color.White;
+            appearance66.ImageHAlign = Infragistics.Win.HAlign.Center;
+            this.btnvalidaciondedocumentos.Appearance = appearance66;
+            this.btnvalidaciondedocumentos.ButtonStyle = Infragistics.Win.UIElementButtonStyle.FlatBorderless;
+            this.btnvalidaciondedocumentos.ImageSize = new System.Drawing.Size(116, 116);
+            this.btnvalidaciondedocumentos.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnvalidaciondedocumentos.Location = new System.Drawing.Point(523, 459);
+            this.btnvalidaciondedocumentos.Name = "btnvalidaciondedocumentos";
+            this.btnvalidaciondedocumentos.Size = new System.Drawing.Size(219, 111);
+            this.btnvalidaciondedocumentos.TabIndex = 2;
+            this.btnvalidaciondedocumentos.Tag = "";
+            this.btnvalidaciondedocumentos.Text = "Validación de Documentos Digitales XML";
+            this.btnvalidaciondedocumentos.UseAppStyling = false;
+            this.btnvalidaciondedocumentos.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            // 
+            // home
+            // 
+            this.home.Controls.Add(this.btningresos);
+            this.home.Controls.Add(this.btnvalidaciondedocumentos);
+            this.home.Controls.Add(this.btndocumentosxml);
+            this.home.Controls.Add(this.btnsolicitudesdescargas);
+            this.home.Controls.Add(this.pblogoizquierdo);
+            this.home.Location = new System.Drawing.Point(-10000, -10000);
+            this.home.Name = "home";
+            this.home.Padding = new System.Windows.Forms.Padding(38, 0, 38, 38);
+            this.home.Size = new System.Drawing.Size(1020, 611);
+            // 
+            // pblogoizquierdo
+            // 
+            this.pblogoizquierdo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pblogoizquierdo.Image = ((System.Drawing.Image)(resources.GetObject("pblogoizquierdo.Image")));
+            this.pblogoizquierdo.Location = new System.Drawing.Point(2, 3);
+            this.pblogoizquierdo.Name = "pblogoizquierdo";
+            this.pblogoizquierdo.Size = new System.Drawing.Size(1016, 606);
+            this.pblogoizquierdo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pblogoizquierdo.TabIndex = 49;
+            this.pblogoizquierdo.TabStop = false;
+            // 
+            // frmCIPAL
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(1024, 726);
+            this.Controls.Add(this.utcmain);
+            this.Controls.Add(this._Form1_UltraFormManager_Dock_Area_Left);
+            this.Controls.Add(this._Form1_UltraFormManager_Dock_Area_Right);
+            this.Controls.Add(this._Form1_UltraFormManager_Dock_Area_Top);
+            this.Controls.Add(this._Form1_UltraFormManager_Dock_Area_Bottom);
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
+            this.Name = "frmCIPAL";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "CIPAL - Sistema de Control Municipal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmCIPAL_Load);
+            this.tiposdeingresos.ResumeLayout(false);
+            this.tiposdeingresos.PerformLayout();
+            this.catalogos.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tabcatalogos)).EndInit();
+            this.tabcatalogos.ResumeLayout(false);
+            this.ingresos.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tabingresos)).EndInit();
+            this.tabingresos.ResumeLayout(false);
+            this.egresos.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tabegresos)).EndInit();
+            this.tabegresos.ResumeLayout(false);
+            this.gestion.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tabgestion)).EndInit();
+            this.tabgestion.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.utcmain)).EndInit();
+            this.utcmain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl1)).EndInit();
+            this.ultraTabControl1.ResumeLayout(false);
+            this.ultraTabPageControl41.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ultraGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fmcipal)).EndInit();
+            this.home.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pblogoizquierdo)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+        private Infragistics.Win.UltraWinTabControl.UltraTabControl utcmain;
+        private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage compartido;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl catalogos;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl egresos;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl gestion;
+        private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage ultraTabSharedControlsPage3;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl10;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl11;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl12;
+        private Infragistics.Win.UltraWinTabControl.UltraTabControl ultraTabControl1;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl licencia;
+        private Infragistics.Win.UltraWinTabControl.UltraTabControl tabgestion;
+        private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage ultraTabSharedControlsPage6;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl34;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl36;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl37;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl38;
+        private Infragistics.Win.UltraWinTabControl.UltraTabControl tabcatalogos;
+        private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage catalogos_compartido;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl beneficiarios;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl tiposdeingresos;
+        private Infragistics.Win.Misc.UltraLabel lbltitulo;
+        private Infragistics.Win.Misc.UltraLabel lblsubtitulo;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl contribuyentes;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl tiposdeapoyo;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl proveedores;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl departamentos;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl empleados;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl puestos;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl vehiculos;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl unidades;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl impuestos;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl conceptos;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl40;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl41;
+        private Infragistics.Win.UltraWinGrid.UltraGrid ultraGrid1;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl42;
+        private Infragistics.Win.UltraWinTabControl.UltraTabControl ultraTabControl2;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl13;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl14;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl15;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl16;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl47;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl48;
+        private Infragistics.Win.UltraWinTabControl.UltraTabControl ultraTabControl4;
+        private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage ultraTabSharedControlsPage8;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl50;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl51;
+        private Infragistics.Win.UltraWinTabControl.UltraTabControl tabegresos;
+        private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage ultraTabSharedControlsPage5;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl tpcsolicitudes;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl20;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl21;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl29;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl30;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl31;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl32;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ingresos;
+        private Infragistics.Win.UltraWinTabControl.UltraTabControl tabingresos;
+        private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage ultraTabSharedControlsPage4;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl49;
+        private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage ultraTabSharedControlsPage9;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl39;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl53;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl54;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl55;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl52;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl56;
+        private Infragistics.Win.UltraWinForm.UltraFormManager fmcipal;
+        private Infragistics.Win.UltraWinForm.UltraFormDockArea _Form1_UltraFormManager_Dock_Area_Left;
+        private Infragistics.Win.UltraWinForm.UltraFormDockArea _Form1_UltraFormManager_Dock_Area_Right;
+        private Infragistics.Win.UltraWinForm.UltraFormDockArea _Form1_UltraFormManager_Dock_Area_Top;
+        private Infragistics.Win.UltraWinForm.UltraFormDockArea _Form1_UltraFormManager_Dock_Area_Bottom;
+        public Infragistics.Win.UltraWinTabControl.UltraTabPageControl home;
+        private Infragistics.Win.Misc.UltraButton btnvalidaciondedocumentos;
+        private Infragistics.Win.Misc.UltraButton btndocumentosxml;
+        private Infragistics.Win.Misc.UltraButton btningresos;
+        private Infragistics.Win.Misc.UltraButton btnsolicitudesdescargas;
+        private System.Windows.Forms.PictureBox pblogoizquierdo;
+    }
+}
+
